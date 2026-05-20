@@ -4,71 +4,54 @@
 
 </div>
 
-<table>
-  <tr>
-    <td width="39%" valign="top">
-      <h1>Petros Dhespollari</h1>
-      <p>
-        <strong>iOS Engineer at <a href="https://withplum.com/en-gb">Plum</a></strong><br>
-        Athens, Greece
-      </p>
-      <p>
-        I build production Apple-platform software with Swift, SwiftUI, UIKit, and The Composable Architecture.
-      </p>
-      <p>
-        I work best in teams where mobile quality matters: fintech, high-traffic product flows, architecture-heavy codebases, and releases where regressions are expensive.
-      </p>
-      <p>
-        <a href="https://peterdsp.dev">
-          <img src="https://img.shields.io/badge/peterdsp.dev-0D1117?style=flat-square&logo=safari&logoColor=58A6FF" alt="Website">
-        </a>
-        <a href="https://www.linkedin.com/in/peterdsp/">
-          <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=flat-square&logo=linkedin&logoColor=58A6FF" alt="LinkedIn">
-        </a>
-        <a href="mailto:info@peterdsp.dev">
-          <img src="https://img.shields.io/badge/Email-0D1117?style=flat-square&logo=gmail&logoColor=58A6FF" alt="Email">
-        </a>
-      </p>
-    </td>
-    <td width="61%" valign="top">
-      <h3>Built for important iOS work</h3>
-      <table>
-        <tr>
-          <td><strong>Ownership</strong></td>
-          <td>Take features from ambiguous product intent to shipped, maintainable implementation.</td>
-        </tr>
-        <tr>
-          <td><strong>Architecture</strong></td>
-          <td>Design SwiftUI, UIKit, and TCA systems that stay readable as the product grows.</td>
-        </tr>
-        <tr>
-          <td><strong>Reliability</strong></td>
-          <td>Care about release quality, edge cases, performance, accessibility, and long-term operability.</td>
-        </tr>
-        <tr>
-          <td><strong>Product sense</strong></td>
-          <td>Work close to design, backend, data, and product so technical choices match user and business needs.</td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+# Petros Dhespollari
+
+**iOS Engineer at [Plum](https://withplum.com/en-gb), based in Athens.**
+
+I build production Apple-platform software with Swift, SwiftUI, UIKit, and The Composable Architecture.
+
+I work best in teams where mobile quality matters: fintech, high-traffic product flows, architecture-heavy codebases, and releases where regressions are expensive.
+
+<a href="https://peterdsp.dev">
+  <img src="https://img.shields.io/badge/peterdsp.dev-0D1117?style=flat-square&logo=safari&logoColor=58A6FF" alt="Website">
+</a>
+<a href="https://www.linkedin.com/in/peterdsp/">
+  <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=flat-square&logo=linkedin&logoColor=58A6FF" alt="LinkedIn">
+</a>
+<a href="mailto:info@peterdsp.dev">
+  <img src="https://img.shields.io/badge/Email-0D1117?style=flat-square&logo=gmail&logoColor=58A6FF" alt="Email">
+</a>
+
+</div>
+
+<br>
+
+## Built for important iOS work
+
+- **Ownership:** turn ambiguous product intent into shipped, maintainable implementation.
+- **Architecture:** design SwiftUI, UIKit, and TCA systems that stay readable as products grow.
+- **Reliability:** care about edge cases, performance, accessibility, and release quality.
+- **Product sense:** align technical choices with users, product direction, and business needs.
 
 <table>
   <tr>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <strong>Role fit</strong><br>
       Senior iOS, platform, product
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <strong>Domain</strong><br>
       Fintech, consumer, tools
     </td>
-    <td align="center" width="25%">
+  </tr>
+  <tr>
+    <td align="center" width="50%">
       <strong>Architecture</strong><br>
       TCA, SwiftUI, UIKit
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <strong>Strength</strong><br>
       Ownership under complexity
     </td>
@@ -97,28 +80,19 @@
 
 <br>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>What I bring</h3>
-      <ul>
-        <li>Strong ownership across implementation, review, release, and follow-up.</li>
-        <li>Architecture that supports product speed without hiding complexity in the wrong places.</li>
-        <li>Pragmatic judgment on when to use SwiftUI, UIKit, TCA, or a simpler local pattern.</li>
-        <li>High care for user-facing details, stability, and maintainable code.</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Best environment</h3>
-      <ul>
-        <li>Important iOS surfaces with real users and high reliability expectations.</li>
-        <li>Teams that value clear technical decisions, not just fast output.</li>
-        <li>Products where mobile engineering is part of the product strategy.</li>
-        <li>Codebases that need calm refactoring, delivery discipline, and architectural taste.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+## What I bring
+
+- Strong ownership across implementation, review, release, and follow-up.
+- Architecture that supports product speed without hiding complexity in the wrong places.
+- Pragmatic judgment on when to use SwiftUI, UIKit, TCA, or a simpler local pattern.
+- High care for user-facing details, stability, and maintainable code.
+
+## Best environment
+
+- Important iOS surfaces with real users and high reliability expectations.
+- Teams that value clear technical decisions, not just fast output.
+- Products where mobile engineering is part of the product strategy.
+- Codebases that need calm refactoring, delivery discipline, and architectural taste.
 
 <details>
   <summary><strong>How I tend to work</strong></summary>
