@@ -1,39 +1,24 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:58a6ff,50:8b949e,100:30363d" alt="" width="100%">
-
-</div>
-
-<div align="center">
-
-# Petros Dhespollari
-
-**iOS Engineer at [Plum](https://withplum.com/en-gb), based in Athens.**
-
-I build production Apple-platform software with Swift, SwiftUI, UIKit, and The Composable Architecture.
-
-I work best in teams where mobile quality matters: fintech, high-traffic product flows, architecture-heavy codebases, and releases where regressions are expensive.
+<img src="./assets/hero.svg" alt="Petros Dhespollari, iOS Engineer building high-reliability Apple-platform products" width="100%">
 
 <a href="https://peterdsp.dev">
-  <img src="https://img.shields.io/badge/peterdsp.dev-0D1117?style=flat-square&logo=safari&logoColor=58A6FF" alt="Website">
+  <img src="https://img.shields.io/badge/peterdsp.dev-0D1117?style=for-the-badge&logo=safari&logoColor=58A6FF" alt="Website">
 </a>
 <a href="https://www.linkedin.com/in/peterdsp/">
-  <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=flat-square&logo=linkedin&logoColor=58A6FF" alt="LinkedIn">
+  <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=58A6FF" alt="LinkedIn">
 </a>
 <a href="mailto:info@peterdsp.dev">
-  <img src="https://img.shields.io/badge/Email-0D1117?style=flat-square&logo=gmail&logoColor=58A6FF" alt="Email">
+  <img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=58A6FF" alt="Email">
 </a>
 
 </div>
 
-<br>
+## Built for high-trust iOS work
 
-## Built for important iOS work
+I build production Apple-platform software with Swift, SwiftUI, UIKit, and The Composable Architecture. I work best where mobile quality has real product weight: fintech flows, complex state, high-traffic user journeys, and releases where regressions are expensive.
 
-- **Ownership:** turn ambiguous product intent into shipped, maintainable implementation.
-- **Architecture:** design SwiftUI, UIKit, and TCA systems that stay readable as products grow.
-- **Reliability:** care about edge cases, performance, accessibility, and release quality.
-- **Product sense:** align technical choices with users, product direction, and business needs.
+<img src="./assets/signal.svg" alt="Role signal dashboard for senior iOS, platform, and product engineering" width="100%">
 
 <table>
   <tr>
@@ -78,45 +63,42 @@ I work best in teams where mobile quality matters: fintech, high-traffic product
 
 </div>
 
-<br>
+<details open>
+  <summary><strong>What makes me useful on important teams</strong></summary>
+  <br>
 
-## What I bring
-
-- Strong ownership across implementation, review, release, and follow-up.
-- Architecture that supports product speed without hiding complexity in the wrong places.
-- Pragmatic judgment on when to use SwiftUI, UIKit, TCA, or a simpler local pattern.
-- High care for user-facing details, stability, and maintainable code.
-
-## Best environment
-
-- Important iOS surfaces with real users and high reliability expectations.
-- Teams that value clear technical decisions, not just fast output.
-- Products where mobile engineering is part of the product strategy.
-- Codebases that need calm refactoring, delivery discipline, and architectural taste.
+  | Signal | How it shows up |
+  | --- | --- |
+  | Ownership | I take product ambiguity and turn it into shipped, maintainable implementation. |
+  | Architecture | I design SwiftUI, UIKit, and TCA systems that stay readable as products grow. |
+  | Reliability | I care about edge cases, performance, accessibility, data flow, and release quality. |
+  | Product sense | I work close to design, backend, data, and product so technical choices serve the user. |
+</details>
 
 <details>
-  <summary><strong>How I tend to work</strong></summary>
+  <summary><strong>Engineering operating model</strong></summary>
   <br>
-  <table>
-    <tr>
-      <td><strong>Before code</strong></td>
-      <td>Understand the product shape, existing architecture, and failure modes.</td>
-    </tr>
-    <tr>
-      <td><strong>During code</strong></td>
-      <td>Keep boundaries clear, state obvious, and UI behavior easy to reason about.</td>
-    </tr>
-    <tr>
-      <td><strong>Before release</strong></td>
-      <td>Check edge cases, regressions, accessibility, copy, and the path for future changes.</td>
-    </tr>
-  </table>
+
+  | Moment | Bias |
+  | --- | --- |
+  | Before code | Understand the product shape, existing architecture, and failure modes. |
+  | During code | Keep boundaries clear, state obvious, and UI behavior easy to reason about. |
+  | Review | Look for correctness, maintainability, testability, and product edge cases. |
+  | Before release | Check regressions, accessibility, copy, telemetry, and the path for future changes. |
+</details>
+
+<details>
+  <summary><strong>Where I fit best</strong></summary>
+  <br>
+
+  - Important iOS surfaces with real users and high reliability expectations.
+  - Teams that value technical judgment, not just fast output.
+  - Products where mobile engineering is part of the product strategy.
+  - Codebases that need deliberate refactoring, delivery discipline, and architectural taste.
 </details>
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:30363d,50:8b949e,100:58a6ff" alt="" width="100%">
-
-<sub>Swift, product judgment, release quality.</sub>
+<sub>Swift · product judgment · release quality · architecture under pressure</sub>
 
 </div>
