@@ -26,7 +26,7 @@
     </pattern>
   </defs>
 
-  <rect width="1200" height="250" fill="url(#bg)"/>
+  <rect width="1200" height="250" rx="30" fill="url(#bg)"/>
 
   <path d="M96 80H1104" stroke="url(#line)" stroke-width="2" filter="url(#glow)"/>
   <circle cx="156" cy="80" r="4" fill="#58A6FF" filter="url(#glow)">
