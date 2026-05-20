@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="./assets/hero.svg" alt="Petros Dhespollari, iOS Engineer building high-reliability Apple-platform products" width="100%">
+<picture>
+  <source media="(max-width: 640px)" srcset="./assets/hero-mobile.svg">
+  <img src="./assets/hero.svg" alt="Petros Dhespollari, iOS Engineer building high-reliability Apple-platform products" width="100%">
+</picture>
 
 <a href="https://peterdsp.dev">
   <img src="https://img.shields.io/badge/peterdsp.dev-0D1117?style=for-the-badge&logo=safari&logoColor=58A6FF" alt="Website">
