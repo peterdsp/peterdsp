@@ -13,10 +13,10 @@
         Athens, Greece
       </p>
       <p>
-        I build Apple-platform products with Swift, SwiftUI, UIKit, and The Composable Architecture.
+        I build production Apple-platform software with Swift, SwiftUI, UIKit, and The Composable Architecture.
       </p>
       <p>
-        My work sits close to product: fintech flows, release quality, clean architecture, and codebases that can keep moving without becoming fragile.
+        I work best in teams where mobile quality matters: fintech, high-traffic product flows, architecture-heavy codebases, and releases where regressions are expensive.
       </p>
       <p>
         <a href="https://peterdsp.dev">
@@ -31,22 +31,25 @@
       </p>
     </td>
     <td width="61%" valign="top">
-      <pre lang="swift"><code>struct Profile {
-    let role = "iOS Engineer"
-    let company = "Plum"
-    let location = "Athens, Greece"
-
-    let stack = ["Swift", "SwiftUI", "UIKit", "TCA"]
-    let instincts = [
-        "make state explicit",
-        "keep APIs small",
-        "ship calmly",
-        "leave code easier to change"
-    ]
-}</code></pre>
-      <p>
-        I care about predictable state, polished interaction details, clear boundaries, and release paths that do not depend on luck.
-      </p>
+      <h3>Built for important iOS work</h3>
+      <table>
+        <tr>
+          <td><strong>Ownership</strong></td>
+          <td>Take features from ambiguous product intent to shipped, maintainable implementation.</td>
+        </tr>
+        <tr>
+          <td><strong>Architecture</strong></td>
+          <td>Design SwiftUI, UIKit, and TCA systems that stay readable as the product grows.</td>
+        </tr>
+        <tr>
+          <td><strong>Reliability</strong></td>
+          <td>Care about release quality, edge cases, performance, accessibility, and long-term operability.</td>
+        </tr>
+        <tr>
+          <td><strong>Product sense</strong></td>
+          <td>Work close to design, backend, data, and product so technical choices match user and business needs.</td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
@@ -54,20 +57,20 @@
 <table>
   <tr>
     <td align="center" width="25%">
-      <strong>Platform</strong><br>
-      iOS, iPadOS, macOS
+      <strong>Role fit</strong><br>
+      Senior iOS, platform, product
     </td>
     <td align="center" width="25%">
-      <strong>Language</strong><br>
-      Swift
+      <strong>Domain</strong><br>
+      Fintech, consumer, tools
     </td>
     <td align="center" width="25%">
       <strong>Architecture</strong><br>
-      TCA, MVVM, UIKit bridges
+      TCA, SwiftUI, UIKit
     </td>
     <td align="center" width="25%">
-      <strong>Product</strong><br>
-      Fintech, tools, learning apps
+      <strong>Strength</strong><br>
+      Ownership under complexity
     </td>
   </tr>
 </table>
@@ -87,21 +90,21 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>Engineering bias</h3>
+      <h3>What I bring</h3>
       <ul>
-        <li>Keep state explicit and features understandable.</li>
-        <li>Prefer testable architecture over clever shortcuts.</li>
-        <li>Make product details feel simple by doing the hard engineering underneath.</li>
-        <li>Ship with enough care that the next iteration is easier, not harder.</li>
+        <li>Strong ownership across implementation, review, release, and follow-up.</li>
+        <li>Architecture that supports product speed without hiding complexity in the wrong places.</li>
+        <li>Pragmatic judgment on when to use SwiftUI, UIKit, TCA, or a simpler local pattern.</li>
+        <li>High care for user-facing details, stability, and maintainable code.</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h3>Current signal</h3>
+      <h3>Best environment</h3>
       <ul>
-        <li>Building user-facing fintech flows at Plum.</li>
-        <li>Working with SwiftUI, UIKit, TCA, and modular product surfaces.</li>
-        <li>Keeping side projects close to Apple platforms, developer tools, and useful local-first ideas.</li>
-        <li>Interested in software that feels minimal because the internals are disciplined.</li>
+        <li>Important iOS surfaces with real users and high reliability expectations.</li>
+        <li>Teams that value clear technical decisions, not just fast output.</li>
+        <li>Products where mobile engineering is part of the product strategy.</li>
+        <li>Codebases that need calm refactoring, delivery discipline, and architectural taste.</li>
       </ul>
     </td>
   </tr>
