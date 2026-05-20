@@ -77,11 +77,21 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Swift-0D1117?style=for-the-badge&logo=swift&logoColor=F05138" alt="Swift">
-<img src="https://img.shields.io/badge/SwiftUI-0D1117?style=for-the-badge&logo=apple&logoColor=58A6FF" alt="SwiftUI">
-<img src="https://img.shields.io/badge/UIKit-0D1117?style=for-the-badge&logo=apple&logoColor=A5D6FF" alt="UIKit">
-<img src="https://img.shields.io/badge/TCA-0D1117?style=for-the-badge&logo=github&logoColor=8B949E" alt="The Composable Architecture">
-<img src="https://img.shields.io/badge/Xcode-0D1117?style=for-the-badge&logo=xcode&logoColor=58A6FF" alt="Xcode">
+<a href="https://www.swift.org">
+  <img src="https://img.shields.io/badge/Swift-0D1117?style=for-the-badge&logo=swift&logoColor=F05138" alt="Swift">
+</a>
+<a href="https://developer.apple.com/xcode/swiftui/">
+  <img src="https://img.shields.io/badge/SwiftUI-0D1117?style=for-the-badge&logo=apple&logoColor=58A6FF" alt="SwiftUI">
+</a>
+<a href="https://developer.apple.com/documentation/uikit">
+  <img src="https://img.shields.io/badge/UIKit-0D1117?style=for-the-badge&logo=apple&logoColor=A5D6FF" alt="UIKit">
+</a>
+<a href="https://github.com/pointfreeco/swift-composable-architecture">
+  <img src="https://img.shields.io/badge/TCA-0D1117?style=for-the-badge&logo=github&logoColor=8B949E" alt="The Composable Architecture">
+</a>
+<a href="https://developer.apple.com/xcode/">
+  <img src="https://img.shields.io/badge/Xcode-0D1117?style=for-the-badge&logo=xcode&logoColor=58A6FF" alt="Xcode">
+</a>
 
 </div>
 
