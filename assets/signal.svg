@@ -1,6 +1,6 @@
 <svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">iOS engineering signal dashboard</title>
-  <desc id="desc">Compact visual dashboard showing ownership, architecture, reliability, and product sense.</desc>
+  <desc id="desc">Compact visual dashboard showing non-numeric engineering signals: ownership, architecture, reliability, and product sense.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0D1117"/>
@@ -17,19 +17,23 @@
   <text x="70" y="120" fill="#F0F6FC" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="34" font-weight="700">Senior iOS, platform, product</text>
   <text x="70" y="158" fill="#C9D1D9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20">Important mobile surfaces, fintech reliability, clean architecture, deliberate delivery.</text>
 
-  <g transform="translate(760 58)">
+  <g transform="translate(740 58)">
     <rect width="96" height="128" rx="14" fill="#0D1117" stroke="#30363D"/>
-    <rect x="18" y="82" width="60" height="28" rx="6" fill="#58A6FF"/>
+    <rect x="18" y="72" width="60" height="38" rx="6" fill="#58A6FF"/>
     <text x="22" y="34" fill="#C9D1D9" font-family="SFMono-Regular, Consolas, monospace" font-size="12">OWN</text>
-    <text x="28" y="102" fill="#0D1117" font-family="SFMono-Regular, Consolas, monospace" font-size="13" font-weight="700">92%</text>
-    <rect x="122" width="96" height="128" rx="14" fill="#0D1117" stroke="#30363D"/>
-    <rect x="140" y="54" width="60" height="56" rx="6" fill="#79C0FF"/>
-    <text x="144" y="34" fill="#C9D1D9" font-family="SFMono-Regular, Consolas, monospace" font-size="12">ARCH</text>
-    <text x="150" y="102" fill="#0D1117" font-family="SFMono-Regular, Consolas, monospace" font-size="13" font-weight="700">88%</text>
-    <rect x="244" width="96" height="128" rx="14" fill="#0D1117" stroke="#30363D"/>
-    <rect x="262" y="38" width="60" height="72" rx="6" fill="#7EE787"/>
-    <text x="266" y="34" fill="#C9D1D9" font-family="SFMono-Regular, Consolas, monospace" font-size="12">REL</text>
-    <text x="272" y="102" fill="#0D1117" font-family="SFMono-Regular, Consolas, monospace" font-size="13" font-weight="700">95%</text>
+    <text x="28" y="96" fill="#0D1117" font-family="SFMono-Regular, Consolas, monospace" font-size="13" font-weight="700">HIGH</text>
+    <rect x="116" width="96" height="128" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <rect x="134" y="58" width="60" height="52" rx="6" fill="#79C0FF"/>
+    <text x="138" y="34" fill="#C9D1D9" font-family="SFMono-Regular, Consolas, monospace" font-size="12">ARCH</text>
+    <text x="140" y="92" fill="#0D1117" font-family="SFMono-Regular, Consolas, monospace" font-size="12" font-weight="700">CLEAR</text>
+    <rect x="232" width="96" height="128" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <rect x="250" y="46" width="60" height="64" rx="6" fill="#7EE787"/>
+    <text x="254" y="34" fill="#C9D1D9" font-family="SFMono-Regular, Consolas, monospace" font-size="12">REL</text>
+    <text x="258" y="86" fill="#0D1117" font-family="SFMono-Regular, Consolas, monospace" font-size="12" font-weight="700">CALM</text>
+    <rect x="348" width="96" height="128" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <rect x="366" y="64" width="60" height="46" rx="6" fill="#A5D6FF"/>
+    <text x="370" y="34" fill="#C9D1D9" font-family="SFMono-Regular, Consolas, monospace" font-size="12">PROD</text>
+    <text x="372" y="92" fill="#0D1117" font-family="SFMono-Regular, Consolas, monospace" font-size="12" font-weight="700">SENSE</text>
   </g>
   <path d="M70 198H1130" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
 </svg>
