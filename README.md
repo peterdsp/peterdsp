@@ -14,12 +14,6 @@
 
 </div>
 
-## Built for high-trust iOS work
-
-I build production Apple-platform software with Swift, SwiftUI, UIKit, and The Composable Architecture. I work best where mobile quality has real product weight: fintech flows, complex state, high-traffic user journeys, and releases where regressions are expensive.
-
-<img src="./assets/signal.svg" alt="Role signal dashboard for senior iOS, platform, and product engineering" width="100%">
-
 <table>
   <tr>
     <td align="center" width="50%">
@@ -43,28 +37,8 @@ I build production Apple-platform software with Swift, SwiftUI, UIKit, and The C
   </tr>
 </table>
 
-<div align="center">
-
-<a href="https://www.swift.org">
-  <img src="https://img.shields.io/badge/Swift-0D1117?style=for-the-badge&logo=swift&logoColor=F05138" alt="Swift">
-</a>
-<a href="https://developer.apple.com/xcode/swiftui/">
-  <img src="https://img.shields.io/badge/SwiftUI-0D1117?style=for-the-badge&logo=apple&logoColor=58A6FF" alt="SwiftUI">
-</a>
-<a href="https://developer.apple.com/documentation/uikit">
-  <img src="https://img.shields.io/badge/UIKit-0D1117?style=for-the-badge&logo=apple&logoColor=A5D6FF" alt="UIKit">
-</a>
-<a href="https://github.com/pointfreeco/swift-composable-architecture">
-  <img src="https://img.shields.io/badge/TCA-0D1117?style=for-the-badge&logo=github&logoColor=8B949E" alt="The Composable Architecture">
-</a>
-<a href="https://developer.apple.com/xcode/">
-  <img src="https://img.shields.io/badge/Xcode-0D1117?style=for-the-badge&logo=xcode&logoColor=58A6FF" alt="Xcode">
-</a>
-
-</div>
-
-<details open>
-  <summary><strong>What makes me useful on important teams</strong></summary>
+<details>
+  <summary><strong>Built for high-trust iOS work</strong></summary>
   <br>
 
   | Signal | How it shows up |

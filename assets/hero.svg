@@ -1,8 +1,8 @@
-<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="1200" height="250" viewBox="0 0 1200 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Petros Dhespollari iOS engineering profile</title>
   <desc id="desc">A futuristic profile panel for iOS engineering, Swift, SwiftUI, UIKit, TCA, reliability, and product ownership.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="250" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#05070D"/>
       <stop offset="0.52" stop-color="#0D1524"/>
       <stop offset="1" stop-color="#080B12"/>
@@ -12,7 +12,7 @@
       <stop offset="0.45" stop-color="#58A6FF"/>
       <stop offset="1" stop-color="#A5D6FF" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="card" x1="160" y1="120" x2="1040" y2="360" gradientUnits="userSpaceOnUse">
+    <linearGradient id="card" x1="820" y1="50" x2="1106" y2="210" gradientUnits="userSpaceOnUse">
       <stop stop-color="#111827" stop-opacity="0.92"/>
       <stop offset="1" stop-color="#0D1117" stop-opacity="0.96"/>
     </linearGradient>
@@ -26,7 +26,7 @@
     </pattern>
   </defs>
 
-  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="250" fill="url(#bg)"/>
 
   <path d="M96 80H1104" stroke="url(#line)" stroke-width="2" filter="url(#glow)"/>
   <circle cx="156" cy="80" r="4" fill="#58A6FF" filter="url(#glow)">
@@ -34,33 +34,18 @@
     <animate attributeName="opacity" values="0.25;1;0.25" dur="8s" repeatCount="indefinite"/>
   </circle>
 
-  <text x="88" y="142" fill="#8B949E" font-family="SFMono-Regular, Consolas, monospace" font-size="18" letter-spacing="3">PETERDSP / IOS SYSTEMS</text>
-  <text x="88" y="202" fill="#F0F6FC" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="48" font-weight="700">Petros Dhespollari</text>
-  <text x="88" y="244" fill="#A5D6FF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="26" font-weight="600">iOS Engineer building high-reliability Apple-platform products</text>
-  <text x="88" y="286" fill="#C9D1D9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20">Swift · SwiftUI · UIKit · TCA · fintech flows · release quality · product ownership</text>
+  <text x="88" y="122" fill="#8B949E" font-family="SFMono-Regular, Consolas, monospace" font-size="16" letter-spacing="3">PETERDSP / IOS SYSTEMS</text>
+  <text x="88" y="170" fill="#F0F6FC" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="42" font-weight="700">Petros Dhespollari</text>
+  <text x="88" y="208" fill="#A5D6FF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="600">iOS Engineer building high-reliability Apple-platform products</text>
 
-  <g transform="translate(820 118)">
-    <rect width="286" height="206" rx="22" fill="url(#card)" stroke="#30363D"/>
-    <path d="M28 58H258" stroke="#58A6FF" stroke-opacity="0.5"/>
-    <path d="M28 104H258" stroke="#58A6FF" stroke-opacity="0.22"/>
-    <path d="M28 150H258" stroke="#58A6FF" stroke-opacity="0.22"/>
-    <text x="28" y="38" fill="#F0F6FC" font-family="SFMono-Regular, Consolas, monospace" font-size="16">signal.matrix</text>
-    <text x="28" y="86" fill="#A5D6FF" font-family="SFMono-Regular, Consolas, monospace" font-size="16">ownership</text>
-    <text x="192" y="86" fill="#7EE787" font-family="SFMono-Regular, Consolas, monospace" font-size="16">high</text>
-    <text x="28" y="132" fill="#A5D6FF" font-family="SFMono-Regular, Consolas, monospace" font-size="16">architecture</text>
-    <text x="192" y="132" fill="#7EE787" font-family="SFMono-Regular, Consolas, monospace" font-size="16">clean</text>
-    <text x="28" y="178" fill="#A5D6FF" font-family="SFMono-Regular, Consolas, monospace" font-size="16">release</text>
-    <text x="192" y="178" fill="#7EE787" font-family="SFMono-Regular, Consolas, monospace" font-size="16">calm</text>
-  </g>
-
-  <g transform="translate(88 330)">
-    <rect width="128" height="36" rx="18" fill="#0D1117" stroke="#58A6FF" stroke-opacity="0.48"/>
-    <text x="24" y="24" fill="#F0F6FC" font-family="SFMono-Regular, Consolas, monospace" font-size="14">Swift</text>
-    <rect x="144" width="128" height="36" rx="18" fill="#0D1117" stroke="#58A6FF" stroke-opacity="0.48"/>
-    <text x="168" y="24" fill="#F0F6FC" font-family="SFMono-Regular, Consolas, monospace" font-size="14">SwiftUI</text>
-    <rect x="288" width="128" height="36" rx="18" fill="#0D1117" stroke="#58A6FF" stroke-opacity="0.48"/>
-    <text x="312" y="24" fill="#F0F6FC" font-family="SFMono-Regular, Consolas, monospace" font-size="14">UIKit</text>
-    <rect x="432" width="128" height="36" rx="18" fill="#0D1117" stroke="#58A6FF" stroke-opacity="0.48"/>
-    <text x="456" y="24" fill="#F0F6FC" font-family="SFMono-Regular, Consolas, monospace" font-size="14">TCA</text>
+  <g transform="translate(820 52)">
+    <rect width="286" height="150" rx="22" fill="url(#card)" stroke="#30363D"/>
+    <path d="M28 48H258" stroke="#58A6FF" stroke-opacity="0.5"/>
+    <path d="M28 88H258" stroke="#58A6FF" stroke-opacity="0.22"/>
+    <text x="28" y="32" fill="#F0F6FC" font-family="SFMono-Regular, Consolas, monospace" font-size="15">signal.matrix</text>
+    <text x="28" y="74" fill="#A5D6FF" font-family="SFMono-Regular, Consolas, monospace" font-size="15">ownership</text>
+    <text x="196" y="74" fill="#7EE787" font-family="SFMono-Regular, Consolas, monospace" font-size="15">high</text>
+    <text x="28" y="114" fill="#A5D6FF" font-family="SFMono-Regular, Consolas, monospace" font-size="15">architecture</text>
+    <text x="196" y="114" fill="#7EE787" font-family="SFMono-Regular, Consolas, monospace" font-size="15">clean</text>
   </g>
 </svg>
