@@ -14,29 +14,6 @@
 
 </div>
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <strong>Role fit</strong><br>
-      Senior iOS, platform, product
-    </td>
-    <td align="center" width="50%">
-      <strong>Domain</strong><br>
-      Fintech, consumer, tools
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <strong>Architecture</strong><br>
-      TCA, SwiftUI, UIKit
-    </td>
-    <td align="center" width="50%">
-      <strong>Strength</strong><br>
-      Ownership under complexity
-    </td>
-  </tr>
-</table>
-
 <details>
   <summary><strong>Built for high-trust iOS work</strong></summary>
   <br>
