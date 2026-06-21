@@ -1,0 +1,46 @@
+name: Update stars graph
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update-stars.mjs"
+      - ".github/workflows/update-stars.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stars
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Regenerate SVGs from GitHub API
+        env:
+          GH_USER: peterdsp
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/update-stars.mjs
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain assets/stars.svg assets/stars-mobile.svg)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/stars.svg assets/stars-mobile.svg
+            git commit -m "chore: refresh stars graph"
+            git push
+          else
+            echo "No changes."
+          fi
