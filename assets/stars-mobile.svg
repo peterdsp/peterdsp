@@ -1,75 +1,87 @@
-<svg width="720" height="560" viewBox="0 0 720 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="720" height="600" viewBox="0 0 720 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across peterdsp's open-source projects</title>
-  <desc id="desc">Mobile liquid-glass panel showing 77 cumulative GitHub stars across 9 projects.</desc>
+  <desc id="desc">Mobile OLED-black minimal panel showing 77 cumulative GitHub stars across 9 projects.</desc>
   <defs>
-    <linearGradient id="sbg" x1="0" y1="0" x2="720" y2="560" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#05070D"/>
-      <stop offset="0.5" stop-color="#081526"/>
-      <stop offset="1" stop-color="#070A12"/>
-    </linearGradient>
-    <radialGradient id="saqua" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 30) rotate(72) scale(280 580)">
-      <stop stop-color="#58A6FF" stop-opacity="0.55"/>
-      <stop offset="0.45" stop-color="#7DD3FC" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#58A6FF" stop-opacity="0"/>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 -60) rotate(72) scale(420 920)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.025"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="halo2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1100 40) rotate(140) scale(320 520)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glassFill" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.015"/>
+    </linearGradient>
+    <linearGradient id="hairline" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/>
+    </linearGradient>
     <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#58A6FF"/>
-      <stop offset="0.55" stop-color="#79C0FF"/>
-      <stop offset="1" stop-color="#7EE787"/>
+      <stop stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.55"/>
     </linearGradient>
     <linearGradient id="barTrack" x1="0" y1="0" x2="1" y2="0">
       <stop stop-color="#FFFFFF" stop-opacity="0.06"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.02"/>
     </linearGradient>
     <linearGradient id="totalGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#F0F6FC"/>
-      <stop offset="1" stop-color="#A5D6FF"/>
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#8E8E93"/>
     </linearGradient>
-    <pattern id="sgrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M30 0H0V30" stroke="#A5D6FF" stroke-opacity="0.06" stroke-width="1"/>
-    </pattern>
-  </defs>
+</defs>
 
-  <rect width="720" height="560" rx="34" fill="url(#sbg)"/>
-  <rect width="720" height="560" rx="34" fill="url(#saqua)"/>
-  <rect width="720" height="560" rx="34" fill="url(#sgrid)"/>
-  <rect x="18" y="18" width="684" height="524" rx="28" stroke="#FFFFFF" stroke-opacity="0.13"/>
+  <rect width="720" height="600" rx="32" fill="#000000"/>
+  <rect width="720" height="600" rx="32" fill="url(#halo)"/>
+  <rect x="0.5" y="0.5" width="719" height="599" rx="31.5" stroke="url(#hairline)"/>
 
-  <g transform="translate(56 80)">
-    <text x="0" y="0" fill="#8B949E" font-family="SFMono-Regular, Consolas, monospace" font-size="15" letter-spacing="3">STARS / OPEN SOURCE</text>
-    <text x="0" y="136" fill="url(#totalGrad)" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="168" font-weight="800" letter-spacing="-4">77</text>
-    <text x="0" y="178" fill="#A5D6FF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="600">cumulative GitHub stars</text>
-    <text x="0" y="206" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16">across 9 shipped open-source projects</text>
+  <g transform="translate(56 88)">
+    <text x="0" y="0" fill="#8E8E93" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="3.5">STARS · OPEN SOURCE</text>
+    <text x="0" y="148" fill="url(#totalGrad)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="180" font-weight="700" letter-spacing="-5">77</text>
+    <text x="0" y="186" fill="#E5E5EA" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="20" font-weight="500">cumulative GitHub stars</text>
+    <text x="0" y="212" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15">across 9 open-source projects</text>
   </g>
 
-  <g transform="translate(56 314)" font-family="SFMono-Regular, Consolas, monospace">
+  <g transform="translate(56 360)" font-family="SFMono-Regular, ui-monospace, Consolas, monospace">
+    <text x="0" y="-10" fill="#8E8E93" font-size="12" letter-spacing="2.5">TOP PROJECTS</text>
+    <line x1="0" y1="-2" x2="608" y2="-2" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <g transform="translate(0 22)">
     <g transform="translate(0 0)">
-      <text x="0" y="14" fill="#F0F6FC" font-size="15" font-weight="600">PromptBar</text>
-      <rect x="180" y="2" width="380" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="180" y="2" width="380" height="14" rx="7" fill="url(#bar)" opacity="0.95"/>
-      <text x="572" y="14" fill="#7EE787" font-size="14" font-weight="700">46 ★</text>
+      <text x="0" y="14" fill="#E5E5EA" font-size="14" font-weight="500">PromptBar</text>
+      <rect x="240" y="3" width="296" height="10" rx="5" fill="url(#barTrack)"/>
+      <rect x="240" y="3" width="296" height="10" rx="5" fill="url(#bar)" opacity="0.95"/>
+      <text x="560" y="14" fill="#FFFFFF" font-size="14" font-weight="700">46</text>
     </g>
-    <g transform="translate(0 36)">
-      <text x="0" y="14" fill="#F0F6FC" font-size="15" font-weight="600">Magnetio</text>
-      <rect x="180" y="2" width="380" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="180" y="2" width="140" height="14" rx="7" fill="url(#bar)" opacity="0.90"/>
-      <text x="572" y="14" fill="#79C0FF" font-size="14" font-weight="700">17 ★</text>
+    <g transform="translate(0 38)">
+      <text x="0" y="14" fill="#E5E5EA" font-size="14" font-weight="500">Magnetio</text>
+      <rect x="240" y="3" width="296" height="10" rx="5" fill="url(#barTrack)"/>
+      <rect x="240" y="3" width="109" height="10" rx="5" fill="url(#bar)" opacity="0.87"/>
+      <text x="560" y="14" fill="#FFFFFF" font-size="14" font-weight="700">17</text>
     </g>
-    <g transform="translate(0 72)">
-      <text x="0" y="14" fill="#F0F6FC" font-size="15" font-weight="600">TranquiMind</text>
-      <rect x="180" y="2" width="380" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="180" y="2" width="33" height="14" rx="7" fill="url(#bar)" opacity="0.85"/>
-      <text x="572" y="14" fill="#A5D6FF" font-size="14" font-weight="700">4 ★</text>
+    <g transform="translate(0 76)">
+      <text x="0" y="14" fill="#E5E5EA" font-size="14" font-weight="500">TranquiMind</text>
+      <rect x="240" y="3" width="296" height="10" rx="5" fill="url(#barTrack)"/>
+      <rect x="240" y="3" width="26" height="10" rx="5" fill="url(#bar)" opacity="0.79"/>
+      <text x="560" y="14" fill="#FFFFFF" font-size="14" font-weight="700">4</text>
     </g>
-    <g transform="translate(0 108)">
-      <text x="0" y="14" fill="#F0F6FC" font-size="15" font-weight="600">Syrmos</text>
-      <rect x="180" y="2" width="380" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="180" y="2" width="25" height="14" rx="7" fill="url(#bar)" opacity="0.80"/>
-      <text x="572" y="14" fill="#A5D6FF" font-size="14" font-weight="700">3 ★</text>
+    <g transform="translate(0 114)">
+      <text x="0" y="14" fill="#E5E5EA" font-size="14" font-weight="500">Syrmos</text>
+      <rect x="240" y="3" width="296" height="10" rx="5" fill="url(#barTrack)"/>
+      <rect x="240" y="3" width="19" height="10" rx="5" fill="url(#bar)" opacity="0.71"/>
+      <text x="560" y="14" fill="#FFFFFF" font-size="14" font-weight="700">3</text>
     </g>
-    <g transform="translate(0 144)">
-      <text x="0" y="14" fill="#8B949E" font-size="13">+5 more</text>
-      <text x="572" y="14" fill="#8B949E" font-size="13" font-weight="600">7 ★</text>
+    <g transform="translate(0 152)">
+      <text x="0" y="14" fill="#E5E5EA" font-size="14" font-weight="500">conservatio</text>
+      <rect x="240" y="3" width="296" height="10" rx="5" fill="url(#barTrack)"/>
+      <rect x="240" y="3" width="13" height="10" rx="5" fill="url(#bar)" opacity="0.63"/>
+      <text x="560" y="14" fill="#FFFFFF" font-size="14" font-weight="700">2</text>
+    </g>
+    <g transform="translate(0 190)">
+      <text x="0" y="14" fill="#6E6E73" font-size="13">+ 4 more</text>
+      <text x="560" y="14" fill="#8E8E93" font-size="13" font-weight="600">5</text>
+    </g>
     </g>
   </g>
 </svg>

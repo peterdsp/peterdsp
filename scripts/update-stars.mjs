@@ -37,19 +37,57 @@ const esc = (s) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" }[c]),
   );
 
+const truncate = (s, n) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
+
+const DEFS = `
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 -60) rotate(72) scale(420 920)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.025"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1100 40) rotate(140) scale(320 520)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glassFill" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.015"/>
+    </linearGradient>
+    <linearGradient id="hairline" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="barTrack" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="totalGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#8E8E93"/>
+    </linearGradient>
+`;
+
 function buildDesktop({ total, projects, top }) {
   const max = Math.max(1, top[0]?.stars || 1);
-  const trackW = 460;
+  const nameX = 0;
+  const barX = 240;
+  const barW = 380;
+  const valueX = barX + barW + 24;
+  const rowH = 36;
+
   const rows = top
     .map((p, i) => {
-      const w = Math.max(6, Math.round((p.stars / max) * trackW));
-      const color = i === 0 ? "#7EE787" : i === 1 ? "#79C0FF" : "#A5D6FF";
-      const opacity = (0.95 - i * 0.04).toFixed(2);
-      return `    <g transform="translate(0 ${i * 36})">
-      <text x="0" y="14" fill="#F0F6FC" font-size="14" font-weight="600">${esc(p.name)}</text>
-      <rect x="170" y="2" width="${trackW}" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="170" y="2" width="${w}" height="14" rx="7" fill="url(#bar)" opacity="${opacity}"/>
-      <text x="640" y="14" fill="${color}" font-size="13" font-weight="700">${p.stars} ★</text>
+      const w = Math.max(4, Math.round((p.stars / max) * barW));
+      const opacity = (0.95 - i * 0.07).toFixed(2);
+      return `    <g transform="translate(0 ${i * rowH})">
+      <text x="${nameX}" y="14" fill="#E5E5EA" font-size="13" font-weight="500">${esc(truncate(p.name, 26))}</text>
+      <rect x="${barX}" y="3" width="${barW}" height="10" rx="5" fill="url(#barTrack)"/>
+      <rect x="${barX}" y="3" width="${w}" height="10" rx="5" fill="url(#bar)" opacity="${opacity}"/>
+      <text x="${valueX}" y="14" fill="#FFFFFF" font-size="13" font-weight="700">${p.stars}</text>
     </g>`;
     })
     .join("\n");
@@ -58,82 +96,45 @@ function buildDesktop({ total, projects, top }) {
   const remainingStars = projects.slice(top.length).reduce((a, p) => a + p.stars, 0);
   const more =
     remainingCount > 0
-      ? `    <g transform="translate(0 ${top.length * 36})">
-      <text x="0" y="14" fill="#8B949E" font-size="12">+${remainingCount} more</text>
-      <text x="640" y="14" fill="#8B949E" font-size="12" font-weight="600">${remainingStars} ★</text>
+      ? `    <g transform="translate(0 ${top.length * rowH})">
+      <text x="${nameX}" y="14" fill="#6E6E73" font-size="12">+ ${remainingCount} more</text>
+      <text x="${valueX}" y="14" fill="#8E8E93" font-size="12" font-weight="600">${remainingStars}</text>
     </g>`
       : "";
 
   return `<svg width="1200" height="340" viewBox="0 0 1200 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across ${esc(USER)}'s open-source projects</title>
-  <desc id="desc">Liquid-glass panel summarizing ${total} cumulative GitHub stars across ${projects.length} projects.</desc>
-  <defs>
-    <linearGradient id="sbg" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#05070D"/>
-      <stop offset="0.5" stop-color="#081526"/>
-      <stop offset="1" stop-color="#070A12"/>
-    </linearGradient>
-    <radialGradient id="saqua" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 40) rotate(72) scale(320 760)">
-      <stop stop-color="#58A6FF" stop-opacity="0.55"/>
-      <stop offset="0.45" stop-color="#7DD3FC" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#58A6FF" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="sglass" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1020 60) rotate(140) scale(280 460)">
-      <stop stop-color="#D2E9FF" stop-opacity="0.28"/>
-      <stop offset="0.55" stop-color="#58A6FF" stop-opacity="0.1"/>
-      <stop offset="1" stop-color="#58A6FF" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#58A6FF"/>
-      <stop offset="0.55" stop-color="#79C0FF"/>
-      <stop offset="1" stop-color="#7EE787"/>
-    </linearGradient>
-    <linearGradient id="barTrack" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="totalGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#F0F6FC"/>
-      <stop offset="1" stop-color="#A5D6FF"/>
-    </linearGradient>
-    <pattern id="sgrid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" stroke="#A5D6FF" stroke-opacity="0.06" stroke-width="1"/>
-    </pattern>
-    <filter id="sGlow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="10" result="b"/>
-      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0.345 0 0 0 0 0.651 0 0 0 0 1 0 0 0 0.5 0"/>
-      <feBlend in2="SourceGraphic" mode="screen"/>
-    </filter>
-  </defs>
+  <desc id="desc">OLED-black minimal liquid-glass panel showing ${total} cumulative GitHub stars across ${projects.length} projects.</desc>
+  <defs>${DEFS}</defs>
 
-  <rect width="1200" height="340" rx="34" fill="url(#sbg)"/>
-  <rect width="1200" height="340" rx="34" fill="url(#saqua)"/>
-  <rect width="1200" height="340" rx="34" fill="url(#sglass)"/>
-  <rect width="1200" height="340" rx="34" fill="url(#sgrid)"/>
-  <rect x="20" y="20" width="1160" height="300" rx="28" stroke="#FFFFFF" stroke-opacity="0.13"/>
+  <rect width="1200" height="340" rx="32" fill="#000000"/>
+  <rect width="1200" height="340" rx="32" fill="url(#halo)"/>
+  <rect width="1200" height="340" rx="32" fill="url(#halo2)"/>
+  <rect x="0.5" y="0.5" width="1199" height="339" rx="31.5" stroke="url(#hairline)"/>
 
-  <g transform="translate(72 70)">
-    <text x="0" y="0" fill="#8B949E" font-family="SFMono-Regular, Consolas, monospace" font-size="13" letter-spacing="3">STARS / OPEN SOURCE</text>
-    <text x="0" y="118" fill="url(#totalGrad)" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="148" font-weight="800" letter-spacing="-4">${total}</text>
-    <g transform="translate(2 30)" filter="url(#sGlow)" opacity="0.55">
-      <path d="M0 0L228 0" stroke="#58A6FF" stroke-width="1.5"/>
-    </g>
-    <text x="0" y="156" fill="#A5D6FF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="600">cumulative GitHub stars</text>
-    <text x="0" y="180" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14">across ${projects.length} shipped open-source projects</text>
+  <g transform="translate(72 72)">
+    <text x="0" y="0" fill="#8E8E93" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="12" letter-spacing="3.5">STARS · OPEN SOURCE</text>
+    <text x="0" y="138" fill="url(#totalGrad)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="168" font-weight="700" letter-spacing="-5">${total}</text>
+    <text x="0" y="172" fill="#E5E5EA" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="16" font-weight="500">cumulative GitHub stars</text>
+    <text x="0" y="194" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="13">across ${projects.length} open-source projects</text>
 
-    <g transform="translate(0 214)">
-      <circle cx="6" cy="6" r="3" fill="#7EE787"/>
-      <circle cx="6" cy="6" r="8" fill="none" stroke="#7EE787" stroke-opacity="0.3">
-        <animate attributeName="r" values="6;12;6" dur="2.8s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.6;0.05;0.6" dur="2.8s" repeatCount="indefinite"/>
+    <g transform="translate(0 226)">
+      <circle cx="4" cy="6" r="3" fill="#FFFFFF"/>
+      <circle cx="4" cy="6" r="6" fill="none" stroke="#FFFFFF" stroke-opacity="0.35">
+        <animate attributeName="r" values="4;10;4" dur="2.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" repeatCount="indefinite"/>
       </circle>
-      <text x="22" y="11" fill="#C9D1D9" font-family="SFMono-Regular, Consolas, monospace" font-size="12">live · github.com/${esc(USER)}</text>
+      <text x="20" y="11" fill="#8E8E93" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="11" letter-spacing="1.5">LIVE · GITHUB.COM/${esc(USER.toUpperCase())}</text>
     </g>
   </g>
 
-  <g transform="translate(540 64)" font-family="SFMono-Regular, Consolas, monospace">
+  <g transform="translate(488 76)" font-family="SFMono-Regular, ui-monospace, Consolas, monospace">
+    <text x="0" y="-10" fill="#8E8E93" font-size="11" letter-spacing="2.5">TOP PROJECTS</text>
+    <line x1="0" y1="-2" x2="644" y2="-2" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <g transform="translate(0 20)">
 ${rows}
 ${more}
+    </g>
   </g>
 </svg>
 `;
@@ -141,17 +142,21 @@ ${more}
 
 function buildMobile({ total, projects, top }) {
   const max = Math.max(1, top[0]?.stars || 1);
-  const trackW = 380;
+  const nameX = 0;
+  const barX = 240;
+  const barW = 296;
+  const valueX = barX + barW + 24;
+  const rowH = 38;
+
   const rows = top
     .map((p, i) => {
-      const w = Math.max(6, Math.round((p.stars / max) * trackW));
-      const color = i === 0 ? "#7EE787" : i === 1 ? "#79C0FF" : "#A5D6FF";
-      const opacity = (0.95 - i * 0.05).toFixed(2);
-      return `    <g transform="translate(0 ${i * 36})">
-      <text x="0" y="14" fill="#F0F6FC" font-size="15" font-weight="600">${esc(p.name)}</text>
-      <rect x="180" y="2" width="${trackW}" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="180" y="2" width="${w}" height="14" rx="7" fill="url(#bar)" opacity="${opacity}"/>
-      <text x="572" y="14" fill="${color}" font-size="14" font-weight="700">${p.stars} ★</text>
+      const w = Math.max(4, Math.round((p.stars / max) * barW));
+      const opacity = (0.95 - i * 0.08).toFixed(2);
+      return `    <g transform="translate(0 ${i * rowH})">
+      <text x="${nameX}" y="14" fill="#E5E5EA" font-size="14" font-weight="500">${esc(truncate(p.name, 22))}</text>
+      <rect x="${barX}" y="3" width="${barW}" height="10" rx="5" fill="url(#barTrack)"/>
+      <rect x="${barX}" y="3" width="${w}" height="10" rx="5" fill="url(#bar)" opacity="${opacity}"/>
+      <text x="${valueX}" y="14" fill="#FFFFFF" font-size="14" font-weight="700">${p.stars}</text>
     </g>`;
     })
     .join("\n");
@@ -160,59 +165,35 @@ function buildMobile({ total, projects, top }) {
   const remainingStars = projects.slice(top.length).reduce((a, p) => a + p.stars, 0);
   const more =
     remainingCount > 0
-      ? `    <g transform="translate(0 ${top.length * 36})">
-      <text x="0" y="14" fill="#8B949E" font-size="13">+${remainingCount} more</text>
-      <text x="572" y="14" fill="#8B949E" font-size="13" font-weight="600">${remainingStars} ★</text>
+      ? `    <g transform="translate(0 ${top.length * rowH})">
+      <text x="${nameX}" y="14" fill="#6E6E73" font-size="13">+ ${remainingCount} more</text>
+      <text x="${valueX}" y="14" fill="#8E8E93" font-size="13" font-weight="600">${remainingStars}</text>
     </g>`
       : "";
 
-  return `<svg width="720" height="560" viewBox="0 0 720 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  return `<svg width="720" height="600" viewBox="0 0 720 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across ${esc(USER)}'s open-source projects</title>
-  <desc id="desc">Mobile liquid-glass panel showing ${total} cumulative GitHub stars across ${projects.length} projects.</desc>
-  <defs>
-    <linearGradient id="sbg" x1="0" y1="0" x2="720" y2="560" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#05070D"/>
-      <stop offset="0.5" stop-color="#081526"/>
-      <stop offset="1" stop-color="#070A12"/>
-    </linearGradient>
-    <radialGradient id="saqua" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 30) rotate(72) scale(280 580)">
-      <stop stop-color="#58A6FF" stop-opacity="0.55"/>
-      <stop offset="0.45" stop-color="#7DD3FC" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#58A6FF" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#58A6FF"/>
-      <stop offset="0.55" stop-color="#79C0FF"/>
-      <stop offset="1" stop-color="#7EE787"/>
-    </linearGradient>
-    <linearGradient id="barTrack" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="totalGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#F0F6FC"/>
-      <stop offset="1" stop-color="#A5D6FF"/>
-    </linearGradient>
-    <pattern id="sgrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M30 0H0V30" stroke="#A5D6FF" stroke-opacity="0.06" stroke-width="1"/>
-    </pattern>
-  </defs>
+  <desc id="desc">Mobile OLED-black minimal panel showing ${total} cumulative GitHub stars across ${projects.length} projects.</desc>
+  <defs>${DEFS}</defs>
 
-  <rect width="720" height="560" rx="34" fill="url(#sbg)"/>
-  <rect width="720" height="560" rx="34" fill="url(#saqua)"/>
-  <rect width="720" height="560" rx="34" fill="url(#sgrid)"/>
-  <rect x="18" y="18" width="684" height="524" rx="28" stroke="#FFFFFF" stroke-opacity="0.13"/>
+  <rect width="720" height="600" rx="32" fill="#000000"/>
+  <rect width="720" height="600" rx="32" fill="url(#halo)"/>
+  <rect x="0.5" y="0.5" width="719" height="599" rx="31.5" stroke="url(#hairline)"/>
 
-  <g transform="translate(56 80)">
-    <text x="0" y="0" fill="#8B949E" font-family="SFMono-Regular, Consolas, monospace" font-size="15" letter-spacing="3">STARS / OPEN SOURCE</text>
-    <text x="0" y="136" fill="url(#totalGrad)" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="168" font-weight="800" letter-spacing="-4">${total}</text>
-    <text x="0" y="178" fill="#A5D6FF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="600">cumulative GitHub stars</text>
-    <text x="0" y="206" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16">across ${projects.length} shipped open-source projects</text>
+  <g transform="translate(56 88)">
+    <text x="0" y="0" fill="#8E8E93" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="3.5">STARS · OPEN SOURCE</text>
+    <text x="0" y="148" fill="url(#totalGrad)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="180" font-weight="700" letter-spacing="-5">${total}</text>
+    <text x="0" y="186" fill="#E5E5EA" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="20" font-weight="500">cumulative GitHub stars</text>
+    <text x="0" y="212" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15">across ${projects.length} open-source projects</text>
   </g>
 
-  <g transform="translate(56 314)" font-family="SFMono-Regular, Consolas, monospace">
+  <g transform="translate(56 360)" font-family="SFMono-Regular, ui-monospace, Consolas, monospace">
+    <text x="0" y="-10" fill="#8E8E93" font-size="12" letter-spacing="2.5">TOP PROJECTS</text>
+    <line x1="0" y1="-2" x2="608" y2="-2" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <g transform="translate(0 22)">
 ${rows}
 ${more}
+    </g>
   </g>
 </svg>
 `;
@@ -231,7 +212,7 @@ function writeIfChanged(path, content) {
 const projects = (await fetchRepos()).filter((p) => p.stars > 0);
 const total = projects.reduce((a, p) => a + p.stars, 0);
 const top = projects.slice(0, 6);
-const topMobile = projects.slice(0, 4);
+const topMobile = projects.slice(0, 5);
 
 const changedA = writeIfChanged(
   resolve(ROOT, "assets/stars.svg"),
