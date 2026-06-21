@@ -15,8 +15,10 @@
 <br />
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=SF+Mono&weight=600&size=18&duration=2600&pause=800&color=F5F5F7&center=true&vCenter=true&width=900&lines=iOS+Engineer+at+Plum+Fintech;SwiftUI+%2B+TCA+%2B+Kotlin+Multiplatform;Building+Syrmos%2C+Conservatio%2C+and+Kujto" alt="iOS engineer at Plum Fintech. SwiftUI, TCA, Kotlin Multiplatform. Building Syrmos, Conservatio, and Kujto.">
-
+<strong>iOS Engineer at Plum Fintech</strong>
+<br />
+<sub>SwiftUI &middot; TCA &middot; Kotlin Multiplatform &middot; Syrmos &middot; Conservatio &middot; Kujto</sub>
+<br />
 <br />
 
 <img src="https://komarev.com/ghpvc/?username=peterdsp&style=flat-square&color=0A0A0B&label=Profile+views" alt="Profile views">
@@ -30,20 +32,16 @@
 <table>
   <tr>
     <td width="54%" valign="top">
-
-      <h3>Now</h3>
-      <ul>
-        <li><strong>iOS Engineer at <a href="https://withplum.com">Plum Fintech</a></strong>, Engagement Team. Shipping user-facing fintech features with Swift, SwiftUI, UIKit, and TCA.</li>
-        <li><strong>Building in parallel:</strong> <a href="https://syrmos.peterdsp.dev">Syrmos</a>, <a href="https://conservatio.peterdsp.dev">Conservatio</a>, <a href="https://kujto.peterdsp.dev">Kujto</a>, and smaller Apple-platform tools.</li>
-        <li><strong>Based in Athens, Greece.</strong> Product-minded Apple-platform engineer with a bias for reliability, clear architecture, and polished release quality.</li>
-      </ul>
-
+<h3>Now</h3>
+<ul>
+<li><strong>iOS Engineer at <a href="https://withplum.com">Plum Fintech</a></strong>, Engagement Team. Shipping user-facing fintech features with Swift, SwiftUI, UIKit, and TCA.</li>
+<li><strong>Building in parallel:</strong> <a href="https://syrmos.peterdsp.dev">Syrmos</a>, <a href="https://conservatio.peterdsp.dev">Conservatio</a>, <a href="https://kujto.peterdsp.dev">Kujto</a>, and smaller Apple-platform tools.</li>
+<li><strong>Based in Athens, Greece.</strong> Product-minded Apple-platform engineer with a bias for reliability, clear architecture, and polished release quality.</li>
+</ul>
     </td>
     <td width="46%" valign="top">
-
-      <h3>Signal</h3>
-      <img src="./assets/signal.svg" alt="Role signal dashboard" width="100%">
-
+<h3>Signal</h3>
+<img src="./assets/signal.svg" alt="Role signal dashboard" width="100%">
     </td>
   </tr>
 </table>
@@ -160,23 +158,19 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-
-      <strong>Recognition</strong>
-      <ul>
-        <li><strong>LocAbility</strong>, Apps4Athens Hackathon 2.0, City of Athens, 2025. Selected among the Top 20 of 120 projects for accessibility and mobility.</li>
-        <li><strong>CoNeCo 2024</strong>, Copenhagen. Thesis on a human-centred mobile app for managing stress and anxiety, honored among 37 standout submissions.</li>
-      </ul>
-
+<strong>Recognition</strong>
+<ul>
+<li><strong>LocAbility</strong>, Apps4Athens Hackathon 2.0, City of Athens, 2025. Selected among the Top 20 of 120 projects for accessibility and mobility.</li>
+<li><strong>CoNeCo 2024</strong>, Copenhagen. Thesis on a human-centred mobile app for managing stress and anxiety, honored among 37 standout submissions.</li>
+</ul>
     </td>
     <td width="50%" valign="top">
-
-      <strong>Education</strong>
-      <ul>
-        <li><strong>MEng, Informatics and Computer Engineering</strong>, University of West Attica</li>
-        <li><strong>Diploma, Advanced Software Engineering</strong>, University of York</li>
-        <li><strong>iOS Development</strong>, London App Brewery and Meta</li>
-      </ul>
-
+<strong>Education</strong>
+<ul>
+<li><strong>MEng, Informatics and Computer Engineering</strong>, University of West Attica</li>
+<li><strong>Diploma, Advanced Software Engineering</strong>, University of York</li>
+<li><strong>iOS Development</strong>, London App Brewery and Meta</li>
+</ul>
     </td>
   </tr>
 </table>
