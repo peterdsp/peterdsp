@@ -1,77 +1,75 @@
 <svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Petros Dhespollari mobile profile hero</title>
-  <desc id="desc">Mobile OLED-black liquid-glass profile panel for an iOS engineer focused on Apple-platform product surfaces.</desc>
+  <title id="title">Petros Dhespollari — iOS engineer</title>
+  <desc id="desc">Mobile OLED-black liquid-glass slab with specular top edge, rim light, inner shadow, and drop shadow.</desc>
   <defs>
-    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(140 -40) rotate(72) scale(360 720)">
-      <stop stop-color="#FFFFFF" stop-opacity="0.10"/>
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.025"/>
+    <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="0.7" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="bodyTint" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.01"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="specular" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="0.65" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="dispR" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) scale(360 420)">
+      <stop stop-color="#FF7AA2" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FF7AA2" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="halo2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(680 540) rotate(-130) scale(360 520)">
-      <stop stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    <radialGradient id="dispC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 520) scale(360 420)">
+      <stop stop-color="#7DD3FC" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#7DD3FC" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="glassFill" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.05"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.015"/>
-    </linearGradient>
-    <linearGradient id="hairline" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/>
-    </linearGradient>
-    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="nameGrad" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
       <stop stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#C7C7CC"/>
+      <stop offset="1" stop-color="#B8B8BD"/>
     </linearGradient>
+    <filter id="drop" x="-10%" y="-10%" width="120%" height="130%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
+      <feOffset dy="12" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer>
+      <feComposite in="SourceGraphic" operator="over"/>
+    </filter>
   </defs>
 
-  <rect width="720" height="520" rx="32" fill="#000000"/>
-  <rect width="720" height="520" rx="32" fill="url(#halo)"/>
-  <rect width="720" height="520" rx="32" fill="url(#halo2)"/>
-  <rect x="0.5" y="0.5" width="719" height="519" rx="31.5" stroke="url(#hairline)"/>
+  <rect width="720" height="520" fill="#000000"/>
 
-  <path d="M64 56H656" stroke="url(#rail)" stroke-width="1"/>
-  <circle cx="160" cy="56" r="2.5" fill="#FFFFFF">
-    <animate attributeName="cx" values="160;560;160" dur="9s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.2;0.9;0.2" dur="9s" repeatCount="indefinite"/>
-  </circle>
-
-  <g transform="translate(56 120)">
-    <text x="0" y="0" fill="#8E8E93" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="3.5">PETERDSP / IOS</text>
-    <text x="0" y="64" fill="url(#nameGrad)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="56" font-weight="700" letter-spacing="-1">Petros</text>
-    <text x="0" y="120" fill="url(#nameGrad)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="56" font-weight="700" letter-spacing="-1">Dhespollari</text>
-    <text x="0" y="160" fill="#E5E5EA" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="20" font-weight="500">iOS engineer · high-trust</text>
-    <text x="0" y="188" fill="#E5E5EA" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="20" font-weight="500">Apple-platform products</text>
+  <g filter="url(#drop)">
+    <rect x="20" y="20" width="680" height="480" rx="36" fill="#0A0A0B"/>
   </g>
+  <rect x="20" y="20" width="680" height="480" rx="36" fill="url(#bodyTint)"/>
+  <rect x="20" y="20" width="680" height="480" rx="36" fill="url(#dispR)"/>
+  <rect x="20" y="20" width="680" height="480" rx="36" fill="url(#dispC)"/>
+  <rect x="20" y="20" width="680" height="480" rx="36" fill="url(#dome)"/>
+  <rect x="20" y="20" width="680" height="480" rx="36" fill="url(#floor)"/>
+  <rect x="20.5" y="20.5" width="679" height="479" rx="35.5" stroke="url(#rim)"/>
+  <path d="M80 21H640" stroke="url(#specular)" stroke-width="1"/>
 
-  <g transform="translate(56 350)" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="12">
-    <rect width="140" height="32" rx="16" fill="url(#glassFill)" stroke="#FFFFFF" stroke-opacity="0.16"/>
-    <text x="70" y="20" fill="#F5F5F7" text-anchor="middle" letter-spacing="1.5">SENIOR iOS</text>
-    <rect x="152" width="140" height="32" rx="16" fill="url(#glassFill)" stroke="#FFFFFF" stroke-opacity="0.16"/>
-    <text x="222" y="20" fill="#F5F5F7" text-anchor="middle" letter-spacing="1.5">PLATFORM</text>
-    <rect x="304" width="140" height="32" rx="16" fill="url(#glassFill)" stroke="#FFFFFF" stroke-opacity="0.16"/>
-    <text x="374" y="20" fill="#F5F5F7" text-anchor="middle" letter-spacing="1.5">PRODUCT</text>
-    <rect x="456" width="140" height="32" rx="16" fill="url(#glassFill)" stroke="#FFFFFF" stroke-opacity="0.16"/>
-    <text x="526" y="20" fill="#F5F5F7" text-anchor="middle" letter-spacing="1.5">FINTECH</text>
-  </g>
+  <g transform="translate(56 138)">
+    <circle cx="56" cy="56" r="56" fill="#FFFFFF" fill-opacity="0.025" stroke="#FFFFFF" stroke-opacity="0.16"/>
+    <path d="M6 56A50 50 0 0 1 106 56" stroke="url(#specular)" stroke-width="1" fill="none"/>
+    <text x="56" y="68" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="-1">PD</text>
 
-  <g transform="translate(56 410)">
-    <rect width="608" height="76" rx="20" fill="url(#glassFill)" stroke="#FFFFFF" stroke-opacity="0.14"/>
-    <rect x="0.5" y="0.5" width="607" height="75" rx="19.5" stroke="url(#hairline)"/>
-    <text x="24" y="30" fill="#8E8E93" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="12" letter-spacing="2.5">SIGNAL</text>
-    <circle cx="586" cy="26" r="3" fill="#FFFFFF"/>
-    <circle cx="586" cy="26" r="6" fill="none" stroke="#FFFFFF" stroke-opacity="0.35">
-      <animate attributeName="r" values="4;10;4" dur="2.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" repeatCount="indefinite"/>
-    </circle>
-    <text x="24" y="60" fill="#E5E5EA" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="14">ownership</text>
-    <text x="220" y="60" fill="#FFFFFF" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="14" font-weight="700">high</text>
-    <text x="320" y="60" fill="#E5E5EA" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="14">architecture</text>
-    <text x="584" y="60" fill="#FFFFFF" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="14" font-weight="700" text-anchor="end">clean</text>
+    <text x="0" y="170" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="4">iOS ENGINEER</text>
+    <text x="0" y="226" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="56" font-weight="700" letter-spacing="-1.5">Petros</text>
+    <text x="0" y="278" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="56" font-weight="700" letter-spacing="-1.5">Dhespollari</text>
+    <text x="0" y="316" fill="#C7C7CC" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="19" font-weight="400">High-trust Apple-platform products.</text>
+    <text x="0" y="344" fill="#6E6E73" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="1.5">SWIFT · SWIFTUI · UIKIT · TCA</text>
   </g>
 </svg>
