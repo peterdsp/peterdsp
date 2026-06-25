@@ -38,12 +38,6 @@
 <li><strong>Building in parallel:</strong> <a href="https://syrmos.peterdsp.dev">Syrmos</a>, <a href="https://conservatio.peterdsp.dev">Conservatio</a>, <a href="https://kujto.peterdsp.dev">Kujto</a>, and smaller Apple-platform tools.</li>
 <li><strong>Based in Athens, Greece.</strong> Product-minded Apple-platform engineer with a bias for reliability, clear architecture, and polished release quality.</li>
 </ul>
-    </td>
-    <td width="46%" valign="top">
-<h3>Signal</h3>
-<img src="./assets/signal.svg" alt="Role signal dashboard" width="100%">
-    </td>
-  </tr>
 </table>
 
 ### Selected work
