@@ -29,26 +29,11 @@
 
 <br />
 
-<table>
-  <tr>
-    <td width="56%" valign="top">
-
 ### Now
 
 - **iOS Engineer at [Plum Fintech](https://withplum.com)**, Engagement Team. Shipping user-facing fintech features with Swift, SwiftUI, UIKit, and TCA.
 - **Building in parallel:** [Syrmos](https://syrmos.peterdsp.dev), [Conservatio](https://conservatio.peterdsp.dev), [Kujto](https://kujto.peterdsp.dev), and smaller Apple-platform tools.
 - **Based in Athens, Greece.** Product-minded Apple-platform engineer with a bias for reliability, clear architecture, and polished release quality.
-
-</td>
-    <td width="44%" valign="top">
-
-### Signal
-
-<img src="./assets/signal.svg" alt="Role signal dashboard" width="100%">
-
-</td>
-  </tr>
-</table>
 
 ### Selected work
 
