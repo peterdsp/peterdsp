@@ -1,81 +1,112 @@
-<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Petros Dhespollari - iOS engineer</title>
-  <desc id="desc">OLED-black liquid-glass slab with specular top edge, rim light, inner shadow, and drop shadow. iOS engineer profile for high-trust Apple-platform product surfaces.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Petros Dhespollari, iOS engineer at Plum Fintech">
   <defs>
-    <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
-      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.04"/>
-      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.32"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.14"/>
     </linearGradient>
-    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="0.7" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    <linearGradient id="tint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0.35"/>
     </linearGradient>
-    <linearGradient id="bodyTint" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.04"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.01"/>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.42" stop-color="#ffffff" stop-opacity="0.38"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="0.58" stop-color="#ffffff" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.28"/>
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="specular" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.85"/>
-      <stop offset="0.65" stop-color="#FFFFFF" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="dispR" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) scale(360 240)">
-      <stop stop-color="#FF7AA2" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#FF7AA2" stop-opacity="0"/>
+    <radialGradient id="orb-purple" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="dispC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1200 280) scale(360 240)">
-      <stop stop-color="#7DD3FC" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#7DD3FC" stop-opacity="0"/>
+    <radialGradient id="orb-cyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#B8B8BD"/>
-    </linearGradient>
-    <filter id="drop" x="-10%" y="-20%" width="120%" height="160%" color-interpolation-filters="sRGB">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
-      <feOffset dy="12" result="off"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer>
-      <feComposite in="SourceGraphic" operator="over"/>
+    <radialGradient id="orb-pink" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-mint" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="bigblur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="42"/>
     </filter>
+    <clipPath id="card-clip">
+      <rect x="40" y="40" width="1120" height="260" rx="36" ry="36"/>
+    </clipPath>
+    <clipPath id="chip-clip">
+      <rect x="900" y="80" width="220" height="180" rx="26" ry="26"/>
+    </clipPath>
   </defs>
 
-  <rect width="1200" height="280" fill="#000000"/>
-
-  <g filter="url(#drop)">
-    <rect x="24" y="20" width="1152" height="240" rx="36" fill="#0A0A0B"/>
-  </g>
-  <rect x="24" y="20" width="1152" height="240" rx="36" fill="url(#bodyTint)"/>
-  <rect x="24" y="20" width="1152" height="240" rx="36" fill="url(#dispR)"/>
-  <rect x="24" y="20" width="1152" height="240" rx="36" fill="url(#dispC)"/>
-  <rect x="24" y="20" width="1152" height="240" rx="36" fill="url(#dome)"/>
-  <rect x="24" y="20" width="1152" height="240" rx="36" fill="url(#floor)"/>
-  <rect x="24.5" y="20.5" width="1151" height="239" rx="35.5" stroke="url(#rim)"/>
-  <path d="M88 21H1112" stroke="url(#specular)" stroke-width="1"/>
-
-  <g transform="translate(76 92)">
-    <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="11" letter-spacing="4">PD · iOS ENGINEER</text>
-    <text x="0" y="62" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="64" font-weight="700" letter-spacing="-1.5">Petros Dhespollari</text>
-    <text x="0" y="100" fill="#C7C7CC" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="17" font-weight="400">Building high-trust product surfaces on Apple platforms.</text>
-    <text x="0" y="126" fill="#6E6E73" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="12" letter-spacing="1.5">SWIFT · SWIFTUI · UIKIT · TCA</text>
-  </g>
-
-  <g transform="translate(1004 92)">
-    <circle cx="64" cy="32" r="56" fill="#FFFFFF" fill-opacity="0.025" stroke="#FFFFFF" stroke-opacity="0.16"/>
-    <path d="M14 32A50 50 0 0 1 114 32" stroke="url(#specular)" stroke-width="1" fill="none"/>
-    <text x="64" y="44" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="-1">PD</text>
-    <circle cx="106" cy="-6" r="3" fill="#FFFFFF"/>
-    <circle cx="106" cy="-6" r="6" fill="none" stroke="#FFFFFF" stroke-opacity="0.4">
-      <animate attributeName="r" values="4;10;4" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite"/>
+  <g filter="url(#bigblur)">
+    <circle cx="160" cy="170" r="130" fill="url(#orb-purple)">
+      <animate attributeName="cx" values="160;260;200;160" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="170;120;200;170" dur="14s" repeatCount="indefinite"/>
     </circle>
+    <circle cx="1020" cy="190" r="160" fill="url(#orb-cyan)">
+      <animate attributeName="cx" values="1020;920;1040;1020" dur="13s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="190;230;160;190" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="80" r="110" fill="url(#orb-pink)">
+      <animate attributeName="cy" values="80;180;90;80" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="280" r="100" fill="url(#orb-mint)">
+      <animate attributeName="cx" values="780;680;820;780" dur="15s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g clip-path="url(#card-clip)">
+    <rect x="40" y="40" width="1120" height="260" rx="36" ry="36" fill="url(#glass)"/>
+    <rect x="40" y="40" width="1120" height="260" rx="36" ry="36" fill="url(#tint)" opacity="0.22"/>
+    <rect x="-360" y="40" width="320" height="260" fill="url(#shine)" opacity="0.55">
+      <animate attributeName="x" from="-360" to="1200" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="40" y="40" width="1120" height="2" fill="#ffffff" opacity="0.45"/>
+  </g>
+
+  <rect x="40" y="40" width="1120" height="260" rx="36" ry="36" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.2"/>
+  <rect x="41.5" y="41.5" width="1117" height="257" rx="34.5" ry="34.5" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="0.8"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+    <text x="84" y="138" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-1">Petros Dhespollari</text>
+    <text x="84" y="180" font-size="20" font-weight="500" fill="#ffffff" opacity="0.88">iOS Engineer &#183; Plum Fintech &#183; Athens, Greece</text>
+    <text x="84" y="232" font-size="12" font-weight="700" fill="#ffffff" opacity="0.7" letter-spacing="3">SWIFTUI &#8226; TCA &#8226; KOTLIN MULTIPLATFORM &#8226; RELEASE QUALITY</text>
+
+    <g transform="translate(84,256)">
+      <rect width="124" height="28" rx="14" fill="#ffffff" fill-opacity="0.16" stroke="#ffffff" stroke-opacity="0.35"/>
+      <circle cx="16" cy="14" r="4" fill="#34d399">
+        <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="28" y="18" font-size="12" font-weight="600" fill="#ffffff">shipping daily</text>
+    </g>
+    <g transform="translate(218,256)">
+      <rect width="120" height="28" rx="14" fill="#ffffff" fill-opacity="0.16" stroke="#ffffff" stroke-opacity="0.35"/>
+      <text x="60" y="18" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">open to talks</text>
+    </g>
+  </g>
+
+  <g clip-path="url(#chip-clip)">
+    <rect x="900" y="80" width="220" height="180" rx="26" ry="26" fill="url(#glass)"/>
+    <rect x="900" y="80" width="220" height="180" rx="26" ry="26" fill="url(#tint)" opacity="0.3"/>
+    <rect x="900" y="80" width="220" height="2" fill="#ffffff" opacity="0.45"/>
+  </g>
+  <rect x="900" y="80" width="220" height="180" rx="26" ry="26" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" text-anchor="middle">
+    <text x="1010" y="118" font-size="11" fill="#ffffff" opacity="0.75" letter-spacing="3" font-weight="700">NOW BUILDING</text>
+    <text x="1010" y="160" font-size="30" font-weight="800" fill="#ffffff">Syrmos</text>
+    <text x="1010" y="186" font-size="13" fill="#ffffff" opacity="0.78">Conservatio &#183; Kujto</text>
+    <text x="1010" y="218" font-size="11" fill="#ffffff" opacity="0.65" letter-spacing="2" font-weight="700">iOS &#183; ANDROID &#183; WEB</text>
+    <g transform="translate(990,232)">
+      <circle cx="0" cy="0" r="3" fill="#a78bfa"/>
+      <circle cx="10" cy="0" r="3" fill="#22d3ee"/>
+      <circle cx="20" cy="0" r="3" fill="#f472b6"/>
+      <circle cx="30" cy="0" r="3" fill="#34d399"/>
+    </g>
   </g>
 </svg>

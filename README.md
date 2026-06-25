@@ -15,29 +15,39 @@
 <br />
 <br />
 
-<strong>iOS Engineer at Plum Fintech</strong>
-<br />
-<sub>SwiftUI &middot; TCA &middot; Kotlin Multiplatform &middot; Syrmos &middot; Conservatio &middot; Kujto</sub>
-<br />
-<br />
-
-<img src="https://komarev.com/ghpvc/?username=peterdsp&style=flat-square&color=0A0A0B&label=Profile+views" alt="Profile views">
-<img src="https://img.shields.io/github/followers/peterdsp?style=flat-square&color=0A0A0B&labelColor=0A0A0B&logo=github&logoColor=FFFFFF&label=Followers" alt="GitHub followers">
-<img src="https://img.shields.io/github/stars/peterdsp?affiliations=OWNER&style=flat-square&color=0A0A0B&labelColor=0A0A0B&logo=github&logoColor=FFFFFF&label=Stars" alt="GitHub stars">
+<img src="https://img.shields.io/github/stars/peterdsp?affiliations=OWNER&style=for-the-badge&color=a78bfa&labelColor=0A0A0B&logo=github&logoColor=FFFFFF&label=TOTAL+STARS" alt="Total stars across all repositories">
+<img src="https://img.shields.io/github/followers/peterdsp?style=for-the-badge&color=22d3ee&labelColor=0A0A0B&logo=github&logoColor=FFFFFF&label=FOLLOWERS" alt="GitHub followers">
+<img src="https://komarev.com/ghpvc/?username=peterdsp&style=for-the-badge&color=f472b6&label=PROFILE+VIEWS" alt="Profile views">
 
 </div>
 
 <br />
 
+<picture>
+  <img src="./assets/cat.svg" alt="A ginger cat walking across the README, occasionally speaking" width="100%">
+</picture>
+
+<br />
+
 <table>
   <tr>
-    <td width="54%" valign="top">
-<h3>Now</h3>
-<ul>
-<li><strong>iOS Engineer at <a href="https://withplum.com">Plum Fintech</a></strong>, Engagement Team. Shipping user-facing fintech features with Swift, SwiftUI, UIKit, and TCA.</li>
-<li><strong>Building in parallel:</strong> <a href="https://syrmos.peterdsp.dev">Syrmos</a>, <a href="https://conservatio.peterdsp.dev">Conservatio</a>, <a href="https://kujto.peterdsp.dev">Kujto</a>, and smaller Apple-platform tools.</li>
-<li><strong>Based in Athens, Greece.</strong> Product-minded Apple-platform engineer with a bias for reliability, clear architecture, and polished release quality.</li>
-</ul>
+    <td width="56%" valign="top">
+
+### Now
+
+- **iOS Engineer at [Plum Fintech](https://withplum.com)**, Engagement Team. Shipping user-facing fintech features with Swift, SwiftUI, UIKit, and TCA.
+- **Building in parallel:** [Syrmos](https://syrmos.peterdsp.dev), [Conservatio](https://conservatio.peterdsp.dev), [Kujto](https://kujto.peterdsp.dev), and smaller Apple-platform tools.
+- **Based in Athens, Greece.** Product-minded Apple-platform engineer with a bias for reliability, clear architecture, and polished release quality.
+
+</td>
+    <td width="44%" valign="top">
+
+### Signal
+
+<img src="./assets/signal.svg" alt="Role signal dashboard" width="100%">
+
+</td>
+  </tr>
 </table>
 
 ### Selected work
@@ -125,6 +135,20 @@
 
 </div>
 
+### Commit grid &middot; 3D snake
+
+<div align="center">
+
+<img src="./assets/iso-grid.svg" alt="Isometric 3D commit grid with animated snake" width="100%">
+
+</div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/peterdsp/peterdsp/output/snake.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/peterdsp/peterdsp/output/snake-light.svg">
+  <img alt="Real-data contribution snake" src="https://raw.githubusercontent.com/peterdsp/peterdsp/output/snake.svg" width="100%">
+</picture>
+
 ### Open source signal
 
 <div align="center">
@@ -137,13 +161,13 @@
 <br />
 <br />
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=peterdsp&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=F0F6FC&text_color=8B949E&icon_color=7EE787" alt="Petros Dhespollari GitHub stats">
-<img height="165" src="https://streak-stats.demolab.com?user=peterdsp&theme=github-dark-blue&hide_border=true&background=0D1117&ring=7EE787&fire=58A6FF&currStreakLabel=F0F6FC" alt="Petros Dhespollari GitHub streak">
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=peterdsp&show_icons=true&include_all_commits=true&hide_border=true&bg_color=00000000&title_color=a78bfa&text_color=c9d1d9&icon_color=22d3ee" alt="Petros Dhespollari GitHub stats">
+<img height="165" src="https://streak-stats.demolab.com?user=peterdsp&hide_border=true&background=00000000&ring=a78bfa&fire=f472b6&currStreakLabel=22d3ee&sideLabels=c9d1d9&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="Petros Dhespollari GitHub streak">
 
 <br />
 <br />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=peterdsp&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20activity" alt="Contribution activity graph" width="100%">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=peterdsp&theme=react-dark&bg_color=00000000&color=a78bfa&line=22d3ee&point=f472b6&hide_border=true&area=true&custom_title=Contribution%20activity" alt="Contribution activity graph" width="100%">
 
 </div>
 
@@ -152,20 +176,22 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-<strong>Recognition</strong>
-<ul>
-<li><strong>LocAbility</strong>, Apps4Athens Hackathon 2.0, City of Athens, 2025. Selected among the Top 20 of 120 projects for accessibility and mobility.</li>
-<li><strong>CoNeCo 2024</strong>, Copenhagen. Thesis on a human-centred mobile app for managing stress and anxiety, honored among 37 standout submissions.</li>
-</ul>
-    </td>
+
+**Recognition**
+
+- **LocAbility**, Apps4Athens Hackathon 2.0, City of Athens, 2025. Selected among the Top 20 of 120 projects for accessibility and mobility.
+- **CoNeCo 2024**, Copenhagen. Thesis on a human-centred mobile app for managing stress and anxiety, honored among 37 standout submissions.
+
+</td>
     <td width="50%" valign="top">
-<strong>Education</strong>
-<ul>
-<li><strong>MEng, Informatics and Computer Engineering</strong>, University of West Attica</li>
-<li><strong>Diploma, Advanced Software Engineering</strong>, University of York</li>
-<li><strong>iOS Development</strong>, London App Brewery and Meta</li>
-</ul>
-    </td>
+
+**Education**
+
+- **MEng, Informatics and Computer Engineering**, University of West Attica
+- **Diploma, Advanced Software Engineering**, University of York
+- **iOS Development**, London App Brewery and Meta
+
+</td>
   </tr>
 </table>
 

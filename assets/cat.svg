@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="A ginger cat walking across the README with thoughts">
+  <defs>
+    <linearGradient id="cat-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="bubble" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="bubble-tint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="-200,0; 980,0; 980,0; -200,0; -200,0"
+      keyTimes="0; 0.48; 0.52; 0.98; 1"
+      dur="28s" repeatCount="indefinite"/>
+
+    <g transform="translate(80,8)">
+      <rect x="0" y="0" width="260" height="64" rx="32" ry="32" fill="url(#bubble)" stroke="#0A0A0B" stroke-opacity="0.15"/>
+      <rect x="0" y="0" width="260" height="64" rx="32" ry="32" fill="url(#bubble-tint)"/>
+      <path d="M50,64 L66,86 L80,64 Z" fill="#ffffff" fill-opacity="0.96" stroke="#0A0A0B" stroke-opacity="0.12"/>
+
+      <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15" font-weight="600" fill="#0A0A0B" text-anchor="middle">
+        <text x="130" y="38" opacity="0">
+          meow. you read READMEs? respect.
+          <animate attributeName="opacity" values="0;1;1;0;0;0;0;0;0;0;0" keyTimes="0;0.03;0.16;0.2;0.3;0.4;0.55;0.7;0.85;0.95;1" dur="28s" repeatCount="indefinite"/>
+        </text>
+        <text x="130" y="38" opacity="0">
+          TCA is my catnip
+          <animate attributeName="opacity" values="0;0;0;1;1;0;0;0;0;0;0" keyTimes="0;0.18;0.21;0.24;0.34;0.38;0.5;0.6;0.7;0.85;1" dur="28s" repeatCount="indefinite"/>
+        </text>
+        <text x="130" y="38" opacity="0">
+          starring this repo &#10084;&#65039; +1 life
+          <animate attributeName="opacity" values="0;0;0;0;0;1;1;0;0;0;0" keyTimes="0;0.2;0.3;0.38;0.4;0.42;0.54;0.58;0.7;0.85;1" dur="28s" repeatCount="indefinite"/>
+        </text>
+        <text x="130" y="38" opacity="0">
+          Swift &gt; everything. fight me.
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0;0" keyTimes="0;0.3;0.4;0.5;0.55;0.58;0.6;0.62;0.74;0.78;1" dur="28s" repeatCount="indefinite"/>
+        </text>
+        <text x="130" y="38" opacity="0">
+          psst &#8212; projects are below &#8595;
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;0" keyTimes="0;0.4;0.6;0.74;0.78;0.8;0.82;0.84;0.86;0.9;0.98" dur="28s" repeatCount="indefinite"/>
+        </text>
+      </g>
+    </g>
+
+    <g transform="translate(40,98)">
+      <path d="M16,46 Q-12,30 -4,4" stroke="url(#cat-body)" stroke-width="8" fill="none" stroke-linecap="round">
+        <animate attributeName="d" values="M16,46 Q-12,30 -4,4; M16,46 Q-16,38 8,2; M16,46 Q-12,30 -4,4" dur="1.4s" repeatCount="indefinite"/>
+      </path>
+
+      <ellipse cx="64" cy="50" rx="54" ry="26" fill="url(#cat-body)"/>
+      <path d="M22,40 Q24,46 22,52 M40,38 Q42,46 40,54 M58,38 Q60,46 58,54 M76,38 Q78,46 76,54 M94,40 Q96,46 94,52" stroke="#7c2d12" stroke-width="1.4" fill="none" opacity="0.45"/>
+
+      <circle cx="118" cy="34" r="24" fill="url(#cat-body)"/>
+      <polygon points="98,20 104,-2 116,20" fill="url(#cat-body)"/>
+      <polygon points="122,20 134,-2 140,22" fill="url(#cat-body)"/>
+      <polygon points="103,18 107,8 113,18" fill="#fda4af"/>
+      <polygon points="127,18 132,8 137,20" fill="#fda4af"/>
+
+      <ellipse cx="110" cy="34" rx="4" ry="5" fill="#0A0A0B"/>
+      <ellipse cx="126" cy="34" rx="4" ry="5" fill="#0A0A0B"/>
+      <circle cx="110" cy="32" r="1.4" fill="#ffffff"/>
+      <circle cx="126" cy="32" r="1.4" fill="#ffffff"/>
+
+      <path d="M114,42 L118,46 L122,42 Z" fill="#fda4af" stroke="#7c2d12" stroke-width="0.6"/>
+      <path d="M118,46 L118,49 Q114,52 112,50" stroke="#7c2d12" stroke-width="0.8" fill="none"/>
+      <path d="M118,46 L118,49 Q122,52 124,50" stroke="#7c2d12" stroke-width="0.8" fill="none"/>
+
+      <g stroke="#ffffff" stroke-opacity="0.85" stroke-width="0.8" stroke-linecap="round">
+        <line x1="106" y1="44" x2="88" y2="42"/>
+        <line x1="106" y1="46" x2="88" y2="48"/>
+        <line x1="130" y1="44" x2="148" y2="42"/>
+        <line x1="130" y1="46" x2="148" y2="48"/>
+      </g>
+
+      <g fill="url(#cat-body)">
+        <rect x="28" y="68" width="9" height="18" rx="3">
+          <animate attributeName="y" values="68;64;68;68;68" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="50" y="68" width="9" height="18" rx="3">
+          <animate attributeName="y" values="68;68;68;64;68" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="80" y="68" width="9" height="18" rx="3">
+          <animate attributeName="y" values="68;68;64;68;68" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="102" y="68" width="9" height="18" rx="3">
+          <animate attributeName="y" values="68;64;68;68;68" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      <g fill="#0A0A0B" opacity="0.18">
+        <ellipse cx="34" cy="92" rx="9" ry="2"/>
+        <ellipse cx="56" cy="92" rx="9" ry="2"/>
+        <ellipse cx="86" cy="92" rx="9" ry="2"/>
+        <ellipse cx="108" cy="92" rx="9" ry="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
