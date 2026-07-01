@@ -1,6 +1,6 @@
 <svg width="720" height="620" viewBox="0 0 720 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across peterdsp's open-source projects</title>
-  <desc id="desc">Mobile OLED-black liquid-glass slab summarizing 86 cumulative GitHub stars across 9 projects.</desc>
+  <desc id="desc">Mobile OLED-black liquid-glass slab summarizing 87 cumulative GitHub stars across 9 projects.</desc>
   <defs>
     <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
@@ -72,7 +72,7 @@
 
   <g transform="translate(56 90)">
     <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="4">STARS · OPEN SOURCE</text>
-    <text x="0" y="150" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="184" font-weight="700" letter-spacing="-6">86</text>
+    <text x="0" y="150" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="184" font-weight="700" letter-spacing="-6">87</text>
     <text x="0" y="188" fill="#C7C7CC" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="20" font-weight="500">cumulative GitHub stars</text>
     <text x="0" y="216" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15">across 9 open-source projects</text>
   </g>
@@ -96,9 +96,9 @@
       <text x="0" y="87" fill="#E5E5EA" font-size="13" font-weight="500">Syrmos</text>
       <rect x="240" y="78" width="260" height="14" rx="7" fill="url(#barTrack)"/>
       <rect x="240.5" y="78.5" width="259" height="13" rx="6.5" stroke="#FFFFFF" stroke-opacity="0.08" fill="none"/>
-      <rect x="240" y="78" width="50" height="14" rx="7" fill="url(#barFill)"/>
-      <path d="M244 79.5H286" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
-      <text x="524" y="87" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">9</text>
+      <rect x="240" y="78" width="55" height="14" rx="7" fill="url(#barFill)"/>
+      <path d="M244 79.5H291" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
+      <text x="524" y="87" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">10</text>
       <text x="0" y="125" fill="#E5E5EA" font-size="13" font-weight="500">TranquiMind</text>
       <rect x="240" y="116" width="260" height="14" rx="7" fill="url(#barTrack)"/>
       <rect x="240.5" y="116.5" width="259" height="13" rx="6.5" stroke="#FFFFFF" stroke-opacity="0.08" fill="none"/>
