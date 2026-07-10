@@ -1,6 +1,6 @@
 <svg width="720" height="620" viewBox="0 0 720 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across peterdsp's open-source projects</title>
-  <desc id="desc">Mobile OLED-black liquid-glass slab summarizing 88 cumulative GitHub stars across 10 projects.</desc>
+  <desc id="desc">Mobile OLED-black liquid-glass slab summarizing 89 cumulative GitHub stars across 10 projects.</desc>
   <defs>
     <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
@@ -72,7 +72,7 @@
 
   <g transform="translate(56 90)">
     <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="4">STARS · OPEN SOURCE</text>
-    <text x="0" y="150" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="184" font-weight="700" letter-spacing="-6">88</text>
+    <text x="0" y="150" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="184" font-weight="700" letter-spacing="-6">89</text>
     <text x="0" y="188" fill="#C7C7CC" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="20" font-weight="500">cumulative GitHub stars</text>
     <text x="0" y="216" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15">across 10 open-source projects</text>
   </g>
@@ -112,7 +112,7 @@
       <path d="M244 155.5H247" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
       <text x="524" y="163" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">2</text>
       <text x="0" y="201" fill="#6E6E73" font-size="13">+ 5 more</text>
-      <text x="524" y="201" fill="#8E8E93" font-size="13" font-weight="600" text-anchor="end">6</text>
+      <text x="524" y="201" fill="#8E8E93" font-size="13" font-weight="600" text-anchor="end">7</text>
     </g>
   </g>
 </svg>

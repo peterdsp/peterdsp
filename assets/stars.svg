@@ -1,6 +1,6 @@
 <svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across peterdsp's open-source projects</title>
-  <desc id="desc">OLED-black liquid-glass slab summarizing 88 cumulative GitHub stars across 10 projects.</desc>
+  <desc id="desc">OLED-black liquid-glass slab summarizing 89 cumulative GitHub stars across 10 projects.</desc>
   <defs>
     <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
@@ -72,7 +72,7 @@
 
   <g transform="translate(76 76)">
     <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="11" letter-spacing="4">STARS · OPEN SOURCE</text>
-    <text x="0" y="140" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="172" font-weight="700" letter-spacing="-6">88</text>
+    <text x="0" y="140" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="172" font-weight="700" letter-spacing="-6">89</text>
     <text x="0" y="172" fill="#C7C7CC" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15" font-weight="500">cumulative GitHub stars</text>
     <text x="0" y="194" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="13">across 10 open-source projects</text>
 
@@ -127,7 +127,7 @@
       <path d="M244 153.5H251" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
       <text x="624" y="161" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">2</text>
       <text x="0" y="191" fill="#6E6E73" font-size="12">+ 4 more</text>
-      <text x="624" y="191" fill="#8E8E93" font-size="12" font-weight="600" text-anchor="end">4</text>
+      <text x="624" y="191" fill="#8E8E93" font-size="12" font-weight="600" text-anchor="end">5</text>
     </g>
   </g>
 </svg>
