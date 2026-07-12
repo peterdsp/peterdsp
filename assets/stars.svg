@@ -1,6 +1,6 @@
 <svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across peterdsp's open-source projects</title>
-  <desc id="desc">OLED-black liquid-glass slab summarizing 90 cumulative GitHub stars across 10 projects.</desc>
+  <desc id="desc">OLED-black liquid-glass slab summarizing 91 cumulative GitHub stars across 10 projects.</desc>
   <defs>
     <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
@@ -72,7 +72,7 @@
 
   <g transform="translate(76 76)">
     <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="11" letter-spacing="4">STARS · OPEN SOURCE</text>
-    <text x="0" y="140" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="172" font-weight="700" letter-spacing="-6">90</text>
+    <text x="0" y="140" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="172" font-weight="700" letter-spacing="-6">91</text>
     <text x="0" y="172" fill="#C7C7CC" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15" font-weight="500">cumulative GitHub stars</text>
     <text x="0" y="194" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="13">across 10 open-source projects</text>
 
@@ -99,9 +99,9 @@
       <text x="0" y="41" fill="#E5E5EA" font-size="13" font-weight="500">Magnetio</text>
       <rect x="240" y="32" width="360" height="14" rx="7" fill="url(#barTrack)"/>
       <rect x="240.5" y="32.5" width="359" height="13" rx="6.5" stroke="#FFFFFF" stroke-opacity="0.08" fill="none"/>
-      <rect x="240" y="32" width="153" height="14" rx="7" fill="url(#barFill)"/>
-      <path d="M244 33.5H389" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
-      <text x="624" y="41" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">20</text>
+      <rect x="240" y="32" width="161" height="14" rx="7" fill="url(#barFill)"/>
+      <path d="M244 33.5H397" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
+      <text x="624" y="41" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">21</text>
       <text x="0" y="71" fill="#E5E5EA" font-size="13" font-weight="500">Syrmos</text>
       <rect x="240" y="62" width="360" height="14" rx="7" fill="url(#barTrack)"/>
       <rect x="240.5" y="62.5" width="359" height="13" rx="6.5" stroke="#FFFFFF" stroke-opacity="0.08" fill="none"/>
