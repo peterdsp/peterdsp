@@ -35,19 +35,18 @@
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <h3><a href="https://syrmos.peterdsp.dev">Syrmos</a></h3>
-      <p>Live Athens metro, tram, and rail departures — offline-first and built for daily commuting.</p>
+      <p>Live Athens transit departures, offline-first.</p>
       <p>
-        <img src="https://img.shields.io/badge/Kotlin_Multiplatform-0A0A0B?style=flat-square&logo=kotlin&logoColor=7F52FF" alt="Kotlin Multiplatform">
+        <img src="https://img.shields.io/badge/Kotlin_MP-0A0A0B?style=flat-square&logo=kotlin&logoColor=7F52FF" alt="Kotlin Multiplatform">
         <img src="https://img.shields.io/badge/SwiftUI-0A0A0B?style=flat-square&logo=swift&logoColor=F05138" alt="SwiftUI">
-        <img src="https://img.shields.io/badge/Compose-0A0A0B?style=flat-square&logo=jetpackcompose&logoColor=4285F4" alt="Compose">
       </p>
       <p><a href="https://syrmos.peterdsp.dev">Website</a> &middot; <a href="https://github.com/peterdsp/Syrmos">Repo</a></p>
     </td>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <h3><a href="https://conservatio.peterdsp.dev">Conservatio</a></h3>
-      <p>Conservation documentation platform for cultural-heritage work across mobile and web.</p>
+      <p>Conservation docs across mobile and web.</p>
       <p>
         <img src="https://img.shields.io/badge/iOS-0A0A0B?style=flat-square&logo=apple&logoColor=FFFFFF" alt="iOS">
         <img src="https://img.shields.io/badge/Android-0A0A0B?style=flat-square&logo=android&logoColor=3DDC84" alt="Android">
@@ -55,28 +54,28 @@
       </p>
       <p><a href="https://conservatio.peterdsp.dev">Website</a> &middot; <a href="https://github.com/peterdsp/conservatio">Repo</a></p>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <h3><a href="https://kujto.peterdsp.dev">Kujto</a></h3>
-      <p>Open-source bilingual memory framework for AI coding agents — git-native rules and workflows.</p>
+      <p>Bilingual memory framework for AI agents.</p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-0A0A0B?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript">
-        <img src="https://img.shields.io/badge/AI_Agents-0A0A0B?style=flat-square&logo=openai&logoColor=FFFFFF" alt="AI agents">
         <img src="https://img.shields.io/badge/MIT-0A0A0B?style=flat-square&logo=opensourceinitiative&logoColor=3DA639" alt="MIT">
       </p>
       <p><a href="https://kujto.peterdsp.dev">Website</a> &middot; <a href="https://github.com/peterdsp/kujto">Repo</a></p>
     </td>
-    <td width="50%" valign="top">
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
       <h3><a href="https://github.com/peterdsp/PromptBar">PromptBar</a></h3>
-      <p>macOS menu-bar prompt manager that keeps repeated LLM prompting close to the keyboard.</p>
+      <p>macOS menu-bar prompt manager.</p>
       <p>
         <img src="https://img.shields.io/badge/macOS-0A0A0B?style=flat-square&logo=apple&logoColor=FFFFFF" alt="macOS">
         <img src="https://img.shields.io/badge/SwiftUI-0A0A0B?style=flat-square&logo=swift&logoColor=F05138" alt="SwiftUI">
-        <img src="https://img.shields.io/badge/Menu_bar-0A0A0B?style=flat-square&logo=raycast&logoColor=FFFFFF" alt="Menu bar">
       </p>
       <p><a href="https://github.com/peterdsp/PromptBar">Repo</a></p>
     </td>
+    <td width="33%" valign="top"></td>
+    <td width="33%" valign="top"></td>
   </tr>
 </table>
 
@@ -101,6 +100,15 @@
 <picture>
   <source media="(max-width: 640px)" srcset="./assets/stars-mobile.svg">
   <img src="./assets/stars.svg" alt="Cumulative GitHub stars across open-source projects" width="100%">
+</picture>
+
+<br />
+<br />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/peterdsp/peterdsp/output/snake.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/peterdsp/peterdsp/output/snake-light.svg">
+  <img alt="Contribution snake eating the commit graph" src="https://raw.githubusercontent.com/peterdsp/peterdsp/output/snake.svg" width="100%">
 </picture>
 
 </div>
