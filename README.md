@@ -33,51 +33,14 @@
 
 ### Selected work
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3><a href="https://syrmos.peterdsp.dev">Syrmos</a></h3>
-      <p>Live Athens transit departures, offline-first.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Kotlin_MP-0A0A0B?style=flat-square&logo=kotlin&logoColor=7F52FF" alt="Kotlin Multiplatform">
-        <img src="https://img.shields.io/badge/SwiftUI-0A0A0B?style=flat-square&logo=swift&logoColor=F05138" alt="SwiftUI">
-      </p>
-      <p><a href="https://syrmos.peterdsp.dev">Website</a> &middot; <a href="https://github.com/peterdsp/Syrmos">Repo</a></p>
-    </td>
-    <td width="33%" valign="top">
-      <h3><a href="https://conservatio.peterdsp.dev">Conservatio</a></h3>
-      <p>Conservation docs across mobile and web.</p>
-      <p>
-        <img src="https://img.shields.io/badge/iOS-0A0A0B?style=flat-square&logo=apple&logoColor=FFFFFF" alt="iOS">
-        <img src="https://img.shields.io/badge/Android-0A0A0B?style=flat-square&logo=android&logoColor=3DDC84" alt="Android">
-        <img src="https://img.shields.io/badge/Web-0A0A0B?style=flat-square&logo=googlechrome&logoColor=FFFFFF" alt="Web">
-      </p>
-      <p><a href="https://conservatio.peterdsp.dev">Website</a> &middot; <a href="https://github.com/peterdsp/conservatio">Repo</a></p>
-    </td>
-    <td width="33%" valign="top">
-      <h3><a href="https://kujto.peterdsp.dev">Kujto</a></h3>
-      <p>Bilingual memory framework for AI agents.</p>
-      <p>
-        <img src="https://img.shields.io/badge/TypeScript-0A0A0B?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript">
-        <img src="https://img.shields.io/badge/MIT-0A0A0B?style=flat-square&logo=opensourceinitiative&logoColor=3DA639" alt="MIT">
-      </p>
-      <p><a href="https://kujto.peterdsp.dev">Website</a> &middot; <a href="https://github.com/peterdsp/kujto">Repo</a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top">
-      <h3><a href="https://github.com/peterdsp/PromptBar">PromptBar</a></h3>
-      <p>macOS menu-bar prompt manager.</p>
-      <p>
-        <img src="https://img.shields.io/badge/macOS-0A0A0B?style=flat-square&logo=apple&logoColor=FFFFFF" alt="macOS">
-        <img src="https://img.shields.io/badge/SwiftUI-0A0A0B?style=flat-square&logo=swift&logoColor=F05138" alt="SwiftUI">
-      </p>
-      <p><a href="https://github.com/peterdsp/PromptBar">Repo</a></p>
-    </td>
-    <td width="33%" valign="top"></td>
-    <td width="33%" valign="top"></td>
-  </tr>
-</table>
+<img src="./assets/work.svg" alt="Selected work: Syrmos, Conservatio, Kujto, PromptBar" width="100%">
+
+<sub>
+<a href="https://syrmos.peterdsp.dev">Syrmos</a> &middot; <a href="https://github.com/peterdsp/Syrmos">repo</a> &nbsp;&bull;&nbsp;
+<a href="https://conservatio.peterdsp.dev">Conservatio</a> &middot; <a href="https://github.com/peterdsp/conservatio">repo</a> &nbsp;&bull;&nbsp;
+<a href="https://kujto.peterdsp.dev">Kujto</a> &middot; <a href="https://github.com/peterdsp/kujto">repo</a> &nbsp;&bull;&nbsp;
+<a href="https://github.com/peterdsp/PromptBar">PromptBar</a>
+</sub>
 
 ### Toolbox
 
