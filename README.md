@@ -103,15 +103,6 @@
   <img src="./assets/stars.svg" alt="Cumulative GitHub stars across open-source projects" width="100%">
 </picture>
 
-<br />
-<br />
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/peterdsp/peterdsp/output/snake.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/peterdsp/peterdsp/output/snake-light.svg">
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/peterdsp/peterdsp/output/snake.svg" width="100%">
-</picture>
-
 </div>
 
 ### Recognition & education
