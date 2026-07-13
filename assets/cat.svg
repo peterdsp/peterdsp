@@ -1,34 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="A ginger tabby cat walking across the README, sharing thoughts in a cloud">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="A grey cat walking across the README, sharing thoughts in a cloud">
   <defs>
     <style>
       /* Theme-aware thought cloud — readable on both GitHub light and dark backgrounds */
-      .cloud-fill   { fill: #ffffff; }
-      .cloud-edge   { fill: #0A0A0B; fill-opacity: 0.16; }
-      .cloud-text   { fill: #0A0A0B; }
+      .cloud-fill { fill: #ffffff; }
+      .cloud-edge { fill: #6b7280; fill-opacity: 0.55; }
+      .cloud-text { fill: #1f2430; }
       @media (prefers-color-scheme: light) {
-        .cloud-fill { fill: #f5f2fc; }
-        .cloud-edge { fill: #5b21b6; fill-opacity: 0.38; }
-        .cloud-text { fill: #1f1147; }
+        .cloud-fill { fill: #eef1f6; }
+        .cloud-edge { fill: #6b7280; fill-opacity: 0.9; }
+        .cloud-text { fill: #1f2430; }
       }
     </style>
-
-    <linearGradient id="cat-body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f7a44c"/>
-      <stop offset="0.55" stop-color="#e07b2e"/>
-      <stop offset="1" stop-color="#bd5518"/>
+    <linearGradient id="cat-grey" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9aa3b0"/>
+      <stop offset="1" stop-color="#5b6472"/>
     </linearGradient>
-    <linearGradient id="cat-belly" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffe0b0"/>
-      <stop offset="1" stop-color="#ffc27a"/>
-    </linearGradient>
-    <radialGradient id="eye" cx="0.4" cy="0.35" r="0.75">
-      <stop offset="0" stop-color="#b7e36a"/>
-      <stop offset="0.6" stop-color="#6f9e2e"/>
-      <stop offset="1" stop-color="#3f5e18"/>
-    </radialGradient>
-
     <filter id="cloud-shadow" x="-20%" y="-20%" width="140%" height="160%">
-      <feDropShadow dx="0" dy="2.5" stdDeviation="3" flood-color="#0A0A0B" flood-opacity="0.16"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0A0A0B" flood-opacity="0.18"/>
     </filter>
   </defs>
 
@@ -40,7 +28,6 @@
 
     <!-- Thought cloud -->
     <g transform="translate(70,6)" filter="url(#cloud-shadow)">
-      <!-- crisp union outline: puffs drawn slightly larger in edge colour, no internal seams -->
       <g class="cloud-edge">
         <ellipse cx="42"  cy="42" rx="28" ry="24"/>
         <ellipse cx="82"  cy="27" rx="32" ry="27"/>
@@ -51,7 +38,6 @@
         <circle  cx="70"  cy="80" r="8"/>
         <circle  cx="60"  cy="97" r="5"/>
       </g>
-      <!-- fill on top -->
       <g class="cloud-fill">
         <ellipse cx="42"  cy="42" rx="26" ry="22"/>
         <ellipse cx="82"  cy="27" rx="30" ry="25"/>
@@ -62,7 +48,6 @@
         <circle  cx="70"  cy="80" r="6"/>
         <circle  cx="60"  cy="97" r="3.4"/>
       </g>
-
       <g class="cloud-text" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15" font-weight="600" text-anchor="middle">
         <text x="134" y="42" opacity="0">
           meow. you read READMEs? respect.
@@ -73,114 +58,73 @@
           <animate attributeName="opacity" values="0;0;0;1;1;0;0;0;0;0;0" keyTimes="0;0.18;0.21;0.24;0.34;0.38;0.5;0.6;0.7;0.85;1" dur="28s" repeatCount="indefinite"/>
         </text>
         <text x="134" y="42" opacity="0">
-          starring this repo &#10084;&#65039; +1 life
+          Swift &gt; everything. fight me.
           <animate attributeName="opacity" values="0;0;0;0;0;1;1;0;0;0;0" keyTimes="0;0.2;0.3;0.38;0.4;0.42;0.54;0.58;0.7;0.85;1" dur="28s" repeatCount="indefinite"/>
         </text>
         <text x="134" y="42" opacity="0">
-          Swift &gt; everything. fight me.
+          psst &#8212; projects are below &#8595;
           <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0;0" keyTimes="0;0.3;0.4;0.5;0.55;0.58;0.6;0.62;0.74;0.78;1" dur="28s" repeatCount="indefinite"/>
         </text>
         <text x="134" y="42" opacity="0">
-          psst &#8212; projects are below &#8595;
+          go on, star the repo &#9733;
           <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;0" keyTimes="0;0.4;0.6;0.74;0.78;0.8;0.82;0.84;0.86;0.9;0.98" dur="28s" repeatCount="indefinite"/>
         </text>
       </g>
     </g>
 
-    <!-- Cat -->
-    <g transform="translate(40,96)">
-      <!-- Tail: fluffy, banded, wagging -->
+    <!-- Cat: clean grey walking silhouette -->
+    <g transform="translate(40,92)" fill="url(#cat-grey)">
+      <!-- Tail, curled up, gently swaying -->
       <g>
         <animateTransform attributeName="transform" type="rotate"
-          values="-4 16 50; 6 16 50; -4 16 50" dur="1.4s" repeatCount="indefinite"/>
-        <path d="M16,50 Q-18,44 -14,16 Q-12,2 2,0" stroke="url(#cat-body)" stroke-width="13" fill="none" stroke-linecap="round"/>
-        <path d="M-14,20 Q-13,8 -3,2" stroke="#ffd9a6" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.9"/>
-        <g stroke="#9a3412" stroke-width="3" stroke-linecap="round" opacity="0.55" fill="none">
-          <path d="M-16,34 Q-12,33 -8,35"/>
-          <path d="M-16,24 Q-12,22 -7,25"/>
-        </g>
+          values="-3 20 54; 5 20 54; -3 20 54" dur="1.6s" repeatCount="indefinite"/>
+        <path d="M22,54 C-2,54 -14,40 -12,20 C-11,6 -2,-2 8,0 C0,4 -2,14 0,22 C3,34 14,40 24,44 Z"/>
       </g>
 
-      <!-- Hind haunch -->
-      <ellipse cx="30" cy="46" rx="26" ry="24" fill="url(#cat-body)"/>
-      <!-- Body -->
-      <ellipse cx="66" cy="50" rx="54" ry="26" fill="url(#cat-body)"/>
-      <!-- Belly highlight -->
-      <ellipse cx="66" cy="60" rx="44" ry="14" fill="url(#cat-belly)" opacity="0.75"/>
-      <!-- Tabby body stripes -->
-      <g stroke="#9a3412" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round">
-        <path d="M40,30 Q43,44 40,58"/>
-        <path d="M56,28 Q59,44 56,60"/>
-        <path d="M72,28 Q75,44 72,60"/>
-        <path d="M88,30 Q91,44 88,58"/>
-        <path d="M102,34 Q105,45 102,56"/>
-      </g>
+      <!-- Body + haunch as one silhouette -->
+      <ellipse cx="30" cy="50" rx="28" ry="25"/>
+      <ellipse cx="66" cy="52" rx="55" ry="25"/>
 
-      <!-- Chest ruff -->
-      <path d="M110,52 Q118,66 108,72 Q120,64 116,50 Z" fill="url(#cat-belly)" opacity="0.85"/>
+      <!-- Head + ears -->
+      <circle cx="122" cy="34" r="24"/>
+      <path d="M100,20 L104,-4 L119,17 Z"/>
+      <path d="M124,17 L139,-5 L143,22 Z"/>
 
-      <!-- Head -->
-      <circle cx="120" cy="34" r="25" fill="url(#cat-body)"/>
-      <!-- Ears -->
-      <polygon points="99,20 103,-6 118,18" fill="url(#cat-body)"/>
-      <polygon points="123,18 138,-6 143,22" fill="url(#cat-body)"/>
-      <polygon points="104,16 106,2 114,16" fill="#f7b4c2"/>
-      <polygon points="126,16 132,2 137,18" fill="#f7b4c2"/>
-      <!-- Forehead tabby "M" -->
-      <g stroke="#9a3412" stroke-width="2" fill="none" opacity="0.55" stroke-linecap="round">
-        <path d="M114,15 L118,24 L122,15"/>
-        <path d="M122,15 L126,24 L130,16"/>
-      </g>
-
-      <!-- Cheek / muzzle fluff -->
-      <ellipse cx="119" cy="43" rx="15" ry="11" fill="url(#cat-belly)" opacity="0.9"/>
-
-      <!-- Eyes: almond, green, vertical slit pupil -->
-      <path d="M104,33 Q110,27 116,33 Q110,39 104,33 Z" fill="url(#eye)"/>
-      <path d="M124,33 Q130,27 136,33 Q130,39 124,33 Z" fill="url(#eye)"/>
-      <ellipse cx="110" cy="33" rx="1.5" ry="5" fill="#0A0A0B"/>
-      <ellipse cx="130" cy="33" rx="1.5" ry="5" fill="#0A0A0B"/>
-      <circle cx="108.5" cy="31" r="1.3" fill="#ffffff"/>
-      <circle cx="128.5" cy="31" r="1.3" fill="#ffffff"/>
-      <!-- eye rims -->
-      <path d="M104,33 Q110,27 116,33" stroke="#7c2d12" stroke-width="1" fill="none" opacity="0.6"/>
-      <path d="M124,33 Q130,27 136,33" stroke="#7c2d12" stroke-width="1" fill="none" opacity="0.6"/>
-
-      <!-- Nose + mouth -->
-      <path d="M116,43 L123,43 L119.5,47 Z" fill="#e26d8a" stroke="#7c2d12" stroke-width="0.6"/>
-      <path d="M119.5,47 L119.5,50 Q115,53 112,50" stroke="#7c2d12" stroke-width="1" fill="none"/>
-      <path d="M119.5,47 L119.5,50 Q124,53 127,50" stroke="#7c2d12" stroke-width="1" fill="none"/>
-
-      <!-- Whiskers -->
-      <g stroke="#ffffff" stroke-opacity="0.85" stroke-width="0.9" stroke-linecap="round" fill="none">
-        <path d="M108,45 Q94,42 84,40"/>
-        <path d="M108,47 Q94,48 83,49"/>
-        <path d="M131,45 Q145,42 155,40"/>
-        <path d="M131,47 Q145,48 156,49"/>
-      </g>
-
-      <!-- Legs (walk cycle) with paws -->
-      <g fill="url(#cat-body)">
-        <rect x="26" y="66" width="9" height="20" rx="4">
+      <!-- Legs (walk cycle) -->
+      <g>
+        <rect x="24" y="66" width="10" height="22" rx="5">
           <animate attributeName="y" values="66;62;66;66;66" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/>
         </rect>
-        <rect x="48" y="66" width="9" height="20" rx="4">
+        <rect x="48" y="66" width="10" height="22" rx="5">
           <animate attributeName="y" values="66;66;66;62;66" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/>
         </rect>
-        <rect x="82" y="66" width="9" height="20" rx="4">
+        <rect x="84" y="66" width="10" height="22" rx="5">
           <animate attributeName="y" values="66;66;62;66;66" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/>
         </rect>
-        <rect x="104" y="66" width="9" height="20" rx="4">
+        <rect x="106" y="66" width="10" height="22" rx="5">
           <animate attributeName="y" values="66;62;66;66;66" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/>
         </rect>
+      </g>
+
+      <!-- White detail: inner ears, eye, collar -->
+      <g fill="#ffffff">
+        <path d="M105,15 L107,3 L114,15 Z" opacity="0.55"/>
+        <path d="M127,15 L133,3 L136,17 Z" opacity="0.55"/>
+        <circle cx="130" cy="34" r="3.2"/>
+      </g>
+      <circle cx="130.5" cy="33.5" r="1.4" fill="#1f2430"/>
+      <!-- Whiskers -->
+      <g stroke="#ffffff" stroke-opacity="0.7" stroke-width="0.9" stroke-linecap="round" fill="none">
+        <path d="M138,40 Q150,38 158,37"/>
+        <path d="M138,43 Q150,44 158,46"/>
       </g>
 
       <!-- Ground shadow -->
-      <g fill="#0A0A0B" opacity="0.16">
-        <ellipse cx="30" cy="90" rx="10" ry="2.4"/>
-        <ellipse cx="52" cy="90" rx="10" ry="2.4"/>
-        <ellipse cx="86" cy="90" rx="10" ry="2.4"/>
-        <ellipse cx="108" cy="90" rx="10" ry="2.4"/>
+      <g fill="#0A0A0B" opacity="0.14">
+        <ellipse cx="29" cy="92" rx="10" ry="2.4"/>
+        <ellipse cx="53" cy="92" rx="10" ry="2.4"/>
+        <ellipse cx="89" cy="92" rx="10" ry="2.4"/>
+        <ellipse cx="111" cy="92" rx="10" ry="2.4"/>
       </g>
     </g>
   </g>
