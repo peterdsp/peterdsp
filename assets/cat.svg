@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="A grey cat walking across the README, sharing thoughts in a cloud">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="A grey tabby cat walking across the README, sharing thoughts in a cloud">
   <defs>
     <style>
-      /* Theme-aware thought cloud — readable on both GitHub light and dark backgrounds */
       .cloud-fill { fill: #ffffff; }
       .cloud-edge { fill: #6b7280; fill-opacity: 0.55; }
       .cloud-text { fill: #1f2430; }
@@ -11,10 +10,20 @@
         .cloud-text { fill: #1f2430; }
       }
     </style>
-    <linearGradient id="cat-grey" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#7e8794"/>
-      <stop offset="1" stop-color="#616a77"/>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9aa3b0"/>
+      <stop offset="0.55" stop-color="#79828f"/>
+      <stop offset="1" stop-color="#59616d"/>
     </linearGradient>
+    <linearGradient id="belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d3d9e0"/>
+      <stop offset="1" stop-color="#a7afba"/>
+    </linearGradient>
+    <radialGradient id="eye" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#c3e06a"/>
+      <stop offset="0.6" stop-color="#7fa03a"/>
+      <stop offset="1" stop-color="#48611f"/>
+    </radialGradient>
     <filter id="cloud-shadow" x="-20%" y="-20%" width="140%" height="160%">
       <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0A0A0B" flood-opacity="0.18"/>
     </filter>
@@ -29,103 +38,126 @@
     <!-- Thought cloud -->
     <g transform="translate(70,6)" filter="url(#cloud-shadow)">
       <g class="cloud-edge">
-        <ellipse cx="42"  cy="42" rx="28" ry="24"/>
-        <ellipse cx="82"  cy="27" rx="32" ry="27"/>
+        <ellipse cx="42" cy="42" rx="28" ry="24"/>
+        <ellipse cx="82" cy="27" rx="32" ry="27"/>
         <ellipse cx="134" cy="23" rx="36" ry="30"/>
         <ellipse cx="186" cy="27" rx="32" ry="27"/>
         <ellipse cx="226" cy="42" rx="28" ry="24"/>
         <ellipse cx="134" cy="48" rx="122" ry="27"/>
-        <circle  cx="70"  cy="80" r="8"/>
-        <circle  cx="60"  cy="97" r="5"/>
+        <circle cx="70" cy="80" r="8"/>
+        <circle cx="60" cy="97" r="5"/>
       </g>
       <g class="cloud-fill">
-        <ellipse cx="42"  cy="42" rx="26" ry="22"/>
-        <ellipse cx="82"  cy="27" rx="30" ry="25"/>
+        <ellipse cx="42" cy="42" rx="26" ry="22"/>
+        <ellipse cx="82" cy="27" rx="30" ry="25"/>
         <ellipse cx="134" cy="23" rx="34" ry="28"/>
         <ellipse cx="186" cy="27" rx="30" ry="25"/>
         <ellipse cx="226" cy="42" rx="26" ry="22"/>
         <ellipse cx="134" cy="48" rx="120" ry="25"/>
-        <circle  cx="70"  cy="80" r="6"/>
-        <circle  cx="60"  cy="97" r="3.4"/>
+        <circle cx="70" cy="80" r="6"/>
+        <circle cx="60" cy="97" r="3.4"/>
       </g>
       <g class="cloud-text" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15" font-weight="600" text-anchor="middle">
-        <text x="134" y="42" opacity="0">
-          meow. you read READMEs? respect.
-          <animate attributeName="opacity" values="0;1;1;0;0;0;0;0;0;0;0" keyTimes="0;0.03;0.16;0.2;0.3;0.4;0.55;0.7;0.85;0.95;1" dur="28s" repeatCount="indefinite"/>
-        </text>
-        <text x="134" y="42" opacity="0">
-          TCA is my catnip
-          <animate attributeName="opacity" values="0;0;0;1;1;0;0;0;0;0;0" keyTimes="0;0.18;0.21;0.24;0.34;0.38;0.5;0.6;0.7;0.85;1" dur="28s" repeatCount="indefinite"/>
-        </text>
-        <text x="134" y="42" opacity="0">
-          Swift &gt; everything. fight me.
-          <animate attributeName="opacity" values="0;0;0;0;0;1;1;0;0;0;0" keyTimes="0;0.2;0.3;0.38;0.4;0.42;0.54;0.58;0.7;0.85;1" dur="28s" repeatCount="indefinite"/>
-        </text>
-        <text x="134" y="42" opacity="0">
-          psst &#8212; projects are below &#8595;
-          <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0;0" keyTimes="0;0.3;0.4;0.5;0.55;0.58;0.6;0.62;0.74;0.78;1" dur="28s" repeatCount="indefinite"/>
-        </text>
-        <text x="134" y="42" opacity="0">
-          go on, star the repo &#9733;
-          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;0" keyTimes="0;0.4;0.6;0.74;0.78;0.8;0.82;0.84;0.86;0.9;0.98" dur="28s" repeatCount="indefinite"/>
-        </text>
+        <text x="134" y="42" opacity="0">meow. you read READMEs? respect.<animate attributeName="opacity" values="0;1;1;0;0;0;0;0;0;0;0" keyTimes="0;0.03;0.16;0.2;0.3;0.4;0.55;0.7;0.85;0.95;1" dur="28s" repeatCount="indefinite"/></text>
+        <text x="134" y="42" opacity="0">TCA is my catnip<animate attributeName="opacity" values="0;0;0;1;1;0;0;0;0;0;0" keyTimes="0;0.18;0.21;0.24;0.34;0.38;0.5;0.6;0.7;0.85;1" dur="28s" repeatCount="indefinite"/></text>
+        <text x="134" y="42" opacity="0">Swift &gt; everything. fight me.<animate attributeName="opacity" values="0;0;0;0;0;1;1;0;0;0;0" keyTimes="0;0.2;0.3;0.38;0.4;0.42;0.54;0.58;0.7;0.85;1" dur="28s" repeatCount="indefinite"/></text>
+        <text x="134" y="42" opacity="0">psst &#8212; projects are below &#8595;<animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0;0" keyTimes="0;0.3;0.4;0.5;0.55;0.58;0.6;0.62;0.74;0.78;1" dur="28s" repeatCount="indefinite"/></text>
+        <text x="134" y="42" opacity="0">go on, star the repo &#9733;<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;0" keyTimes="0;0.4;0.6;0.74;0.78;0.8;0.82;0.84;0.86;0.9;0.98" dur="28s" repeatCount="indefinite"/></text>
       </g>
     </g>
 
-    <!-- Cat: elegant grey walking silhouette (head right, tail up at rear) -->
-    <g transform="translate(38,96)">
-      <!-- gentle walking bob -->
+    <!-- Grey tabby cat -->
+    <g transform="translate(40,96)">
       <animateTransform attributeName="transform" additive="sum" type="translate"
         values="0,0; 0,-1.5; 0,0; 0,-1.5; 0,0" keyTimes="0;0.25;0.5;0.75;1" dur="0.62s" repeatCount="indefinite"/>
 
-      <g fill="url(#cat-grey)">
-        <!-- Tail, rising and hooking forward, with a soft sway -->
-        <path d="M19,8 C2,-8 5,-42 20,-60 C26,-68 37,-64 34,-54 C33,-61 25,-56 23,-49 C10,-26 22,0 30,10 Z">
-          <animateTransform attributeName="transform" type="rotate"
-            values="-4 19 8; 4 19 8; -4 19 8" dur="1.8s" repeatCount="indefinite"/>
-        </path>
+      <!-- Tail: striped, sways -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-4 16 50; 6 16 50; -4 16 50" dur="1.6s" repeatCount="indefinite"/>
+        <path d="M16,50 Q-18,44 -14,16 Q-12,2 2,0" stroke="url(#fur)" stroke-width="13" fill="none" stroke-linecap="round"/>
+        <path d="M-14,20 Q-13,8 -3,2" stroke="#c9d0d9" stroke-width="4.5" fill="none" stroke-linecap="round" opacity="0.85"/>
+        <g stroke="#454c57" stroke-width="3" stroke-linecap="round" opacity="0.6" fill="none">
+          <path d="M-16,34 Q-12,33 -8,35"/>
+          <path d="M-16,24 Q-12,22 -7,25"/>
+          <path d="M-9,12 Q-5,10 -1,13"/>
+        </g>
+      </g>
 
-        <!-- Legs: tops sit deep inside the body so they merge, lower legs slender -->
-        <g>
-          <rect x="16" y="34" width="9" height="58" rx="4" transform="rotate(-6 20 92)"/>
-          <ellipse cx="20" cy="92" rx="6" ry="3"/>
-        </g>
-        <g>
-          <rect x="50" y="36" width="9" height="56" rx="4" transform="rotate(7 54 90)"/>
-          <ellipse cx="60" cy="90" rx="6" ry="3"/>
-        </g>
-        <g>
-          <rect x="104" y="36" width="9" height="56" rx="4" transform="rotate(-13 108 90)"/>
-          <ellipse cx="102" cy="90" rx="6" ry="3"/>
-        </g>
-        <g>
-          <rect x="148" y="34" width="9" height="58" rx="4" transform="rotate(4 152 92)"/>
-          <ellipse cx="154" cy="92" rx="6" ry="3"/>
-        </g>
+      <!-- Hind haunch + body -->
+      <ellipse cx="30" cy="46" rx="26" ry="24" fill="url(#fur)"/>
+      <ellipse cx="66" cy="50" rx="54" ry="26" fill="url(#fur)"/>
+      <ellipse cx="66" cy="60" rx="44" ry="14" fill="url(#belly)" opacity="0.8"/>
 
-        <!-- Body + head silhouette (taller stance, rounded haunch, small muzzle) -->
-        <path d="M13,54
-                 C9,34 11,16 20,6
-                 C36,-3 62,8 84,13
-                 C107,18 123,10 136,14
-                 C143,16 146,12 149,8
-                 L151,-7 L158,6 L165,-7
-                 C168,-1 171,2 173,6
-                 C179,12 186,16 188,23
-                 C189,27 186,31 179,32
-                 C172,33 167,37 159,41
-                 C154,44 151,46 148,48
-                 C132,55 118,57 100,55
-                 C86,53 74,54 60,55
-                 C44,56 26,58 13,54 Z"/>
+      <!-- Tabby body stripes -->
+      <g stroke="#454c57" stroke-width="3" fill="none" opacity="0.55" stroke-linecap="round">
+        <path d="M40,30 Q43,44 40,58"/>
+        <path d="M56,28 Q59,44 56,60"/>
+        <path d="M72,28 Q75,44 72,60"/>
+        <path d="M88,30 Q91,44 88,58"/>
+        <path d="M102,34 Q105,45 102,56"/>
+      </g>
+
+      <!-- Chest ruff -->
+      <path d="M110,52 Q118,66 108,72 Q120,64 116,50 Z" fill="url(#belly)" opacity="0.85"/>
+
+      <!-- Head -->
+      <circle cx="120" cy="34" r="25" fill="url(#fur)"/>
+      <polygon points="99,20 103,-6 118,18" fill="url(#fur)"/>
+      <polygon points="123,18 138,-6 143,22" fill="url(#fur)"/>
+      <polygon points="104,16 106,2 114,16" fill="#c99aa6"/>
+      <polygon points="126,16 132,2 137,18" fill="#c99aa6"/>
+      <!-- Forehead tabby M -->
+      <g stroke="#454c57" stroke-width="2" fill="none" opacity="0.6" stroke-linecap="round">
+        <path d="M114,15 L118,24 L122,15"/>
+        <path d="M122,15 L126,24 L130,16"/>
+      </g>
+
+      <!-- Muzzle -->
+      <ellipse cx="119" cy="43" rx="15" ry="11" fill="url(#belly)" opacity="0.92"/>
+
+      <!-- Eyes: green, slit pupil -->
+      <path d="M104,33 Q110,27 116,33 Q110,39 104,33 Z" fill="url(#eye)"/>
+      <path d="M124,33 Q130,27 136,33 Q130,39 124,33 Z" fill="url(#eye)"/>
+      <ellipse cx="110" cy="33" rx="1.5" ry="5" fill="#0A0A0B"/>
+      <ellipse cx="130" cy="33" rx="1.5" ry="5" fill="#0A0A0B"/>
+      <circle cx="108.5" cy="31" r="1.3" fill="#ffffff"/>
+      <circle cx="128.5" cy="31" r="1.3" fill="#ffffff"/>
+      <path d="M104,33 Q110,27 116,33" stroke="#3d4450" stroke-width="1" fill="none" opacity="0.6"/>
+      <path d="M124,33 Q130,27 136,33" stroke="#3d4450" stroke-width="1" fill="none" opacity="0.6"/>
+
+      <!-- Nose + mouth -->
+      <path d="M116,43 L123,43 L119.5,47 Z" fill="#9a6b74" stroke="#4b3b40" stroke-width="0.6"/>
+      <path d="M119.5,47 L119.5,50 Q115,53 112,50" stroke="#4b3b40" stroke-width="1" fill="none"/>
+      <path d="M119.5,47 L119.5,50 Q124,53 127,50" stroke="#4b3b40" stroke-width="1" fill="none"/>
+
+      <!-- Whiskers -->
+      <g stroke="#ffffff" stroke-opacity="0.85" stroke-width="0.9" stroke-linecap="round" fill="none">
+        <path d="M108,45 Q94,42 84,40"/>
+        <path d="M108,47 Q94,48 83,49"/>
+        <path d="M131,45 Q145,42 155,40"/>
+        <path d="M131,47 Q145,48 156,49"/>
+      </g>
+
+      <!-- Legs (walk cycle) -->
+      <g fill="url(#fur)">
+        <rect x="26" y="66" width="9" height="20" rx="4"><animate attributeName="y" values="66;62;66;66;66" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/></rect>
+        <rect x="48" y="66" width="9" height="20" rx="4"><animate attributeName="y" values="66;66;66;62;66" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/></rect>
+        <rect x="82" y="66" width="9" height="20" rx="4"><animate attributeName="y" values="66;66;62;66;66" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/></rect>
+        <rect x="104" y="66" width="9" height="20" rx="4"><animate attributeName="y" values="66;62;66;66;66" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/></rect>
+      </g>
+      <g fill="#454c57" opacity="0.35">
+        <rect x="26" y="82" width="9" height="4" rx="2"><animate attributeName="y" values="82;78;82;82;82" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/></rect>
+        <rect x="48" y="82" width="9" height="4" rx="2"><animate attributeName="y" values="82;82;82;78;82" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/></rect>
+        <rect x="82" y="82" width="9" height="4" rx="2"><animate attributeName="y" values="82;82;78;82;82" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/></rect>
+        <rect x="104" y="82" width="9" height="4" rx="2"><animate attributeName="y" values="82;78;82;82;82" keyTimes="0;0.25;0.5;0.75;1" dur="0.6s" repeatCount="indefinite"/></rect>
       </g>
 
       <!-- Ground shadow -->
-      <g fill="#0A0A0B" opacity="0.13">
-        <ellipse cx="20" cy="94" rx="10" ry="2.3"/>
-        <ellipse cx="60" cy="94" rx="10" ry="2.3"/>
-        <ellipse cx="102" cy="94" rx="10" ry="2.3"/>
-        <ellipse cx="154" cy="94" rx="10" ry="2.3"/>
+      <g fill="#0A0A0B" opacity="0.14">
+        <ellipse cx="30" cy="90" rx="10" ry="2.4"/>
+        <ellipse cx="52" cy="90" rx="10" ry="2.4"/>
+        <ellipse cx="86" cy="90" rx="10" ry="2.4"/>
+        <ellipse cx="108" cy="90" rx="10" ry="2.4"/>
       </g>
     </g>
   </g>
