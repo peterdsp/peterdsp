@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 328" width="1200" height="328" role="img" aria-label="Selected work: Syrmos, Conservatio, Kujto, PromptBar">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 328" width="1200" height="328" role="img" aria-label="Selected work: Syrmos, Conservatio, Kujto, PromptBar, Klipa, Glint">
   <defs><style>
     .card { fill:#ffffff; stroke:#d0d7de; stroke-width:1; }
     .title { fill:#0969da; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif; }
@@ -61,5 +61,33 @@
 <text class="pilltext" x="53" y="128" font-size="12" text-anchor="middle">macOS</text>
 <rect class="pill" x="90" y="112" width="73" height="24" rx="6"/>
 <text class="pilltext" x="126" y="128" font-size="12" text-anchor="middle">SwiftUI</text>
+</g>
+<g transform="translate(407,172)">
+<rect class="card" x="0.5" y="0.5" width="384" height="149" rx="13"/>
+<text class="title" x="24" y="42" font-size="22" font-weight="600">Klipa</text>
+<text class="desc" x="24" font-size="14.5">
+<tspan x="24" y="72">Menu-bar clipboard manager,</tspan>
+<tspan x="24" y="92">pure Rust, cross-platform.</tspan>
+</text>
+<rect class="pill" x="24" y="112" width="51" height="24" rx="6"/>
+<text class="pilltext" x="50" y="128" font-size="12" text-anchor="middle">Rust</text>
+<rect class="pill" x="83" y="112" width="58" height="24" rx="6"/>
+<text class="pilltext" x="112" y="128" font-size="12" text-anchor="middle">macOS</text>
+<rect class="pill" x="149" y="112" width="58" height="24" rx="6"/>
+<text class="pilltext" x="178" y="128" font-size="12" text-anchor="middle">Linux</text>
+</g>
+<g transform="translate(808,172)">
+<rect class="card" x="0.5" y="0.5" width="384" height="149" rx="13"/>
+<text class="title" x="24" y="42" font-size="22" font-weight="600">Glint</text>
+<text class="desc" x="24" font-size="14.5">
+<tspan x="24" y="72">A glint of Git in your menu bar.</tspan>
+<tspan x="24" y="92">Tauri + Rust, liquid glass.</tspan>
+</text>
+<rect class="pill" x="24" y="112" width="51" height="24" rx="6"/>
+<text class="pilltext" x="50" y="128" font-size="12" text-anchor="middle">Rust</text>
+<rect class="pill" x="83" y="112" width="58" height="24" rx="6"/>
+<text class="pilltext" x="112" y="128" font-size="12" text-anchor="middle">Tauri</text>
+<rect class="pill" x="149" y="112" width="58" height="24" rx="6"/>
+<text class="pilltext" x="178" y="128" font-size="12" text-anchor="middle">macOS</text>
 </g>
 </svg>

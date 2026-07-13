@@ -121,8 +121,7 @@ function buildDesktop({ total, projects, top }) {
   const max = Math.max(1, top[0]?.stars || 1);
   const w = 1200, h = 320;
   const trackW = 360;
-  const rowH = 30;
-  const valueRightX = 240 + trackW + 24;
+  const rowH = 26;
 
   const rows = top
     .map((p, i) =>
@@ -139,31 +138,23 @@ function buildDesktop({ total, projects, top }) {
     )
     .join("\n");
 
-  const remainingCount = projects.length - top.length;
-  const remainingStars = projects.slice(top.length).reduce((a, p) => a + p.stars, 0);
-  const more =
-    remainingCount > 0
-      ? `      <text x="0" y="${top.length * rowH + 11}" fill="#6E6E73" font-size="12">+ ${remainingCount} more</text>
-      <text x="${valueRightX}" y="${top.length * rowH + 11}" fill="#8E8E93" font-size="12" font-weight="600" text-anchor="end">${remainingStars}</text>`
-      : "";
-
   return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across ${esc(USER)}'s open-source projects</title>
-  <desc id="desc">OLED-black liquid-glass slab summarizing ${total} cumulative GitHub stars across ${projects.length} projects.</desc>
+  <desc id="desc">Glass slab summarizing ${total} cumulative GitHub stars across ${projects.length} projects.</desc>
   <defs>${slabDefs(w, h)}</defs>
 
   <rect width="${w}" height="${h}" fill="#000000"/>
-${slabBody({ x: 24, y: 20, w: w - 48, h: h - 40, r: 36, specularInsetX: 64 })}
+${slabBody({ x: 24, y: 20, w: w - 48, h: h - 40, r: 36 })}
 
-  <g transform="translate(76 76)">
+  <g transform="translate(76 70)">
     <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="11" letter-spacing="4">STARS · OPEN SOURCE</text>
-    <text x="0" y="140" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="172" font-weight="700" letter-spacing="-6">${total}</text>
-    <text x="0" y="172" fill="#C7C7CC" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15" font-weight="500">cumulative GitHub stars</text>
-    <text x="0" y="194" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="13">across ${projects.length} open-source projects</text>
+    <text x="0" y="132" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="156" font-weight="700" letter-spacing="-5">${total}</text>
+    <text x="0" y="164" fill="#C7C7CC" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15" font-weight="500">cumulative GitHub stars</text>
+    <text x="0" y="186" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="13">across ${projects.length} open-source projects</text>
 
-    <g transform="translate(0 218)">
-      <circle cx="4" cy="6" r="3" fill="#FFFFFF"/>
-      <circle cx="4" cy="6" r="6" fill="none" stroke="#FFFFFF" stroke-opacity="0.4">
+    <g transform="translate(0 210)">
+      <circle cx="4" cy="6" r="3" fill="#34d399"/>
+      <circle cx="4" cy="6" r="6" fill="none" stroke="#34d399" stroke-opacity="0.5">
         <animate attributeName="r" values="4;10;4" dur="3s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite"/>
       </circle>
@@ -171,12 +162,11 @@ ${slabBody({ x: 24, y: 20, w: w - 48, h: h - 40, r: 36, specularInsetX: 64 })}
     </g>
   </g>
 
-  <g transform="translate(488 80)" font-family="SFMono-Regular, ui-monospace, Consolas, monospace">
+  <g transform="translate(488 74)" font-family="SFMono-Regular, ui-monospace, Consolas, monospace">
     <text x="0" y="0" fill="#8A8A8F" font-size="11" letter-spacing="4">TOP PROJECTS</text>
     <line x1="0" y1="14" x2="${240 + trackW + 24}" y2="14" stroke="#FFFFFF" stroke-opacity="0.08"/>
     <g transform="translate(0 32)">
 ${rows}
-${more}
     </g>
   </g>
 </svg>
@@ -205,21 +195,13 @@ function buildMobile({ total, projects, top }) {
     )
     .join("\n");
 
-  const remainingCount = projects.length - top.length;
-  const remainingStars = projects.slice(top.length).reduce((a, p) => a + p.stars, 0);
-  const more =
-    remainingCount > 0
-      ? `      <text x="0" y="${top.length * rowH + 11}" fill="#6E6E73" font-size="13">+ ${remainingCount} more</text>
-      <text x="${valueRightX}" y="${top.length * rowH + 11}" fill="#8E8E93" font-size="13" font-weight="600" text-anchor="end">${remainingStars}</text>`
-      : "";
-
   return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across ${esc(USER)}'s open-source projects</title>
-  <desc id="desc">Mobile OLED-black liquid-glass slab summarizing ${total} cumulative GitHub stars across ${projects.length} projects.</desc>
+  <desc id="desc">Mobile glass slab summarizing ${total} cumulative GitHub stars across ${projects.length} projects.</desc>
   <defs>${slabDefs(w, h)}</defs>
 
   <rect width="${w}" height="${h}" fill="#000000"/>
-${slabBody({ x: 20, y: 20, w: w - 40, h: h - 40, r: 36, specularInsetX: 60 })}
+${slabBody({ x: 20, y: 20, w: w - 40, h: h - 40, r: 36 })}
 
   <g transform="translate(56 90)">
     <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="4">STARS · OPEN SOURCE</text>
@@ -233,7 +215,6 @@ ${slabBody({ x: 20, y: 20, w: w - 40, h: h - 40, r: 36, specularInsetX: 60 })}
     <line x1="0" y1="14" x2="${240 + trackW + 24}" y2="14" stroke="#FFFFFF" stroke-opacity="0.08"/>
     <g transform="translate(0 30)">
 ${rows}
-${more}
     </g>
   </g>
 </svg>

@@ -33,13 +33,15 @@
 
 ### Selected work
 
-<img src="./assets/work.svg" alt="Selected work: Syrmos, Conservatio, Kujto, PromptBar" width="100%">
+<img src="./assets/work.svg" alt="Selected work: Syrmos, Conservatio, Kujto, PromptBar, Klipa, Glint" width="100%">
 
 <sub>
 <a href="https://syrmos.peterdsp.dev">Syrmos</a> &middot; <a href="https://github.com/peterdsp/Syrmos">repo</a> &nbsp;&bull;&nbsp;
 <a href="https://conservatio.peterdsp.dev">Conservatio</a> &middot; <a href="https://github.com/peterdsp/conservatio">repo</a> &nbsp;&bull;&nbsp;
 <a href="https://kujto.peterdsp.dev">Kujto</a> &middot; <a href="https://github.com/peterdsp/kujto">repo</a> &nbsp;&bull;&nbsp;
-<a href="https://github.com/peterdsp/PromptBar">PromptBar</a>
+<a href="https://github.com/peterdsp/PromptBar">PromptBar</a> &nbsp;&bull;&nbsp;
+<a href="https://klipa.peterdsp.dev">Klipa</a> &middot; <a href="https://github.com/peterdsp/klipa">repo</a> &nbsp;&bull;&nbsp;
+<a href="https://github.com/peterdsp/glint">Glint</a>
 </sub>
 
 ### Toolbox
