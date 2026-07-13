@@ -25,7 +25,7 @@
 
 <br />
 
-<img src="./assets/cat-walk.gif" alt="A cat walking across the README" width="100%">
+<img src="./assets/cat-cloud.gif" alt="A cat walking across the README" width="100%">
 
 ### Now
 
