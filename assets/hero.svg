@@ -1,107 +1,93 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Petros Dhespollari, iOS engineer at Plum Fintech">
   <defs>
-    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.32"/>
-      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0.14"/>
-    </linearGradient>
-    <linearGradient id="tint" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.45"/>
-      <stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#f472b6" stop-opacity="0.35"/>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16161a"/>
+      <stop offset="1" stop-color="#0a0a0b"/>
     </linearGradient>
     <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="0.42" stop-color="#ffffff" stop-opacity="0.38"/>
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.55"/>
-      <stop offset="0.58" stop-color="#ffffff" stop-opacity="0.38"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.06"/>
       <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <radialGradient id="orb-purple" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.95"/>
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.9"/>
       <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="orb-cyan" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.85"/>
       <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="orb-pink" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#f472b6" stop-opacity="0.95"/>
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.8"/>
       <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="orb-mint" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#34d399" stop-opacity="0.9"/>
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.7"/>
       <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
     </radialGradient>
     <filter id="bigblur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="42"/>
+      <feGaussianBlur stdDeviation="46"/>
     </filter>
-    <clipPath id="card-clip">
-      <rect x="40" y="40" width="1120" height="260" rx="36" ry="36"/>
-    </clipPath>
-    <clipPath id="chip-clip">
-      <rect x="900" y="80" width="220" height="180" rx="26" ry="26"/>
-    </clipPath>
+    <clipPath id="card-clip"><rect x="40" y="40" width="1120" height="260" rx="36" ry="36"/></clipPath>
+    <clipPath id="chip-clip"><rect x="900" y="80" width="220" height="180" rx="26" ry="26"/></clipPath>
   </defs>
 
-  <g filter="url(#bigblur)">
-    <circle cx="160" cy="170" r="130" fill="url(#orb-purple)">
-      <animate attributeName="cx" values="160;260;200;160" dur="12s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="170;120;200;170" dur="14s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1020" cy="190" r="160" fill="url(#orb-cyan)">
-      <animate attributeName="cx" values="1020;920;1040;1020" dur="13s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="190;230;160;190" dur="11s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="600" cy="80" r="110" fill="url(#orb-pink)">
-      <animate attributeName="cy" values="80;180;90;80" dur="10s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="780" cy="280" r="100" fill="url(#orb-mint)">
-      <animate attributeName="cx" values="780;680;820;780" dur="15s" repeatCount="indefinite"/>
-    </circle>
-  </g>
+  <!-- Solid dark card: keeps everything readable on GitHub light AND dark themes -->
+  <rect x="40" y="40" width="1120" height="260" rx="36" ry="36" fill="url(#base)"/>
 
   <g clip-path="url(#card-clip)">
-    <rect x="40" y="40" width="1120" height="260" rx="36" ry="36" fill="url(#glass)"/>
-    <rect x="40" y="40" width="1120" height="260" rx="36" ry="36" fill="url(#tint)" opacity="0.22"/>
-    <rect x="-360" y="40" width="320" height="260" fill="url(#shine)" opacity="0.55">
-      <animate attributeName="x" from="-360" to="1200" dur="7s" repeatCount="indefinite"/>
+    <g filter="url(#bigblur)">
+      <circle cx="180" cy="120" r="150" fill="url(#orb-purple)">
+        <animate attributeName="cx" values="180;280;210;180" dur="12s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="120;180;110;120" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1000" cy="210" r="170" fill="url(#orb-cyan)">
+        <animate attributeName="cx" values="1000;900;1020;1000" dur="13s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="300" r="130" fill="url(#orb-pink)">
+        <animate attributeName="cy" values="300;220;300;300" dur="10s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="760" cy="70" r="110" fill="url(#orb-mint)">
+        <animate attributeName="cx" values="760;660;800;760" dur="15s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <rect x="-360" y="40" width="320" height="260" fill="url(#shine)">
+      <animate attributeName="x" from="-360" to="1200" dur="8s" repeatCount="indefinite"/>
     </rect>
-    <rect x="40" y="40" width="1120" height="2" fill="#ffffff" opacity="0.45"/>
+    <rect x="40" y="40" width="1120" height="1.5" fill="#ffffff" opacity="0.14"/>
   </g>
 
-  <rect x="40" y="40" width="1120" height="260" rx="36" ry="36" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.2"/>
-  <rect x="41.5" y="41.5" width="1117" height="257" rx="34.5" ry="34.5" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="0.8"/>
+  <rect x="40" y="40" width="1120" height="260" rx="36" ry="36" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.2"/>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
     <text x="84" y="138" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-1">Petros Dhespollari</text>
-    <text x="84" y="180" font-size="20" font-weight="500" fill="#ffffff" opacity="0.88">iOS Engineer &#183; Plum Fintech &#183; Athens, Greece</text>
-    <text x="84" y="232" font-size="12" font-weight="700" fill="#ffffff" opacity="0.7" letter-spacing="3">SWIFTUI &#8226; TCA &#8226; KOTLIN MULTIPLATFORM &#8226; RELEASE QUALITY</text>
+    <text x="84" y="180" font-size="20" font-weight="500" fill="#e6e6ea">iOS Engineer &#183; Plum Fintech &#183; Athens, Greece</text>
+    <text x="84" y="232" font-size="12" font-weight="700" fill="#8b8b93" letter-spacing="3">SWIFTUI &#8226; TCA &#8226; KOTLIN MULTIPLATFORM &#8226; RELEASE QUALITY</text>
 
     <g transform="translate(84,256)">
-      <rect width="124" height="28" rx="14" fill="#ffffff" fill-opacity="0.16" stroke="#ffffff" stroke-opacity="0.35"/>
+      <rect width="124" height="28" rx="14" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16"/>
       <circle cx="16" cy="14" r="4" fill="#34d399">
         <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
       </circle>
-      <text x="28" y="18" font-size="12" font-weight="600" fill="#ffffff">shipping daily</text>
+      <text x="28" y="18" font-size="12" font-weight="600" fill="#e6e6ea">shipping daily</text>
     </g>
     <g transform="translate(218,256)">
-      <rect width="120" height="28" rx="14" fill="#ffffff" fill-opacity="0.16" stroke="#ffffff" stroke-opacity="0.35"/>
-      <text x="60" y="18" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">open to talks</text>
+      <rect width="120" height="28" rx="14" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16"/>
+      <text x="60" y="18" text-anchor="middle" font-size="12" font-weight="600" fill="#e6e6ea">open to talks</text>
     </g>
   </g>
 
+  <!-- Now-building chip -->
   <g clip-path="url(#chip-clip)">
-    <rect x="900" y="80" width="220" height="180" rx="26" ry="26" fill="url(#glass)"/>
-    <rect x="900" y="80" width="220" height="180" rx="26" ry="26" fill="url(#tint)" opacity="0.3"/>
-    <rect x="900" y="80" width="220" height="2" fill="#ffffff" opacity="0.45"/>
+    <rect x="900" y="80" width="220" height="180" rx="26" ry="26" fill="#ffffff" fill-opacity="0.05"/>
+    <rect x="900" y="80" width="220" height="1.5" fill="#ffffff" opacity="0.14"/>
   </g>
-  <rect x="900" y="80" width="220" height="180" rx="26" ry="26" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="900" y="80" width="220" height="180" rx="26" ry="26" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1"/>
   <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" text-anchor="middle">
-    <text x="1010" y="118" font-size="11" fill="#ffffff" opacity="0.75" letter-spacing="3" font-weight="700">NOW BUILDING</text>
+    <text x="1010" y="118" font-size="11" fill="#8b8b93" letter-spacing="3" font-weight="700">NOW BUILDING</text>
     <text x="1010" y="160" font-size="30" font-weight="800" fill="#ffffff">Syrmos</text>
-    <text x="1010" y="186" font-size="13" fill="#ffffff" opacity="0.78">Conservatio &#183; Kujto</text>
-    <text x="1010" y="218" font-size="11" fill="#ffffff" opacity="0.65" letter-spacing="2" font-weight="700">iOS &#183; ANDROID &#183; WEB</text>
+    <text x="1010" y="186" font-size="13" fill="#c9c9d1">Conservatio &#183; Kujto</text>
+    <text x="1010" y="218" font-size="11" fill="#8b8b93" letter-spacing="2" font-weight="700">iOS &#183; ANDROID &#183; WEB</text>
     <g transform="translate(990,232)">
       <circle cx="0" cy="0" r="3" fill="#a78bfa"/>
       <circle cx="10" cy="0" r="3" fill="#22d3ee"/>
