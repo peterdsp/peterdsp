@@ -1,9 +1,11 @@
 <div align="center">
 
+<a href="https://peterdsp.dev">
 <picture>
   <source media="(max-width: 640px)" srcset="./assets/hero-mobile.svg">
   <img src="./assets/hero.svg" alt="Petros Dhespollari — iOS engineer at Plum Fintech" width="100%">
 </picture>
+</a>
 
 <br />
 
@@ -33,16 +35,18 @@
 
 ### Selected work
 
-<img src="./assets/work.svg" alt="Selected work: Syrmos, Conservatio, Kujto, PromptBar, Klipa, Glint" width="100%">
-
-<sub>
-<a href="https://syrmos.peterdsp.dev">Syrmos</a> &middot; <a href="https://github.com/peterdsp/Syrmos">repo</a> &nbsp;&bull;&nbsp;
-<a href="https://conservatio.peterdsp.dev">Conservatio</a> &middot; <a href="https://github.com/peterdsp/conservatio">repo</a> &nbsp;&bull;&nbsp;
-<a href="https://kujto.peterdsp.dev">Kujto</a> &middot; <a href="https://github.com/peterdsp/kujto">repo</a> &nbsp;&bull;&nbsp;
-<a href="https://github.com/peterdsp/PromptBar">PromptBar</a> &nbsp;&bull;&nbsp;
-<a href="https://klipa.peterdsp.dev">Klipa</a> &middot; <a href="https://github.com/peterdsp/klipa">repo</a> &nbsp;&bull;&nbsp;
-<a href="https://github.com/peterdsp/glint">Glint</a>
-</sub>
+<table>
+  <tr>
+    <td width="33.33%"><a href="https://syrmos.peterdsp.dev"><img src="./assets/cards/syrmos.svg" alt="Syrmos — live Athens transit departures, offline-first" width="100%"></a></td>
+    <td width="33.33%"><a href="https://conservatio.peterdsp.dev"><img src="./assets/cards/conservatio.svg" alt="Conservatio — conservation docs across mobile and web" width="100%"></a></td>
+    <td width="33.33%"><a href="https://kujto.peterdsp.dev"><img src="./assets/cards/kujto.svg" alt="Kujto — bilingual memory framework for AI agents" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="33.33%"><a href="https://github.com/peterdsp/PromptBar"><img src="./assets/cards/promptbar.svg" alt="PromptBar — macOS menu-bar prompt manager" width="100%"></a></td>
+    <td width="33.33%"><a href="https://klipa.peterdsp.dev"><img src="./assets/cards/klipa.svg" alt="Klipa — menu-bar clipboard manager, pure Rust, cross-platform" width="100%"></a></td>
+    <td width="33.33%"><a href="https://github.com/peterdsp/glint"><img src="./assets/cards/glint.svg" alt="Glint — a glint of Git in your menu bar, Tauri + Rust" width="100%"></a></td>
+  </tr>
+</table>
 
 ### Toolbox
 
@@ -62,10 +66,12 @@
 
 <div align="center">
 
+<a href="https://github.com/peterdsp?tab=repositories">
 <picture>
   <source media="(max-width: 640px)" srcset="./assets/stars-mobile.svg">
   <img src="./assets/stars.svg" alt="Cumulative GitHub stars across open-source projects" width="100%">
 </picture>
+</a>
 
 <br />
 <br />
