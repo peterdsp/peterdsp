@@ -2,73 +2,67 @@
   <title id="title">Total GitHub stars across peterdsp's open-source projects</title>
   <desc id="desc">Mobile OLED-black liquid-glass slab summarizing 90 cumulative GitHub stars across 10 projects.</desc>
   <defs>
-    <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
-      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.04"/>
-      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16161a"/>
+      <stop offset="1" stop-color="#0a0a0b"/>
     </linearGradient>
-    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="0.7" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
-    </linearGradient>
-    <linearGradient id="bodyTint" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.04"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.01"/>
-    </linearGradient>
-    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.28"/>
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="specular" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.85"/>
-      <stop offset="0.65" stop-color="#FFFFFF" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="dispR" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) scale(230.4 527)">
-      <stop stop-color="#FF7AA2" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#FF7AA2" stop-opacity="0"/>
+    <radialGradient id="orbP" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="dispC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 620) scale(230.4 527)">
-      <stop stop-color="#7DD3FC" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#7DD3FC" stop-opacity="0"/>
+    <radialGradient id="orbC" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbK" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbM" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
       <stop stop-color="#FFFFFF"/>
       <stop offset="1" stop-color="#B8B8BD"/>
     </linearGradient>
-    <linearGradient id="barFill" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.95"/>
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.78"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.62"/>
-    </linearGradient>
     <linearGradient id="barTrack" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.03"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.09"/>
     </linearGradient>
+    <filter id="bigblur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="99"/>
+    </filter>
     <filter id="drop" x="-10%" y="-20%" width="120%" height="160%" color-interpolation-filters="sRGB">
       <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
       <feOffset dy="12"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
       <feComposite in="SourceGraphic" operator="over"/>
     </filter>
   </defs>
 
   <rect width="720" height="620" fill="#000000"/>
 
+  <clipPath id="cardClip"><rect x="20" y="20" width="680" height="580" rx="36"/></clipPath>
   <g filter="url(#drop)">
-    <rect x="20" y="20" width="680" height="580" rx="36" fill="#0A0A0B"/>
+    <rect x="20" y="20" width="680" height="580" rx="36" fill="url(#base)"/>
   </g>
-  <rect x="20" y="20" width="680" height="580" rx="36" fill="url(#bodyTint)"/>
-  <rect x="20" y="20" width="680" height="580" rx="36" fill="url(#dispR)"/>
-  <rect x="20" y="20" width="680" height="580" rx="36" fill="url(#dispC)"/>
-  <rect x="20" y="20" width="680" height="580" rx="36" fill="url(#dome)"/>
-  <rect x="20" y="20" width="680" height="580" rx="36" fill="url(#floor)"/>
-  <rect x="20.5" y="20.5" width="679" height="579" rx="35.5" stroke="url(#rim)"/>
-  <path d="M80 21H640" stroke="url(#specular)" stroke-width="1"/>
+  <g clip-path="url(#cardClip)">
+    <g filter="url(#bigblur)">
+      <circle cx="108.4" cy="217.20000000000002" r="319" fill="url(#orbP)">
+        <animate attributeName="cx" values="108.4;156;108.4" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="604.8" cy="368" r="348" fill="url(#orbC)">
+        <animate attributeName="cy" values="368;252;368" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="360" cy="588.4" r="290" fill="url(#orbK)"/>
+      <circle cx="468.8" cy="66.4" r="243.6" fill="url(#orbM)">
+        <animate attributeName="cx" values="468.8;414.4;468.8" dur="16s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <rect x="20" y="20" width="680" height="1.5" fill="#FFFFFF" opacity="0.1"/>
+  </g>
+  <rect x="20.5" y="20.5" width="679" height="579" rx="35.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.12"/>
 
   <g transform="translate(56 90)">
     <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="4">STARS · OPEN SOURCE</text>
@@ -83,34 +77,29 @@
     <g transform="translate(0 30)">
       <text x="0" y="11" fill="#E5E5EA" font-size="13" font-weight="500">PromptBar</text>
       <rect x="240" y="2" width="260" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="240.5" y="2.5" width="259" height="13" rx="6.5" stroke="#FFFFFF" stroke-opacity="0.08" fill="none"/>
-      <rect x="240" y="2" width="260" height="14" rx="7" fill="url(#barFill)"/>
-      <path d="M244 3.5H496" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
-      <text x="524" y="11" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">47</text>
+      <rect x="240" y="2" width="260" height="14" rx="7" fill="#a78bfa"/>
+      <path d="M244 3.5H496" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
+      <text x="524" y="11" fill="#a78bfa" font-size="13" font-weight="700" text-anchor="end">47</text>
       <text x="0" y="49" fill="#E5E5EA" font-size="13" font-weight="500">Magnetio</text>
       <rect x="240" y="40" width="260" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="240.5" y="40.5" width="259" height="13" rx="6.5" stroke="#FFFFFF" stroke-opacity="0.08" fill="none"/>
-      <rect x="240" y="40" width="116" height="14" rx="7" fill="url(#barFill)"/>
-      <path d="M244 41.5H352" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
-      <text x="524" y="49" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">21</text>
+      <rect x="240" y="40" width="116" height="14" rx="7" fill="#22d3ee"/>
+      <path d="M244 41.5H352" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
+      <text x="524" y="49" fill="#22d3ee" font-size="13" font-weight="700" text-anchor="end">21</text>
       <text x="0" y="87" fill="#E5E5EA" font-size="13" font-weight="500">Syrmos</text>
       <rect x="240" y="78" width="260" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="240.5" y="78.5" width="259" height="13" rx="6.5" stroke="#FFFFFF" stroke-opacity="0.08" fill="none"/>
-      <rect x="240" y="78" width="55" height="14" rx="7" fill="url(#barFill)"/>
-      <path d="M244 79.5H291" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
-      <text x="524" y="87" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">10</text>
+      <rect x="240" y="78" width="55" height="14" rx="7" fill="#f472b6"/>
+      <path d="M244 79.5H291" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
+      <text x="524" y="87" fill="#f472b6" font-size="13" font-weight="700" text-anchor="end">10</text>
       <text x="0" y="125" fill="#E5E5EA" font-size="13" font-weight="500">TranquiMind</text>
       <rect x="240" y="116" width="260" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="240.5" y="116.5" width="259" height="13" rx="6.5" stroke="#FFFFFF" stroke-opacity="0.08" fill="none"/>
-      <rect x="240" y="116" width="22" height="14" rx="7" fill="url(#barFill)"/>
-      <path d="M244 117.5H258" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
-      <text x="524" y="125" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">4</text>
+      <rect x="240" y="116" width="22" height="14" rx="7" fill="#34d399"/>
+      <path d="M244 117.5H258" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
+      <text x="524" y="125" fill="#34d399" font-size="13" font-weight="700" text-anchor="end">4</text>
       <text x="0" y="163" fill="#E5E5EA" font-size="13" font-weight="500">conservatio</text>
       <rect x="240" y="154" width="260" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="240.5" y="154.5" width="259" height="13" rx="6.5" stroke="#FFFFFF" stroke-opacity="0.08" fill="none"/>
-      <rect x="240" y="154" width="11" height="14" rx="7" fill="url(#barFill)"/>
-      <path d="M244 155.5H247" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
-      <text x="524" y="163" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">2</text>
+      <rect x="240" y="154" width="11" height="14" rx="7" fill="#a78bfa"/>
+      <path d="M244 155.5H247" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
+      <text x="524" y="163" fill="#a78bfa" font-size="13" font-weight="700" text-anchor="end">2</text>
       <text x="0" y="201" fill="#6E6E73" font-size="13">+ 5 more</text>
       <text x="524" y="201" fill="#8E8E93" font-size="13" font-weight="600" text-anchor="end">6</text>
     </g>

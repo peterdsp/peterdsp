@@ -39,88 +39,82 @@ const esc = (s) =>
 
 const truncate = (s, n) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
 
+const PALETTE = ["#a78bfa", "#22d3ee", "#f472b6", "#34d399", "#a78bfa", "#22d3ee"];
+
 function slabDefs(w, h) {
   return `
-    <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
-      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.04"/>
-      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16161a"/>
+      <stop offset="1" stop-color="#0a0a0b"/>
     </linearGradient>
-    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="0.7" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
-    </linearGradient>
-    <linearGradient id="bodyTint" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.04"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.01"/>
-    </linearGradient>
-    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.28"/>
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="specular" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.85"/>
-      <stop offset="0.65" stop-color="#FFFFFF" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="dispR" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) scale(${w * 0.32} ${h * 0.85})">
-      <stop stop-color="#FF7AA2" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#FF7AA2" stop-opacity="0"/>
+    <radialGradient id="orbP" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="dispC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(${w} ${h}) scale(${w * 0.32} ${h * 0.85})">
-      <stop stop-color="#7DD3FC" stop-opacity="0.06"/>
-      <stop offset="1" stop-color="#7DD3FC" stop-opacity="0"/>
+    <radialGradient id="orbC" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbK" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbM" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
       <stop stop-color="#FFFFFF"/>
       <stop offset="1" stop-color="#B8B8BD"/>
     </linearGradient>
-    <linearGradient id="barFill" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.95"/>
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.78"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.62"/>
-    </linearGradient>
     <linearGradient id="barTrack" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.03"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.09"/>
     </linearGradient>
+    <filter id="bigblur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="${Math.round(h * 0.16)}"/>
+    </filter>
     <filter id="drop" x="-10%" y="-20%" width="120%" height="160%" color-interpolation-filters="sRGB">
       <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
       <feOffset dy="12"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
       <feComposite in="SourceGraphic" operator="over"/>
     </filter>
   `;
 }
 
-function slabBody({ x, y, w, h, r = 36, specularInsetX = 64, specularInsetX2 }) {
-  const sx2 = specularInsetX2 ?? specularInsetX;
+function slabBody({ x, y, w, h, r = 36 }) {
   return `
+  <clipPath id="cardClip"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}"/></clipPath>
   <g filter="url(#drop)">
-    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="#0A0A0B"/>
+    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="url(#base)"/>
   </g>
-  <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="url(#bodyTint)"/>
-  <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="url(#dispR)"/>
-  <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="url(#dispC)"/>
-  <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="url(#dome)"/>
-  <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="url(#floor)"/>
-  <rect x="${x + 0.5}" y="${y + 0.5}" width="${w - 1}" height="${h - 1}" rx="${r - 0.5}" stroke="url(#rim)"/>
-  <path d="M${x + specularInsetX} ${y + 1}H${x + w - sx2}" stroke="url(#specular)" stroke-width="1"/>`;
+  <g clip-path="url(#cardClip)">
+    <g filter="url(#bigblur)">
+      <circle cx="${x + w * 0.13}" cy="${y + h * 0.34}" r="${h * 0.55}" fill="url(#orbP)">
+        <animate attributeName="cx" values="${x + w * 0.13};${x + w * 0.2};${x + w * 0.13}" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="${x + w * 0.86}" cy="${y + h * 0.6}" r="${h * 0.6}" fill="url(#orbC)">
+        <animate attributeName="cy" values="${y + h * 0.6};${y + h * 0.4};${y + h * 0.6}" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="${x + w * 0.5}" cy="${y + h * 0.98}" r="${h * 0.5}" fill="url(#orbK)"/>
+      <circle cx="${x + w * 0.66}" cy="${y + h * 0.08}" r="${h * 0.42}" fill="url(#orbM)">
+        <animate attributeName="cx" values="${x + w * 0.66};${x + w * 0.58};${x + w * 0.66}" dur="16s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <rect x="${x}" y="${y}" width="${w}" height="1.5" fill="#FFFFFF" opacity="0.1"/>
+  </g>
+  <rect x="${x + 0.5}" y="${y + 0.5}" width="${w - 1}" height="${h - 1}" rx="${r - 0.5}" fill="none" stroke="#FFFFFF" stroke-opacity="0.12"/>`;
 }
 
-function bar({ x, y, trackW, value, max, name, nameMaxChars, valueColor = "#FFFFFF" }) {
+function bar({ x, y, trackW, value, max, name, nameMaxChars, color = "#a78bfa" }) {
   const w = Math.max(8, Math.round((value / max) * trackW));
   const h = 14;
   return `      <text x="${x}" y="${y + 11}" fill="#E5E5EA" font-size="13" font-weight="500">${esc(truncate(name, nameMaxChars))}</text>
       <rect x="${x + 240}" y="${y + 2}" width="${trackW}" height="${h}" rx="${h / 2}" fill="url(#barTrack)"/>
-      <rect x="${x + 240 + 0.5}" y="${y + 2.5}" width="${trackW - 1}" height="${h - 1}" rx="${(h - 1) / 2}" stroke="#FFFFFF" stroke-opacity="0.08" fill="none"/>
-      <rect x="${x + 240}" y="${y + 2}" width="${w}" height="${h}" rx="${h / 2}" fill="url(#barFill)"/>
-      <path d="M${x + 240 + 4} ${y + 3.5}H${x + 240 + w - 4}" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="0.75"/>
-      <text x="${x + 240 + trackW + 24}" y="${y + 11}" fill="${valueColor}" font-size="13" font-weight="700" text-anchor="end">${value}</text>`;
+      <rect x="${x + 240}" y="${y + 2}" width="${w}" height="${h}" rx="${h / 2}" fill="${color}"/>
+      <path d="M${x + 240 + 4} ${y + 3.5}H${x + 240 + w - 4}" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
+      <text x="${x + 240 + trackW + 24}" y="${y + 11}" fill="${color}" font-size="13" font-weight="700" text-anchor="end">${value}</text>`;
 }
 
 function buildDesktop({ total, projects, top }) {
@@ -140,6 +134,7 @@ function buildDesktop({ total, projects, top }) {
         max,
         name: p.name,
         nameMaxChars: 26,
+        color: PALETTE[i % PALETTE.length],
       }),
     )
     .join("\n");
@@ -205,6 +200,7 @@ function buildMobile({ total, projects, top }) {
         max,
         name: p.name,
         nameMaxChars: 22,
+        color: PALETTE[i % PALETTE.length],
       }),
     )
     .join("\n");
