@@ -23,7 +23,7 @@
 
 <br />
 
-<img src="./assets/cat.svg" alt="A grey cat walking across the README, sharing thoughts" width="100%">
+<img src="./assets/cat.gif" alt="A cat walking across the README" width="240">
 
 ### Now
 
