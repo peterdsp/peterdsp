@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 152" width="387" height="152" role="img" aria-label="Lidhra">
+<defs><style>
+.card{fill:#ffffff;stroke:#d0d7de;stroke-width:1;}
+.title{fill:#0969da;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;}
+.desc{fill:#59636e;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;}
+.pill{fill:#0A0A0B;}
+.pilltext{fill:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;font-weight:500;}
+@media (prefers-color-scheme:dark){.card{fill:#0d1117;stroke:#30363d;}.title{fill:#4493f8;}.desc{fill:#9198a1;}.pill{fill:#21262d;}.pilltext{fill:#e6edf3;}}
+</style></defs>
+<rect class="card" x="1" y="1" width="385" height="150" rx="13"/>
+<text class="title" x="24" y="42" font-size="22" font-weight="600">Lidhra</text>
+<text class="desc" x="24" font-size="14.5">
+<tspan x="24" y="72">Fast, native download and transfer</tspan>
+<tspan x="24" y="92">manager for every platform.</tspan>
+</text>
+<rect class="pill" x="24" y="114" width="52" height="24" rx="6"/>
+<text class="pilltext" x="50" y="130" font-size="12" text-anchor="middle">Rust</text>
+<rect class="pill" x="84" y="114" width="57" height="24" rx="6"/>
+<text class="pilltext" x="113" y="130" font-size="12" text-anchor="middle">Tauri</text>
+<rect class="pill" x="149" y="114" width="43" height="24" rx="6"/>
+<text class="pilltext" x="171" y="130" font-size="12" text-anchor="middle">MIT</text>
+</svg>

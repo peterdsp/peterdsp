@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { writeFileSync, readFileSync } from "node:fs";
+import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 
@@ -40,6 +41,8 @@ const esc = (s) =>
 const truncate = (s, n) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
 
 const PALETTE = ["#a78bfa", "#22d3ee", "#f472b6", "#34d399", "#a78bfa", "#22d3ee"];
+const HIDDEN_PROJECTS = new Set(["conservatio"]);
+const FEATURED_PROJECT = "lidhra";
 
 function slabDefs(w, h) {
   return `
@@ -143,7 +146,6 @@ function buildDesktop({ total, projects, top }) {
   <desc id="desc">Glass slab summarizing ${total} cumulative GitHub stars across ${projects.length} projects.</desc>
   <defs>${slabDefs(w, h)}</defs>
 
-  <rect width="${w}" height="${h}" fill="#000000"/>
 ${slabBody({ x: 24, y: 20, w: w - 48, h: h - 40, r: 36 })}
 
   <g transform="translate(76 70)">
@@ -200,7 +202,6 @@ function buildMobile({ total, projects, top }) {
   <desc id="desc">Mobile glass slab summarizing ${total} cumulative GitHub stars across ${projects.length} projects.</desc>
   <defs>${slabDefs(w, h)}</defs>
 
-  <rect width="${w}" height="${h}" fill="#000000"/>
 ${slabBody({ x: 20, y: 20, w: w - 40, h: h - 40, r: 36 })}
 
   <g transform="translate(56 90)">
@@ -231,10 +232,32 @@ function writeIfChanged(path, content) {
   return true;
 }
 
+function renderPngIfChanged(svgPath, pngPath) {
+  const result = spawnSync("rsvg-convert", [svgPath], {
+    encoding: null,
+    maxBuffer: 20 * 1024 * 1024,
+  });
+  if (result.error) throw result.error;
+  if (result.status !== 0) {
+    throw new Error(`rsvg-convert failed: ${result.stderr.toString().trim()}`);
+  }
+
+  let prev;
+  try {
+    prev = readFileSync(pngPath);
+  } catch {}
+  if (prev?.equals(result.stdout)) return false;
+  writeFileSync(pngPath, result.stdout);
+  return true;
+}
+
 const projects = (await fetchRepos()).filter((p) => p.stars > 0);
 const total = projects.reduce((a, p) => a + p.stars, 0);
-const top = projects.slice(0, 6);
-const topMobile = projects.slice(0, 5);
+const visibleProjects = projects.filter((p) => !HIDDEN_PROJECTS.has(p.name));
+const featuredProject = visibleProjects.find((p) => p.name === FEATURED_PROJECT);
+const rankedProjects = visibleProjects.filter((p) => p.name !== FEATURED_PROJECT);
+const top = [...rankedProjects.slice(0, 5), ...(featuredProject ? [featuredProject] : [])];
+const topMobile = [...rankedProjects.slice(0, 4), ...(featuredProject ? [featuredProject] : [])];
 
 const changedA = writeIfChanged(
   resolve(ROOT, "assets/stars.svg"),
@@ -244,5 +267,15 @@ const changedB = writeIfChanged(
   resolve(ROOT, "assets/stars-mobile.svg"),
   buildMobile({ total, projects, top: topMobile }),
 );
+const changedC = renderPngIfChanged(
+  resolve(ROOT, "assets/stars.svg"),
+  resolve(ROOT, "assets/stars.png"),
+);
+const changedD = renderPngIfChanged(
+  resolve(ROOT, "assets/stars-mobile.svg"),
+  resolve(ROOT, "assets/stars-mobile.png"),
+);
 
-console.log(`total=${total} projects=${projects.length} changed=${changedA || changedB}`);
+console.log(
+  `total=${total} projects=${projects.length} changed=${changedA || changedB || changedC || changedD}`,
+);

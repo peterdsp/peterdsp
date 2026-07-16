@@ -30,7 +30,7 @@
 ### Now
 
 - **iOS Engineer at [Plum Fintech](https://withplum.com)** — user-facing fintech features in Swift, SwiftUI, UIKit, and TCA.
-- **Building in parallel** — [Syrmos](https://syrmos.peterdsp.dev), [Conservatio](https://conservatio.peterdsp.dev), [Kujto](https://kujto.peterdsp.dev), and smaller Apple-platform tools.
+- **Building in parallel** — [Syrmos](https://syrmos.peterdsp.dev), [Lidhra](https://lidhra.peterdsp.dev), [Kujto](https://kujto.peterdsp.dev), and smaller Apple-platform tools.
 - **Athens, Greece** — focused on reliability, clean architecture, and release polish.
 
 ### Selected work
@@ -38,7 +38,7 @@
 <table>
   <tr>
     <td width="33.33%"><a href="https://syrmos.peterdsp.dev"><img src="./assets/cards/syrmos.svg" alt="Syrmos — live Athens transit departures, offline-first" width="100%"></a></td>
-    <td width="33.33%"><a href="https://conservatio.peterdsp.dev"><img src="./assets/cards/conservatio.svg" alt="Conservatio — conservation docs across mobile and web" width="100%"></a></td>
+    <td width="33.33%"><a href="https://lidhra.peterdsp.dev"><img src="./assets/cards/lidhra.svg" alt="Lidhra, a fast native cross-platform download and transfer manager" width="100%"></a></td>
     <td width="33.33%"><a href="https://kujto.peterdsp.dev"><img src="./assets/cards/kujto.svg" alt="Kujto — bilingual memory framework for AI agents" width="100%"></a></td>
   </tr>
   <tr>
@@ -68,8 +68,8 @@
 
 <a href="https://github.com/peterdsp?tab=repositories">
 <picture>
-  <source media="(max-width: 640px)" srcset="./assets/stars-mobile.svg">
-  <img src="./assets/stars.svg" alt="Cumulative GitHub stars across open-source projects" width="100%">
+  <source media="(max-width: 640px)" srcset="./assets/stars-mobile.png">
+  <img src="./assets/stars.png" alt="Cumulative GitHub stars across open-source projects" width="100%">
 </picture>
 </a>
 

@@ -41,7 +41,6 @@
     </filter>
   </defs>
 
-  <rect width="720" height="620" fill="#000000"/>
 
   <clipPath id="cardClip"><rect x="20" y="20" width="680" height="580" rx="36"/></clipPath>
   <g filter="url(#drop)">
@@ -95,11 +94,11 @@
       <rect x="240" y="116" width="22" height="14" rx="7" fill="#34d399"/>
       <path d="M244 117.5H258" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
       <text x="524" y="125" fill="#34d399" font-size="13" font-weight="700" text-anchor="end">4</text>
-      <text x="0" y="163" fill="#E5E5EA" font-size="13" font-weight="500">conservatio</text>
+      <text x="0" y="163" fill="#E5E5EA" font-size="13" font-weight="500">lidhra</text>
       <rect x="240" y="154" width="260" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="240" y="154" width="11" height="14" rx="7" fill="#a78bfa"/>
-      <path d="M244 155.5H247" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
-      <text x="524" y="163" fill="#a78bfa" font-size="13" font-weight="700" text-anchor="end">2</text>
+      <rect x="240" y="154" width="8" height="14" rx="7" fill="#a78bfa"/>
+      <path d="M244 155.5H244" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
+      <text x="524" y="163" fill="#a78bfa" font-size="13" font-weight="700" text-anchor="end">1</text>
     </g>
   </g>
 </svg>
