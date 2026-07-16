@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { writeFileSync, readFileSync } from "node:fs";
+import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
@@ -41,8 +41,15 @@ const esc = (s) =>
 const truncate = (s, n) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
 
 const PALETTE = ["#a78bfa", "#22d3ee", "#f472b6", "#34d399", "#a78bfa", "#22d3ee"];
-const HIDDEN_PROJECTS = new Set(["conservatio"]);
-const FEATURED_PROJECT = "lidhra";
+const DISPLAY_PROJECTS = [
+  "PromptBar",
+  "Magnetio",
+  "Syrmos",
+  "TranquiMind",
+  "greece-prefectures-and-units",
+  "lidhra",
+];
+const SLICE_DIR = resolve(ROOT, "assets/stars-slices");
 
 function slabDefs(w, h) {
   return `
@@ -77,21 +84,13 @@ function slabDefs(w, h) {
     <filter id="bigblur" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="${Math.round(h * 0.16)}"/>
     </filter>
-    <filter id="drop" x="-10%" y="-20%" width="120%" height="160%" color-interpolation-filters="sRGB">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
-      <feOffset dy="12"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
-      <feComposite in="SourceGraphic" operator="over"/>
-    </filter>
   `;
 }
 
 function slabBody({ x, y, w, h, r = 36 }) {
   return `
   <clipPath id="cardClip"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}"/></clipPath>
-  <g filter="url(#drop)">
-    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="url(#base)"/>
-  </g>
+  <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="url(#base)"/>
   <g clip-path="url(#cardClip)">
     <g filter="url(#bigblur)">
       <circle cx="${x + w * 0.13}" cy="${y + h * 0.34}" r="${h * 0.55}" fill="url(#orbP)">
@@ -177,7 +176,7 @@ ${rows}
 
 function buildMobile({ total, projects, top }) {
   const max = Math.max(1, top[0]?.stars || 1);
-  const w = 720, h = 620;
+  const w = 720, h = 660;
   const trackW = 260;
   const rowH = 38;
   const valueRightX = 240 + trackW + 24;
@@ -251,13 +250,68 @@ function renderPngIfChanged(svgPath, pngPath) {
   return true;
 }
 
+function renderPngSliceIfChanged(svgPath, pngPath, { width, top, height }) {
+  const result = spawnSync(
+    "rsvg-convert",
+    [
+      `--top=${-top}`,
+      `--page-width=${width}`,
+      `--page-height=${height}`,
+      svgPath,
+    ],
+    {
+      encoding: null,
+      maxBuffer: 20 * 1024 * 1024,
+    },
+  );
+  if (result.error) throw result.error;
+  if (result.status !== 0) {
+    throw new Error(`rsvg-convert failed: ${result.stderr.toString().trim()}`);
+  }
+
+  let prev;
+  try {
+    prev = readFileSync(pngPath);
+  } catch {}
+  if (prev?.equals(result.stdout)) return false;
+  writeFileSync(pngPath, result.stdout);
+  return true;
+}
+
+function renderSlices(svgPath, prefix, { width, height, rowTop, rowHeight }) {
+  mkdirSync(SLICE_DIR, { recursive: true });
+  const slices = [
+    { name: "top", top: 0, height: rowTop },
+    ...DISPLAY_PROJECTS.map((name, index) => ({
+      name: name.toLowerCase(),
+      top: rowTop + index * rowHeight,
+      height: rowHeight,
+    })),
+    {
+      name: "bottom",
+      top: rowTop + DISPLAY_PROJECTS.length * rowHeight,
+      height: height - rowTop - DISPLAY_PROJECTS.length * rowHeight,
+    },
+  ];
+
+  const changes = slices.map(({ name, top, height: sliceHeight }) =>
+    renderPngSliceIfChanged(
+      svgPath,
+      resolve(SLICE_DIR, `${prefix}-${name}.png`),
+      { width, top, height: sliceHeight },
+    ),
+  );
+  return changes.some(Boolean);
+}
+
 const projects = (await fetchRepos()).filter((p) => p.stars > 0);
 const total = projects.reduce((a, p) => a + p.stars, 0);
-const visibleProjects = projects.filter((p) => !HIDDEN_PROJECTS.has(p.name));
-const featuredProject = visibleProjects.find((p) => p.name === FEATURED_PROJECT);
-const rankedProjects = visibleProjects.filter((p) => p.name !== FEATURED_PROJECT);
-const top = [...rankedProjects.slice(0, 5), ...(featuredProject ? [featuredProject] : [])];
-const topMobile = [...rankedProjects.slice(0, 4), ...(featuredProject ? [featuredProject] : [])];
+const projectsByName = new Map(projects.map((project) => [project.name, project]));
+const top = DISPLAY_PROJECTS.map((name) => {
+  const project = projectsByName.get(name);
+  if (!project) throw new Error(`Missing featured project: ${name}`);
+  return project;
+});
 
 const changedA = writeIfChanged(
   resolve(ROOT, "assets/stars.svg"),
@@ -265,7 +319,7 @@ const changedA = writeIfChanged(
 );
 const changedB = writeIfChanged(
   resolve(ROOT, "assets/stars-mobile.svg"),
-  buildMobile({ total, projects, top: topMobile }),
+  buildMobile({ total, projects, top }),
 );
 const changedC = renderPngIfChanged(
   resolve(ROOT, "assets/stars.svg"),
@@ -275,7 +329,19 @@ const changedD = renderPngIfChanged(
   resolve(ROOT, "assets/stars-mobile.svg"),
   resolve(ROOT, "assets/stars-mobile.png"),
 );
+const changedE = renderSlices(resolve(ROOT, "assets/stars.svg"), "desktop", {
+  width: 1200,
+  height: 320,
+  rowTop: 102,
+  rowHeight: 26,
+});
+const changedF = renderSlices(resolve(ROOT, "assets/stars-mobile.svg"), "mobile", {
+  width: 720,
+  height: 660,
+  rowTop: 382,
+  rowHeight: 38,
+});
 
 console.log(
-  `total=${total} projects=${projects.length} changed=${changedA || changedB || changedC || changedD}`,
+  `total=${total} projects=${projects.length} changed=${changedA || changedB || changedC || changedD || changedE || changedF}`,
 );

@@ -1,9 +1,9 @@
 <div align="center">
 
-<a href="https://peterdsp.dev">
+<a href="https://peterdsp.dev" aria-label="Open peterdsp.dev" title="Open peterdsp.dev">
 <picture>
   <source media="(max-width: 640px)" srcset="./assets/hero-mobile.svg">
-  <img src="./assets/hero.svg" alt="Petros Dhespollari — iOS engineer at Plum Fintech" width="100%">
+  <img src="./assets/hero.svg" alt="Petros Dhespollari — iOS engineer at Plum Fintech" title="Open peterdsp.dev" width="100%">
 </picture>
 </a>
 
@@ -35,16 +35,16 @@
 
 ### Selected work
 
-<table>
+<table cellpadding="0" cellspacing="0">
   <tr>
-    <td width="33.33%"><a href="https://syrmos.peterdsp.dev"><img src="./assets/cards/syrmos.svg" alt="Syrmos — live Athens transit departures, offline-first" width="100%"></a></td>
-    <td width="33.33%"><a href="https://lidhra.peterdsp.dev"><img src="./assets/cards/lidhra.svg" alt="Lidhra, a fast native cross-platform download and transfer manager" width="100%"></a></td>
-    <td width="33.33%"><a href="https://kujto.peterdsp.dev"><img src="./assets/cards/kujto.svg" alt="Kujto — bilingual memory framework for AI agents" width="100%"></a></td>
+    <td width="33.33%"><a href="https://syrmos.peterdsp.dev"><img src="./assets/cards/syrmos.svg" alt="Open the Syrmos website" title="Open syrmos.peterdsp.dev" width="100%" align="top"></a></td>
+    <td width="33.33%"><a href="https://lidhra.peterdsp.dev"><img src="./assets/cards/lidhra.svg" alt="Open the Lidhra website" title="Open lidhra.peterdsp.dev" width="100%" align="top"></a></td>
+    <td width="33.33%"><a href="https://kujto.peterdsp.dev"><img src="./assets/cards/kujto.svg" alt="Open the Kujto website" title="Open kujto.peterdsp.dev" width="100%" align="top"></a></td>
   </tr>
   <tr>
-    <td width="33.33%"><a href="https://github.com/peterdsp/PromptBar"><img src="./assets/cards/promptbar.svg" alt="PromptBar — macOS menu-bar prompt manager" width="100%"></a></td>
-    <td width="33.33%"><a href="https://klipa.peterdsp.dev"><img src="./assets/cards/klipa.svg" alt="Klipa — menu-bar clipboard manager, pure Rust, cross-platform" width="100%"></a></td>
-    <td width="33.33%"><a href="https://github.com/peterdsp/glint"><img src="./assets/cards/glint.svg" alt="Glint — a glint of Git in your menu bar, Tauri + Rust" width="100%"></a></td>
+    <td width="33.33%"><a href="https://promptbar.peterdsp.dev"><img src="./assets/cards/promptbar.svg" alt="Open the PromptBar website" title="Open promptbar.peterdsp.dev" width="100%" align="top"></a></td>
+    <td width="33.33%"><a href="https://klipa.peterdsp.dev"><img src="./assets/cards/klipa.svg" alt="Open the Klipa website" title="Open klipa.peterdsp.dev" width="100%" align="top"></a></td>
+    <td width="33.33%"><a href="https://glint.peterdsp.dev"><img src="./assets/cards/glint.svg" alt="Open the Glint website" title="Open glint.peterdsp.dev" width="100%" align="top"></a></td>
   </tr>
 </table>
 
@@ -66,12 +66,7 @@
 
 <div align="center">
 
-<a href="https://github.com/peterdsp?tab=repositories">
-<picture>
-  <source media="(max-width: 640px)" srcset="./assets/stars-mobile.png">
-  <img src="./assets/stars.png" alt="Cumulative GitHub stars across open-source projects" width="100%">
-</picture>
-</a>
+<div align="center"><a href="https://github.com/peterdsp?tab=repositories"><picture><source media="(max-width: 640px)" srcset="./assets/stars-slices/mobile-top.png"><img src="./assets/stars-slices/desktop-top.png" alt="Cumulative GitHub stars across open-source projects" width="100%" align="top"></picture></a><a href="https://github.com/peterdsp/PromptBar"><picture><source media="(max-width: 640px)" srcset="./assets/stars-slices/mobile-promptbar.png"><img src="./assets/stars-slices/desktop-promptbar.png" alt="Open the PromptBar repository" width="100%" align="top"></picture></a><a href="https://github.com/peterdsp/Magnetio"><picture><source media="(max-width: 640px)" srcset="./assets/stars-slices/mobile-magnetio.png"><img src="./assets/stars-slices/desktop-magnetio.png" alt="Open the Magnetio repository" width="100%" align="top"></picture></a><a href="https://github.com/peterdsp/Syrmos"><picture><source media="(max-width: 640px)" srcset="./assets/stars-slices/mobile-syrmos.png"><img src="./assets/stars-slices/desktop-syrmos.png" alt="Open the Syrmos repository" width="100%" align="top"></picture></a><a href="https://github.com/peterdsp/TranquiMind"><picture><source media="(max-width: 640px)" srcset="./assets/stars-slices/mobile-tranquimind.png"><img src="./assets/stars-slices/desktop-tranquimind.png" alt="Open the TranquiMind repository" width="100%" align="top"></picture></a><a href="https://github.com/peterdsp/greece-prefectures-and-units"><picture><source media="(max-width: 640px)" srcset="./assets/stars-slices/mobile-greece-prefectures-and-units.png"><img src="./assets/stars-slices/desktop-greece-prefectures-and-units.png" alt="Open the greece-prefectures-and-units repository" width="100%" align="top"></picture></a><a href="https://github.com/peterdsp/lidhra"><picture><source media="(max-width: 640px)" srcset="./assets/stars-slices/mobile-lidhra.png"><img src="./assets/stars-slices/desktop-lidhra.png" alt="Open the Lidhra repository" width="100%" align="top"></picture></a><a href="https://github.com/peterdsp?tab=repositories"><picture><source media="(max-width: 640px)" srcset="./assets/stars-slices/mobile-bottom.png"><img src="./assets/stars-slices/desktop-bottom.png" alt="" width="100%" align="top"></picture></a></div>
 
 <br />
 <br />

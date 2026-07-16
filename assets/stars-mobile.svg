@@ -1,4 +1,4 @@
-<svg width="720" height="620" viewBox="0 0 720 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="720" height="660" viewBox="0 0 720 660" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across peterdsp's open-source projects</title>
   <desc id="desc">Mobile glass slab summarizing 96 cumulative GitHub stars across 14 projects.</desc>
   <defs>
@@ -31,37 +31,29 @@
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.09"/>
     </linearGradient>
     <filter id="bigblur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="99"/>
-    </filter>
-    <filter id="drop" x="-10%" y="-20%" width="120%" height="160%" color-interpolation-filters="sRGB">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
-      <feOffset dy="12"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
-      <feComposite in="SourceGraphic" operator="over"/>
+      <feGaussianBlur stdDeviation="106"/>
     </filter>
   </defs>
 
 
-  <clipPath id="cardClip"><rect x="20" y="20" width="680" height="580" rx="36"/></clipPath>
-  <g filter="url(#drop)">
-    <rect x="20" y="20" width="680" height="580" rx="36" fill="url(#base)"/>
-  </g>
+  <clipPath id="cardClip"><rect x="20" y="20" width="680" height="620" rx="36"/></clipPath>
+  <rect x="20" y="20" width="680" height="620" rx="36" fill="url(#base)"/>
   <g clip-path="url(#cardClip)">
     <g filter="url(#bigblur)">
-      <circle cx="108.4" cy="217.20000000000002" r="319" fill="url(#orbP)">
+      <circle cx="108.4" cy="230.8" r="341" fill="url(#orbP)">
         <animate attributeName="cx" values="108.4;156;108.4" dur="14s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="604.8" cy="368" r="348" fill="url(#orbC)">
-        <animate attributeName="cy" values="368;252;368" dur="12s" repeatCount="indefinite"/>
+      <circle cx="604.8" cy="392" r="372" fill="url(#orbC)">
+        <animate attributeName="cy" values="392;268;392" dur="12s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="360" cy="588.4" r="290" fill="url(#orbK)"/>
-      <circle cx="468.8" cy="66.4" r="243.6" fill="url(#orbM)">
+      <circle cx="360" cy="627.6" r="310" fill="url(#orbK)"/>
+      <circle cx="468.8" cy="69.6" r="260.4" fill="url(#orbM)">
         <animate attributeName="cx" values="468.8;414.4;468.8" dur="16s" repeatCount="indefinite"/>
       </circle>
     </g>
     <rect x="20" y="20" width="680" height="1.5" fill="#FFFFFF" opacity="0.1"/>
   </g>
-  <rect x="20.5" y="20.5" width="679" height="579" rx="35.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <rect x="20.5" y="20.5" width="679" height="619" rx="35.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.12"/>
 
   <g transform="translate(56 90)">
     <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="4">STARS · OPEN SOURCE</text>
@@ -94,11 +86,16 @@
       <rect x="240" y="116" width="22" height="14" rx="7" fill="#34d399"/>
       <path d="M244 117.5H258" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
       <text x="524" y="125" fill="#34d399" font-size="13" font-weight="700" text-anchor="end">4</text>
-      <text x="0" y="163" fill="#E5E5EA" font-size="13" font-weight="500">lidhra</text>
+      <text x="0" y="163" fill="#E5E5EA" font-size="13" font-weight="500">greece-prefectures-an…</text>
       <rect x="240" y="154" width="260" height="14" rx="7" fill="url(#barTrack)"/>
-      <rect x="240" y="154" width="8" height="14" rx="7" fill="#a78bfa"/>
-      <path d="M244 155.5H244" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
-      <text x="524" y="163" fill="#a78bfa" font-size="13" font-weight="700" text-anchor="end">1</text>
+      <rect x="240" y="154" width="11" height="14" rx="7" fill="#a78bfa"/>
+      <path d="M244 155.5H247" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
+      <text x="524" y="163" fill="#a78bfa" font-size="13" font-weight="700" text-anchor="end">2</text>
+      <text x="0" y="201" fill="#E5E5EA" font-size="13" font-weight="500">lidhra</text>
+      <rect x="240" y="192" width="260" height="14" rx="7" fill="url(#barTrack)"/>
+      <rect x="240" y="192" width="8" height="14" rx="7" fill="#22d3ee"/>
+      <path d="M244 193.5H244" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.75"/>
+      <text x="524" y="201" fill="#22d3ee" font-size="13" font-weight="700" text-anchor="end">1</text>
     </g>
   </g>
 </svg>
