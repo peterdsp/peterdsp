@@ -1,6 +1,6 @@
 <svg width="720" height="660" viewBox="0 0 720 660" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across peterdsp's open-source projects</title>
-  <desc id="desc">Mobile glass slab summarizing 111 cumulative GitHub stars across 14 projects.</desc>
+  <desc id="desc">Mobile glass slab summarizing 113 cumulative GitHub stars across 15 projects.</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#16161a"/>
@@ -57,9 +57,9 @@
 
   <g transform="translate(56 90)">
     <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="13" letter-spacing="4">STARS · OPEN SOURCE</text>
-    <text x="0" y="150" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="184" font-weight="700" letter-spacing="-6">111</text>
+    <text x="0" y="150" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="184" font-weight="700" letter-spacing="-6">113</text>
     <text x="0" y="188" fill="#C7C7CC" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="20" font-weight="500">cumulative GitHub stars</text>
-    <text x="0" y="216" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15">across 14 open-source projects</text>
+    <text x="0" y="216" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15">across 15 open-source projects</text>
   </g>
 
   <g transform="translate(56 360)" font-family="SFMono-Regular, ui-monospace, Consolas, monospace">
