@@ -74,7 +74,7 @@
     <rect x="132" y="414" width="332" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.08"/>
     <rect x="132" y="414" width="137" height="4" rx="2" fill="#a78bfa"/>
     <text x="636" y="392" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="36" font-weight="700" letter-spacing="-1" text-anchor="end">52</text>
-    <path d="M582.00 371.00L584.38 376.72L590.56 377.22L585.85 381.25L587.29 387.28L582.00 384.05L576.71 387.28L578.15 381.25L573.44 377.22L579.62 376.72Z" fill="#a78bfa"/>
+    <path d="M570.00 371.00L572.38 376.72L578.56 377.22L573.85 381.25L575.29 387.28L570.00 384.05L564.71 387.28L566.15 381.25L561.44 377.22L567.62 376.72Z" fill="#a78bfa"/>
     <text x="636" y="420" fill="#6E6E73" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="11" letter-spacing="1.5" text-anchor="end">41% OF STARS</text>
   </g>
 
@@ -90,7 +90,7 @@
     <rect x="132" y="526" width="332" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.08"/>
     <rect x="132" y="526" width="134" height="4" rx="2" fill="#22d3ee"/>
     <text x="636" y="504" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="36" font-weight="700" letter-spacing="-1" text-anchor="end">51</text>
-    <path d="M582.00 483.00L584.38 488.72L590.56 489.22L585.85 493.25L587.29 499.28L582.00 496.05L576.71 499.28L578.15 493.25L573.44 489.22L579.62 488.72Z" fill="#22d3ee"/>
+    <path d="M570.00 483.00L572.38 488.72L578.56 489.22L573.85 493.25L575.29 499.28L570.00 496.05L564.71 499.28L566.15 493.25L561.44 489.22L567.62 488.72Z" fill="#22d3ee"/>
     <text x="636" y="532" fill="#6E6E73" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="11" letter-spacing="1.5" text-anchor="end">40% OF STARS</text>
   </g>
 </svg>
