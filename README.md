@@ -3,7 +3,7 @@
 <a href="https://peterdsp.dev" aria-label="Open peterdsp.dev" title="Open peterdsp.dev">
 <picture>
   <source media="(max-width: 640px)" srcset="./assets/hero-mobile.svg">
-  <img src="./assets/hero.svg" alt="Petros Dhespollari — iOS engineer at Plum Fintech" title="Open peterdsp.dev" width="100%">
+  <img src="./assets/hero.svg" alt="Petros Dhespollari, iOS engineer at Plum Fintech" title="Open peterdsp.dev" width="100%">
 </picture>
 </a>
 
@@ -17,9 +17,9 @@
 <br />
 <br />
 
-<img src="https://img.shields.io/github/stars/peterdsp?affiliations=OWNER&style=for-the-badge&color=a78bfa&labelColor=0A0A0B&logo=github&logoColor=FFFFFF&label=STARS" alt="Total stars across all repositories">
-<img src="https://img.shields.io/github/followers/peterdsp?style=for-the-badge&color=22d3ee&labelColor=0A0A0B&logo=github&logoColor=FFFFFF&label=FOLLOWERS" alt="GitHub followers">
-<img src="https://komarev.com/ghpvc/?username=peterdsp&style=for-the-badge&color=f472b6&label=VIEWS" alt="Profile views">
+<a href="https://github.com/peterdsp?tab=repositories"><img src="./assets/stats.svg" alt="GitHub stars, followers and public repositories" height="48"></a>
+<br />
+<img src="https://komarev.com/ghpvc/?username=peterdsp&style=flat-square&color=0A0A0B&label=PROFILE+VIEWS" alt="Profile views">
 
 </div>
 
@@ -55,7 +55,7 @@
 
 <div align="center">
 
-<div align="center"><a href="https://github.com/peterdsp?tab=repositories"><img src="./assets/stars-slices/desktop-top.png" alt="Cumulative GitHub stars across open-source projects" width="100%" align="left"></a><a href="https://github.com/peterdsp/PromptBar"><img src="./assets/stars-slices/desktop-promptbar.png" alt="Open the PromptBar repository" width="100%" align="left"></a><a href="https://github.com/peterdsp/Magnetio"><img src="./assets/stars-slices/desktop-magnetio.png" alt="Open the Magnetio repository" width="100%" align="left"></a><a href="https://github.com/peterdsp/Syrmos"><img src="./assets/stars-slices/desktop-syrmos.png" alt="Open the Syrmos repository" width="100%" align="left"></a><a href="https://github.com/peterdsp/TranquiMind"><img src="./assets/stars-slices/desktop-tranquimind.png" alt="Open the TranquiMind repository" width="100%" align="left"></a><a href="https://github.com/peterdsp/greece-prefectures-and-units"><img src="./assets/stars-slices/desktop-greece-prefectures-and-units.png" alt="Open the greece-prefectures-and-units repository" width="100%" align="left"></a><a href="https://github.com/peterdsp/imjaDNS"><img src="./assets/stars-slices/desktop-imjadns.png" alt="Open the imjaDNS repository" width="100%" align="left"></a><a href="https://github.com/peterdsp?tab=repositories"><img src="./assets/stars-slices/desktop-bottom.png" alt="" width="100%" align="left"></a><br clear="all"></div>
+<div align="center"><a href="https://github.com/peterdsp?tab=repositories"><img src="./assets/stars-slices/desktop-top.png" alt="Cumulative GitHub stars across open-source projects" width="100%" align="left"></a><a href="https://github.com/peterdsp/PromptBar"><img src="./assets/stars-slices/desktop-row-1.png" alt="Open the PromptBar repository" width="100%" align="left"></a><a href="https://github.com/peterdsp/Magnetio"><img src="./assets/stars-slices/desktop-row-2.png" alt="Open the Magnetio repository" width="100%" align="left"></a><a href="https://github.com/peterdsp?tab=repositories"><img src="./assets/stars-slices/desktop-bottom.png" alt="" width="100%" align="left"></a><br clear="all"></div>
 
 <br />
 <br />

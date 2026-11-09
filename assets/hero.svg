@@ -29,7 +29,29 @@
       <feGaussianBlur stdDeviation="46"/>
     </filter>
     <clipPath id="card-clip"><rect x="40" y="40" width="1120" height="260" rx="36" ry="36"/></clipPath>
-    <clipPath id="chip-clip"><rect x="900" y="80" width="220" height="180" rx="26" ry="26"/></clipPath>
+    <linearGradient id="icon-purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="icon-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="icon-front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2a31"/>
+      <stop offset="1" stop-color="#121215"/>
+    </linearGradient>
+    <linearGradient id="icon-gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mono-ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="icon-shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
   </defs>
 
   <!-- Solid dark card: keeps everything readable on GitHub light AND dark themes -->
@@ -60,39 +82,55 @@
   <rect x="40" y="40" width="1120" height="260" rx="36" ry="36" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.2"/>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
-    <text x="84" y="138" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-1">Petros Dhespollari</text>
-    <text x="84" y="180" font-size="20" font-weight="500" fill="#e6e6ea">iOS Engineer &#183; Plum Fintech &#183; Athens, Greece</text>
-    <text x="84" y="232" font-size="12" font-weight="700" fill="#8b8b93" letter-spacing="3">SWIFTUI &#8226; TCA &#8226; KOTLIN MULTIPLATFORM &#8226; RELEASE QUALITY</text>
+    <text x="84" y="104" font-size="12" font-weight="700" fill="#8b8b93" letter-spacing="3.5">iOS ENGINEER &#183; ATHENS, GREECE</text>
+    <text x="84" y="160" font-size="50" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Petros Dhespollari</text>
+    <text x="84" y="198" font-size="19" font-weight="500" fill="#c9c9d1">Building fintech at <tspan fill="#ffffff" font-weight="600">Plum</tspan>. Shipping Apple-platform tools on the side.</text>
 
-    <g transform="translate(84,256)">
-      <rect width="124" height="28" rx="14" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16"/>
-      <circle cx="16" cy="14" r="4" fill="#34d399">
-        <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
-      </circle>
-      <text x="28" y="18" font-size="12" font-weight="600" fill="#e6e6ea">shipping daily</text>
-    </g>
-    <g transform="translate(218,256)">
-      <rect width="120" height="28" rx="14" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16"/>
-      <text x="60" y="18" text-anchor="middle" font-size="12" font-weight="600" fill="#e6e6ea">open to talks</text>
+    <g font-size="12" font-weight="600" fill="#e6e6ea">
+      <g transform="translate(84,232)">
+        <rect width="78" height="30" rx="15" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+        <text x="39" y="19.5" text-anchor="middle">SwiftUI</text>
+      </g>
+      <g transform="translate(170,232)">
+        <rect width="54" height="30" rx="15" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+        <text x="27" y="19.5" text-anchor="middle">TCA</text>
+      </g>
+      <g transform="translate(232,232)">
+        <rect width="150" height="30" rx="15" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+        <text x="75" y="19.5" text-anchor="middle">Kotlin Multiplatform</text>
+      </g>
+      <g transform="translate(390,232)">
+        <rect width="124" height="30" rx="15" fill="#34d399" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.35"/>
+        <circle cx="17" cy="15" r="4" fill="#34d399">
+          <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <text x="29" y="19.5" fill="#a7f3d0">open to talks</text>
+      </g>
     </g>
   </g>
 
-  <!-- Now-building chip -->
-  <g clip-path="url(#chip-clip)">
-    <rect x="900" y="80" width="220" height="180" rx="26" ry="26" fill="#ffffff" fill-opacity="0.05"/>
-    <rect x="900" y="80" width="220" height="1.5" fill="#ffffff" opacity="0.14"/>
-  </g>
-  <rect x="900" y="80" width="220" height="180" rx="26" ry="26" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1"/>
-  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" text-anchor="middle">
-    <text x="1010" y="118" font-size="11" fill="#8b8b93" letter-spacing="3" font-weight="700">NOW BUILDING</text>
-    <text x="1010" y="160" font-size="30" font-weight="800" fill="#ffffff">Syrmos</text>
-    <text x="1010" y="186" font-size="13" fill="#c9c9d1">Lidhra &#183; Kujto</text>
-    <text x="1010" y="218" font-size="11" fill="#8b8b93" letter-spacing="2" font-weight="700">iOS &#183; ANDROID &#183; WEB</text>
-    <g transform="translate(990,232)">
-      <circle cx="0" cy="0" r="3" fill="#a78bfa"/>
-      <circle cx="10" cy="0" r="3" fill="#22d3ee"/>
-      <circle cx="20" cy="0" r="3" fill="#f472b6"/>
-      <circle cx="30" cy="0" r="3" fill="#34d399"/>
+  <!-- App icon fan -->
+  <g transform="translate(966,172)">
+    <animateTransform attributeName="transform" type="translate" values="966,172;966,164;966,172" dur="6s" repeatCount="indefinite"/>
+    <g transform="rotate(-14) translate(-110,-40)" filter="url(#icon-shadow)">
+      <rect x="-56" y="-56" width="112" height="112" rx="27" fill="url(#icon-purple)"/>
+      <rect x="-56" y="-56" width="112" height="112" rx="27" fill="url(#icon-gloss)"/>
+    </g>
+    <g transform="rotate(12) translate(104,-30)" filter="url(#icon-shadow)">
+      <rect x="-56" y="-56" width="112" height="112" rx="27" fill="url(#icon-cyan)"/>
+      <rect x="-56" y="-56" width="112" height="112" rx="27" fill="url(#icon-gloss)"/>
+    </g>
+    <g filter="url(#icon-shadow)">
+      <rect x="-68" y="-68" width="136" height="136" rx="32" fill="url(#icon-front)"/>
+      <rect x="-67.5" y="-67.5" width="135" height="135" rx="31.5" fill="none" stroke="#ffffff" stroke-opacity="0.18"/>
+      <rect x="-68" y="-68" width="136" height="136" rx="32" fill="url(#icon-gloss)" opacity="0.5"/>
+      <text x="0" y="17" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="52" font-weight="800" letter-spacing="-2" fill="url(#mono-ink)">PD</text>
+      <g transform="translate(-21,44)">
+        <circle cx="0" cy="0" r="3" fill="#a78bfa"/>
+        <circle cx="14" cy="0" r="3" fill="#22d3ee"/>
+        <circle cx="28" cy="0" r="3" fill="#f472b6"/>
+        <circle cx="42" cy="0" r="3" fill="#34d399"/>
+      </g>
     </g>
   </g>
 </svg>

@@ -49,29 +49,34 @@
   <rect x="32" y="32" width="656" height="456" rx="36" ry="36" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.2"/>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif" text-anchor="middle">
-    <text x="360" y="140" font-size="11" fill="#8b8b93" letter-spacing="4" font-weight="700">iOS ENGINEER</text>
-    <text x="360" y="200" font-size="38" font-weight="800" fill="#ffffff" letter-spacing="-1">Petros Dhespollari</text>
-    <text x="360" y="240" font-size="17" font-weight="500" fill="#e6e6ea">Plum Fintech &#183; Athens, Greece</text>
+    <text x="360" y="130" font-size="12" fill="#8b8b93" letter-spacing="3.5" font-weight="700">iOS ENGINEER &#183; ATHENS, GREECE</text>
+    <text x="360" y="196" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Petros Dhespollari</text>
+    <text x="360" y="238" font-size="18" font-weight="500" fill="#c9c9d1">Building fintech at <tspan fill="#ffffff" font-weight="600">Plum</tspan>.</text>
+    <text x="360" y="264" font-size="18" font-weight="500" fill="#c9c9d1">Shipping Apple-platform tools on the side.</text>
 
-    <g transform="translate(140,300)">
-      <rect width="440" height="68" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.14"/>
-      <text x="220" y="30" font-size="11" fill="#8b8b93" letter-spacing="3" font-weight="700">STACK</text>
-      <text x="220" y="52" font-size="13" font-weight="600" fill="#e6e6ea">SwiftUI &#183; TCA &#183; Kotlin Multiplatform</text>
+    <g font-size="14" font-weight="600" fill="#e6e6ea">
+      <g transform="translate(150,310)">
+        <rect width="90" height="36" rx="18" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+        <text x="45" y="23">SwiftUI</text>
+      </g>
+      <g transform="translate(250,310)">
+        <rect width="64" height="36" rx="18" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+        <text x="32" y="23">TCA</text>
+      </g>
+      <g transform="translate(324,310)">
+        <rect width="176" height="36" rx="18" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+        <text x="88" y="23">Kotlin Multiplatform</text>
+      </g>
+      <g transform="translate(286,364)">
+        <rect width="148" height="36" rx="18" fill="#34d399" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.35"/>
+        <circle cx="22" cy="18" r="4" fill="#34d399">
+          <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <text x="84" y="23" fill="#a7f3d0">open to talks</text>
+      </g>
     </g>
 
-    <g transform="translate(200,398)">
-      <rect width="140" height="34" rx="17" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16"/>
-      <circle cx="20" cy="17" r="4" fill="#34d399">
-        <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
-      </circle>
-      <text x="80" y="22" font-size="13" font-weight="600" fill="#e6e6ea">shipping daily</text>
-    </g>
-    <g transform="translate(360,398)">
-      <rect width="140" height="34" rx="17" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16"/>
-      <text x="70" y="22" text-anchor="middle" font-size="13" font-weight="600" fill="#e6e6ea">open to talks</text>
-    </g>
-
-    <g transform="translate(340,462)">
+    <g transform="translate(339,446)">
       <circle cx="0" cy="0" r="4" fill="#a78bfa"/>
       <circle cx="14" cy="0" r="4" fill="#22d3ee"/>
       <circle cx="28" cy="0" r="4" fill="#f472b6"/>
