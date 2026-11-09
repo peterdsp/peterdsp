@@ -47,7 +47,7 @@ const DISPLAY_PROJECTS = [
   "Syrmos",
   "TranquiMind",
   "greece-prefectures-and-units",
-  "lidhra",
+  "imjaDNS",
 ];
 const SLICE_DIR = resolve(ROOT, "assets/stars-slices");
 
