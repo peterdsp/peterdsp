@@ -143,7 +143,7 @@ function projectTile({ x, y, w, h, rank, project, total, color, descMaxChars }) 
     <rect x="${trackX}" y="${y + h - 22}" width="${trackW}" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.08"/>
     <rect x="${trackX}" y="${y + h - 22}" width="${fillW}" height="4" rx="2" fill="${color}"/>
     <text x="${countX}" y="${y + 52}" fill="#FFFFFF" font-family="${SANS}" font-size="36" font-weight="700" letter-spacing="-1" text-anchor="end">${project.stars}</text>
-    <path d="${starPath(countX - 12 - String(project.stars).length * 21, y + 40, 9)}" fill="${color}"/>
+    <path d="${starPath(countX - 16 - String(project.stars).length * 25, y + 40, 9)}" fill="${color}"/>
     <text x="${countX}" y="${y + h - 16}" fill="#6E6E73" font-family="${MONO}" font-size="11" letter-spacing="1.5" text-anchor="end">${pct}% OF STARS</text>
   </g>`;
 }
