@@ -55,7 +55,7 @@
 
 <div align="center">
 
-<div align="center"><a href="https://github.com/peterdsp?tab=repositories"><img src="./assets/stars-slices/desktop-top.png" alt="Cumulative GitHub stars across open-source projects" width="100%" align="left"></a><a href="https://github.com/peterdsp/PromptBar"><img src="./assets/stars-slices/desktop-row-1.png" alt="Open the PromptBar repository" width="100%" align="left"></a><a href="https://github.com/peterdsp/Magnetio"><img src="./assets/stars-slices/desktop-row-2.png" alt="Open the Magnetio repository" width="100%" align="left"></a><a href="https://github.com/peterdsp?tab=repositories"><img src="./assets/stars-slices/desktop-bottom.png" alt="" width="100%" align="left"></a><br clear="all"></div>
+<div align="center"><a href="https://github.com/peterdsp?tab=repositories"><img src="./assets/stars-slices/desktop-top.png" alt="Cumulative GitHub stars across open-source projects" width="100%" align="left"></a><a href="https://github.com/peterdsp/Magnetio"><img src="./assets/stars-slices/desktop-row-1.png" alt="Open the Magnetio repository" width="100%" align="left"></a><a href="https://github.com/peterdsp/PromptBar"><img src="./assets/stars-slices/desktop-row-2.png" alt="Open the PromptBar repository" width="100%" align="left"></a><a href="https://github.com/peterdsp?tab=repositories"><img src="./assets/stars-slices/desktop-bottom.png" alt="" width="100%" align="left"></a><br clear="all"></div>
 
 <br />
 <br />
