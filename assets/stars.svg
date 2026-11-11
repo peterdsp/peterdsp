@@ -1,6 +1,6 @@
 <svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Total GitHub stars across peterdsp's open-source projects</title>
-  <desc id="desc">Glass slab summarizing 124 cumulative GitHub stars across 13 projects, with the two most starred projects.</desc>
+  <desc id="desc">Glass slab summarizing 125 cumulative GitHub stars across 13 projects, with the two most starred projects.</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#16161a"/>
@@ -57,7 +57,7 @@
 
   <g transform="translate(76 70)">
     <text x="0" y="0" fill="#8A8A8F" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="11" letter-spacing="4">STARS · OPEN SOURCE</text>
-    <text x="0" y="132" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="156" font-weight="700" letter-spacing="-5">124</text>
+    <text x="0" y="132" fill="url(#ink)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="156" font-weight="700" letter-spacing="-5">125</text>
     <text x="0" y="164" fill="#C7C7CC" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="15" font-weight="500">cumulative GitHub stars</text>
     <text x="0" y="186" fill="#6E6E73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="13">across 13 open-source projects</text>
 
@@ -83,8 +83,8 @@
     <text x="568" y="104" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.4">Magnetio</text>
     <text x="568" y="125" fill="#8A8A8F" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="13">Self-hosted Stremio addon with 22+ torrent providers, 8 d…</text>
     <rect x="568" y="140" width="368" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.08"/>
-    <rect x="568" y="140" width="154" height="4" rx="2" fill="#a78bfa"/>
-    <text x="1108" y="118" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="36" font-weight="700" letter-spacing="-1" text-anchor="end">52</text>
+    <rect x="568" y="140" width="156" height="4" rx="2" fill="#a78bfa"/>
+    <text x="1108" y="118" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="36" font-weight="700" letter-spacing="-1" text-anchor="end">53</text>
     <path d="M1042.00 97.00L1044.38 102.72L1050.56 103.22L1045.85 107.25L1047.29 113.28L1042.00 110.05L1036.71 113.28L1038.15 107.25L1033.44 103.22L1039.62 102.72Z" fill="#a78bfa"/>
     <text x="1108" y="146" fill="#6E6E73" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="11" letter-spacing="1.5" text-anchor="end">42% OF STARS</text>
   </g>
@@ -99,7 +99,7 @@
     <text x="568" y="212" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.4">PromptBar</text>
     <text x="568" y="233" fill="#8A8A8F" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" font-size="13">PromptBar is a SwiftUI application designed for macOS, al…</text>
     <rect x="568" y="248" width="368" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.08"/>
-    <rect x="568" y="248" width="154" height="4" rx="2" fill="#22d3ee"/>
+    <rect x="568" y="248" width="153" height="4" rx="2" fill="#22d3ee"/>
     <text x="1108" y="226" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif" font-size="36" font-weight="700" letter-spacing="-1" text-anchor="end">52</text>
     <path d="M1042.00 205.00L1044.38 210.72L1050.56 211.22L1045.85 215.25L1047.29 221.28L1042.00 218.05L1036.71 221.28L1038.15 215.25L1033.44 211.22L1039.62 210.72Z" fill="#22d3ee"/>
     <text x="1108" y="254" fill="#6E6E73" font-family="SFMono-Regular, ui-monospace, Consolas, monospace" font-size="11" letter-spacing="1.5" text-anchor="end">42% OF STARS</text>
